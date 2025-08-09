@@ -20,7 +20,7 @@ export default function StepText({ step }) {
 
   return (
     <div className="flex flex-col items-center gap-3 text-center">
-      <h3 className="text-[2.5rem] font-400 tracking-[-0.01875rem] leading-[1.2]">
+      <h3 className="text-[2.5rem] font-normal tracking-[-0.01875rem] leading-[1.2]">
         {text[step - 1].title}
       </h3>
       {step === 3 && (

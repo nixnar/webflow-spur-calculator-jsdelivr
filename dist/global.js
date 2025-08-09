@@ -491,36 +491,108 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   display: none;
 }
 
+.tailwind .absolute{
+  position: absolute !important;
+}
+
+.tailwind .relative{
+  position: relative !important;
+}
+
+.tailwind .-top-12{
+  top: -3rem !important;
+}
+
+.tailwind .left-1\\/2{
+  left: 50% !important;
+}
+
+.tailwind .top-full{
+  top: 100% !important;
+}
+
+.tailwind .-top-2{
+  top: -0.5rem !important;
+}
+
+.tailwind .-top-10{
+  top: -2.5rem !important;
+}
+
+.tailwind .left-5{
+  left: 1.25rem !important;
+}
+
+.tailwind .top-1\\/2{
+  top: 50% !important;
+}
+
+.tailwind .left-4{
+  left: 1rem !important;
+}
+
+.tailwind .mt-2{
+  margin-top: 0.5rem !important;
+}
+
+.tailwind .mt-4{
+  margin-top: 1rem !important;
+}
+
+.tailwind .mt-\\[0\\.125rem\\]{
+  margin-top: 0.125rem !important;
+}
+
+.tailwind .block{
+  display: block !important;
+}
+
 .tailwind .flex{
   display: flex !important;
-}
-
-.tailwind .h-full{
-  height: 100% !important;
-}
-
-.tailwind .h-4{
-  height: 1rem !important;
-}
-
-.tailwind .h-10{
-  height: 2.5rem !important;
 }
 
 .tailwind .h-\\[0\\.375rem\\]{
   height: 0.375rem !important;
 }
 
-.tailwind .w-full{
-  width: 100% !important;
+.tailwind .h-full{
+  height: 100% !important;
 }
 
-.tailwind .w-\\[55rem\\]{
-  width: 55rem !important;
+.tailwind .h-10{
+  height: 2.5rem !important;
 }
 
-.tailwind .w-10{
-  width: 2.5rem !important;
+.tailwind .h-0{
+  height: 0px !important;
+}
+
+.tailwind .h-2{
+  height: 0.5rem !important;
+}
+
+.tailwind .h-6{
+  height: 1.5rem !important;
+}
+
+.tailwind .h-\\[3\\.5rem\\]{
+  height: 3.5rem !important;
+}
+
+.tailwind .h-\\[0\\.38rem\\]{
+  height: 0.38rem !important;
+}
+
+.tailwind .max-h-6{
+  max-height: 1.5rem !important;
+}
+
+.tailwind .min-h-6{
+  min-height: 1.5rem !important;
+}
+
+.tailwind .w-\\[61\\.875rem\\]{
+  width: 61.875rem !important;
 }
 
 .tailwind .w-fit{
@@ -528,36 +600,165 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   width: fit-content !important;
 }
 
-.tailwind .w-\\[61\\.875rem\\]{
-  width: 61.875rem !important;
+.tailwind .w-full{
+  width: 100% !important;
+}
+
+.tailwind .w-0{
+  width: 0px !important;
+}
+
+.tailwind .w-20{
+  width: 5rem !important;
+}
+
+.tailwind .w-6{
+  width: 1.5rem !important;
+}
+
+.tailwind .w-\\[4rem\\]{
+  width: 4rem !important;
+}
+
+.tailwind .min-w-6{
+  min-width: 1.5rem !important;
+}
+
+.tailwind .max-w-6{
+  max-width: 1.5rem !important;
+}
+
+.tailwind .-translate-x-1\\/2{
+  --tw-translate-x: -50% !important;
+  transform: translate(-50%, var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .-translate-x-3{
+  --tw-translate-x: -0.75rem !important;
+  transform: translate(-0.75rem, var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .-translate-y-2{
+  --tw-translate-y: -0.5rem !important;
+  transform: translate(var(--tw-translate-x), -0.5rem) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .-translate-y-1\\/2{
+  --tw-translate-y: -50% !important;
+  transform: translate(var(--tw-translate-x), -50%) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .scale-110{
+  --tw-scale-x: 1.1 !important;
+  --tw-scale-y: 1.1 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1) !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .cursor-grab{
+  cursor: grab !important;
+}
+
+.tailwind .cursor-grabbing{
+  cursor: grabbing !important;
+}
+
+.tailwind .cursor-pointer{
+  cursor: pointer !important;
+}
+
+.tailwind .select-none{
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.tailwind .resize{
+  resize: both !important;
 }
 
 .tailwind .flex-col{
   flex-direction: column !important;
 }
 
+.tailwind .items-start{
+  align-items: flex-start !important;
+}
+
 .tailwind .items-center{
   align-items: center !important;
+}
+
+.tailwind .justify-start{
+  justify-content: flex-start !important;
+}
+
+.tailwind .justify-end{
+  justify-content: flex-end !important;
 }
 
 .tailwind .justify-center{
   justify-content: center !important;
 }
 
-.tailwind .gap-5{
-  gap: 1.25rem !important;
+.tailwind .justify-between{
+  justify-content: space-between !important;
 }
 
 .tailwind .gap-3{
   gap: 0.75rem !important;
 }
 
+.tailwind .gap-5{
+  gap: 1.25rem !important;
+}
+
 .tailwind .gap-\\[0\\.625rem\\]{
   gap: 0.625rem !important;
 }
 
-.tailwind .rounded-xl{
-  border-radius: 0.75rem !important;
+.tailwind .gap-6{
+  gap: 1.5rem !important;
+}
+
+.tailwind .gap-8{
+  gap: 2rem !important;
+}
+
+.tailwind .gap-2{
+  gap: 0.5rem !important;
+}
+
+.tailwind .gap-\\[0\\.62rem\\]{
+  gap: 0.62rem !important;
+}
+
+.tailwind .gap-\\[0\\.12rem\\]{
+  gap: 0.12rem !important;
+}
+
+.tailwind .gap-12{
+  gap: 3rem !important;
+}
+
+.tailwind .gap-1{
+  gap: 0.25rem !important;
+}
+
+.tailwind .whitespace-nowrap{
+  white-space: nowrap !important;
+}
+
+.tailwind .whitespace-pre-wrap{
+  white-space: pre-wrap !important;
 }
 
 .tailwind .rounded-\\[1\\.25rem\\]{
@@ -572,8 +773,52 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-radius: 62.5rem !important;
 }
 
+.tailwind .rounded-xl{
+  border-radius: 0.75rem !important;
+}
+
+.tailwind .rounded-full{
+  border-radius: 9999px !important;
+}
+
+.tailwind .rounded-lg{
+  border-radius: 0.5rem !important;
+}
+
+.tailwind .rounded-\\[0\\.5rem\\]{
+  border-radius: 0.5rem !important;
+}
+
+.tailwind .rounded-\\[0\\.375rem\\]{
+  border-radius: 0.375rem !important;
+}
+
+.tailwind .rounded{
+  border-radius: 0.25rem !important;
+}
+
+.tailwind .rounded-\\[0\\.625rem\\]{
+  border-radius: 0.625rem !important;
+}
+
 .tailwind .border-\\[2px\\]{
   border-width: 2px !important;
+}
+
+.tailwind .border-2{
+  border-width: 2px !important;
+}
+
+.tailwind .border-l-4{
+  border-left-width: 4px !important;
+}
+
+.tailwind .border-r-4{
+  border-right-width: 4px !important;
+}
+
+.tailwind .border-t-4{
+  border-top-width: 4px !important;
 }
 
 .tailwind .border-black{
@@ -582,10 +827,38 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1)) !important;
 }
 
-.tailwind .bg-\\[\\#FAF4E8\\]{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(250, 244, 232, 1) !important;
-  background-color: rgba(250, 244, 232, var(--tw-bg-opacity, 1)) !important;
+.tailwind .border-red-500{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(239, 68, 68, 1) !important;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-blue-500{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(59, 130, 246, 1) !important;
+  border-color: rgba(59, 130, 246, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-gray-300{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(209, 213, 219, 1) !important;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-transparent{
+  border-color: transparent !important;
+}
+
+.tailwind .border-white{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-t-black{
+  --tw-border-opacity: 1 !important;
+  border-top-color: rgba(0, 0, 0, 1) !important;
+  border-top-color: rgba(0, 0, 0, var(--tw-border-opacity, 1)) !important;
 }
 
 .tailwind .bg-\\[\\#5C4E47\\]{
@@ -594,10 +867,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(92, 78, 71, var(--tw-bg-opacity, 1)) !important;
 }
 
-.tailwind .bg-white{
+.tailwind .bg-\\[\\#DCD5D0\\]{
   --tw-bg-opacity: 1 !important;
-  background-color: rgba(255, 255, 255, 1) !important;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
+  background-color: rgba(220, 213, 208, 1) !important;
+  background-color: rgba(220, 213, 208, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-\\[\\#FAF4E8\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(250, 244, 232, 1) !important;
+  background-color: rgba(250, 244, 232, var(--tw-bg-opacity, 1)) !important;
 }
 
 .tailwind .bg-black{
@@ -606,19 +885,30 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity, 1)) !important;
 }
 
-.tailwind .bg-\\[\\#DCD5D0\\]{
+.tailwind .bg-white{
   --tw-bg-opacity: 1 !important;
-  background-color: rgba(220, 213, 208, 1) !important;
-  background-color: rgba(220, 213, 208, var(--tw-bg-opacity, 1)) !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-blue-600{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(37, 99, 235, 1) !important;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-gray-300{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(209, 213, 219, 1) !important;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-transparent{
+  background-color: transparent !important;
 }
 
 .tailwind .p-16{
   padding: 4rem !important;
-}
-
-.tailwind .px-20{
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
 }
 
 .tailwind .px-10{
@@ -626,9 +916,59 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-right: 2.5rem !important;
 }
 
+.tailwind .px-20{
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
 .tailwind .py-5{
   padding-top: 1.25rem !important;
   padding-bottom: 1.25rem !important;
+}
+
+.tailwind .px-3{
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.tailwind .py-1{
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.tailwind .py-2{
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.tailwind .py-4{
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.tailwind .px-2{
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.tailwind .py-3{
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.tailwind .py-\\[0\\.38rem\\]{
+  padding-top: 0.38rem !important;
+  padding-bottom: 0.38rem !important;
+}
+
+.tailwind .px-5{
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.tailwind .px-4{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .tailwind .pb-14{
@@ -639,32 +979,69 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-top: 2.5rem !important;
 }
 
+.tailwind .pt-\\[3\\.5rem\\]{
+  padding-top: 3.5rem !important;
+}
+
+.tailwind .pl-7{
+  padding-left: 1.75rem !important;
+}
+
+.tailwind .pb-5{
+  padding-bottom: 1.25rem !important;
+}
+
 .tailwind .text-center{
   text-align: center !important;
-}
-
-.tailwind .text-\\[1\\.5rem\\]{
-  font-size: 1.5rem !important;
-}
-
-.tailwind .text-\\[2\\.5rem\\]{
-  font-size: 2.5rem !important;
-}
-
-.tailwind .text-\\[1rem\\]{
-  font-size: 1rem !important;
-}
-
-.tailwind .text-\\[3\\.5rem\\]{
-  font-size: 3.5rem !important;
 }
 
 .tailwind .text-\\[1\\.25rem\\]{
   font-size: 1.25rem !important;
 }
 
-.tailwind .leading-\\[0\\.03375rem\\]{
-  line-height: 0.03375rem !important;
+.tailwind .text-\\[1rem\\]{
+  font-size: 1rem !important;
+}
+
+.tailwind .text-\\[2\\.5rem\\]{
+  font-size: 2.5rem !important;
+}
+
+.tailwind .text-\\[3\\.5rem\\]{
+  font-size: 3.5rem !important;
+}
+
+.tailwind .text-sm{
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.tailwind .text-\\[1\\.5rem\\]{
+  font-size: 1.5rem !important;
+}
+
+.tailwind .font-medium{
+  font-weight: 500 !important;
+}
+
+.tailwind .font-normal{
+  font-weight: 400 !important;
+}
+
+.tailwind .font-bold{
+  font-weight: 700 !important;
+}
+
+.tailwind .font-semibold{
+  font-weight: 600 !important;
+}
+
+.tailwind .font-extrabold{
+  font-weight: 800 !important;
+}
+
+.tailwind .leading-\\[1\\.15\\]{
+  line-height: 1.15 !important;
 }
 
 .tailwind .leading-\\[1\\.2\\]{
@@ -675,16 +1052,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   line-height: 1.4 !important;
 }
 
-.tailwind .leading-\\[1\\.15\\]{
-  line-height: 1.15 !important;
+.tailwind .leading-\\[1\\.25\\]{
+  line-height: 1.25 !important;
 }
 
-.tailwind .tracking-\\[-0\\.03375rem\\]{
-  letter-spacing: -0.03375rem !important;
-}
-
-.tailwind .tracking-\\[0\\.03375rem\\]{
-  letter-spacing: 0.03375rem !important;
+.tailwind .leading-\\[1\\.3\\]{
+  line-height: 1.3 !important;
 }
 
 .tailwind .tracking-\\[-0\\.01875rem\\]{
@@ -699,16 +1072,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   letter-spacing: 0.02813rem !important;
 }
 
-.tailwind .text-white{
-  --tw-text-opacity: 1 !important;
-  color: rgba(255, 255, 255, 1) !important;
-  color: rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important;
-}
-
-.tailwind .text-black{
-  --tw-text-opacity: 1 !important;
-  color: rgba(0, 0, 0, 1) !important;
-  color: rgba(0, 0, 0, var(--tw-text-opacity, 1)) !important;
+.tailwind .tracking-\\[-0\\.0075rem\\]{
+  letter-spacing: -0.0075rem !important;
 }
 
 .tailwind .text-\\[\\#0E46FA\\]{
@@ -717,8 +1082,72 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   color: rgba(14, 70, 250, var(--tw-text-opacity, 1)) !important;
 }
 
+.tailwind .text-black{
+  --tw-text-opacity: 1 !important;
+  color: rgba(0, 0, 0, 1) !important;
+  color: rgba(0, 0, 0, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-gray-600{
+  --tw-text-opacity: 1 !important;
+  color: rgba(75, 85, 99, 1) !important;
+  color: rgba(75, 85, 99, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-gray-500{
+  --tw-text-opacity: 1 !important;
+  color: rgba(107, 114, 128, 1) !important;
+  color: rgba(107, 114, 128, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-\\[\\#5C4E47\\]{
+  --tw-text-opacity: 1 !important;
+  color: rgba(92, 78, 71, 1) !important;
+  color: rgba(92, 78, 71, var(--tw-text-opacity, 1)) !important;
+}
+
 .tailwind .underline{
   text-decoration-line: underline !important;
+}
+
+.tailwind .shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) !important;
+  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow) !important;
+}
+
+.tailwind .outline-none{
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
+
+.tailwind .blur{
+  --tw-blur: blur(8px) !important;
+  filter: blur(8px) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.tailwind .transition-all{
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.tailwind .duration-150{
+  transition-duration: 150ms !important;
+}
+
+.tailwind .\\[appearance\\:textfield\\]{
+  -webkit-appearance: textfield !important;
+     -moz-appearance: textfield !important;
+          appearance: textfield !important;
 }
 
 .tailwind {
@@ -745,6 +1174,33 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 /* For Internet Explorer and older Edge */
 * {
   -ms-overflow-style: none;
+}
+
+.focus-within\\:border-blue-600:focus-within{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(37, 99, 235, 1) !important;
+  border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
+}
+
+.focus\\:border-blue-600:focus{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(37, 99, 235, 1) !important;
+  border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
+}
+
+.focus\\:outline-none:focus{
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
+
+.\\[\\&\\:\\:-webkit-inner-spin-button\\]\\:appearance-none::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+          appearance: none !important;
+}
+
+.\\[\\&\\:\\:-webkit-outer-spin-button\\]\\:appearance-none::-webkit-outer-spin-button{
+  -webkit-appearance: none !important;
+          appearance: none !important;
 }
 `, ""]);
 // Exports
@@ -874,7 +1330,7 @@ module.exports = function (i) {
 
 var Scheduler = __webpack_require__(982),
   React = __webpack_require__(540),
-  ReactDOM = __webpack_require__(961);
+  ReactDOM = __webpack_require__(342);
 function formatProdErrorMessage(code) {
   var url = "https://react.dev/errors/" + code;
   if (1 < arguments.length) {
@@ -16294,7 +16750,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 961:
+/***/ 342:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -17696,7 +18152,7 @@ function StepText(_ref) {
   return /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col items-center gap-3 text-center"
   }, /*#__PURE__*/react.createElement("h3", {
-    className: "text-[2.5rem] font-400 tracking-[-0.01875rem] leading-[1.2]"
+    className: "text-[2.5rem] font-normal tracking-[-0.01875rem] leading-[1.2]"
   }, text[step - 1].title), step === 3 && /*#__PURE__*/react.createElement("svg", {
     width: "130",
     height: "38",
@@ -17717,7 +18173,13 @@ function StepText(_ref) {
     className: "text-[1rem] leading-[1.4]"
   }, text[step - 1].description));
 }
-;// ./src/App.js
+;// ./src/ui/Slider.js
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -17725,26 +18187,596 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
+function Slider(_ref) {
+  var value = _ref.value,
+    setValue = _ref.setValue,
+    valueName = _ref.valueName,
+    singular = _ref.singular,
+    plural = _ref.plural,
+    min = _ref.min,
+    max = _ref.max;
+  var _React$useState = react.useState(false),
+    _React$useState2 = _slicedToArray(_React$useState, 2),
+    isHovering = _React$useState2[0],
+    setIsHovering = _React$useState2[1];
+  var _React$useState3 = react.useState(false),
+    _React$useState4 = _slicedToArray(_React$useState3, 2),
+    isDragging = _React$useState4[0],
+    setIsDragging = _React$useState4[1];
+  var _React$useState5 = react.useState(value),
+    _React$useState6 = _slicedToArray(_React$useState5, 2),
+    inputValue = _React$useState6[0],
+    setInputValue = _React$useState6[1];
+  var sliderRef = react.useRef(null);
+
+  // Update input value when prop value changes
+  react.useEffect(function () {
+    setInputValue(value);
+  }, [value]);
+
+  // Calculate percentage for slider position
+  var percentage = (value - min) / (max - min) * 100;
+
+  // Handle slider drag
+  var handleMouseDown = function handleMouseDown(e) {
+    setIsDragging(true);
+    updateSliderValue(e);
+  };
+  var handleMouseMove = function handleMouseMove(e) {
+    if (isDragging) {
+      updateSliderValue(e);
+    }
+  };
+  var handleMouseUp = function handleMouseUp() {
+    setIsDragging(false);
+  };
+
+  // Update slider value based on mouse position
+  var updateSliderValue = function updateSliderValue(e) {
+    if (!sliderRef.current) return;
+    var rect = sliderRef.current.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var width = rect.width;
+    var percentage = Math.max(0, Math.min(100, x / width * 100));
+    var newValue = Math.round(min + percentage / 100 * (max - min));
+    setValue(function (prev) {
+      return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, valueName, newValue));
+    });
+  };
+
+  // Handle input field changes
+  var handleInputChange = function handleInputChange(e) {
+    var newValue = e.target.value;
+    setInputValue(newValue);
+
+    // Update value immediately if it's a valid number within range
+    var numValue = parseInt(newValue);
+    if (!isNaN(numValue) && numValue >= min && numValue <= max) {
+      setValue(function (prev) {
+        return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, valueName, numValue));
+      });
+    }
+  };
+  var handleInputBlur = function handleInputBlur() {
+    var numValue = parseInt(inputValue);
+    if (!isNaN(numValue)) {
+      var clampedValue = Math.max(min, Math.min(max, numValue));
+      setValue(function (prev) {
+        return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, valueName, clampedValue));
+      });
+      setInputValue(clampedValue);
+    } else {
+      setInputValue(value);
+    }
+  };
+  var handleInputKeyPress = function handleInputKeyPress(e) {
+    if (e.key === "Enter") {
+      handleInputBlur();
+    }
+  };
+
+  // Add global mouse event listeners when dragging
+  react.useEffect(function () {
+    if (isDragging) {
+      document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseup", handleMouseUp);
+      return function () {
+        document.removeEventListener("mousemove", handleMouseMove);
+        document.removeEventListener("mouseup", handleMouseUp);
+      };
+    }
+  }, [isDragging]);
+  return /*#__PURE__*/react.createElement("div", {
+    className: "w-full py-4 select-none flex gap-6"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "relative w-full"
+  }, /*#__PURE__*/react.createElement("div", {
+    ref: sliderRef,
+    className: "relative w-full py-3 cursor-pointer",
+    onMouseDown: handleMouseDown,
+    onMouseEnter: function onMouseEnter() {
+      return setIsHovering(true);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return setIsHovering(false);
+    }
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "relative w-full h-[0.38rem] bg-gray-300 rounded-full"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "absolute h-full bg-blue-600 rounded-full ".concat(isDragging ? "" : "transition-all duration-150"),
+    style: {
+      width: "".concat(percentage, "%")
+    }
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "absolute w-6 h-6 bg-blue-600 rounded-full border-2 border-white shadow-lg transform -translate-y-1/2 -translate-x-3 cursor-grab ".concat(isDragging ? "cursor-grabbing scale-110" : "transition-all duration-150", " ").concat(isHovering && !isDragging ? "scale-110" : ""),
+    style: {
+      left: "".concat(percentage, "%"),
+      top: "50%"
+    }
+  }, (isHovering || isDragging) && /*#__PURE__*/react.createElement("div", {
+    className: "absolute -top-12 left-1/2 transform -translate-x-1/2  text-black bg-white border-2 border-black rounded-[0.375rem] text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium px-2 py-[0.38rem] whitespace-nowrap"
+  }, value, " ", value <= 1 ? singular : plural))), /*#__PURE__*/react.createElement("div", {
+    className: "flex justify-between text-sm text-gray-600"
+  }, /*#__PURE__*/react.createElement("span", null, min, " ", min <= 1 ? singular : plural), /*#__PURE__*/react.createElement("span", null, max, " ", max <= 1 ? singular : plural))), /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center justify-end"
+  }, /*#__PURE__*/react.createElement("input", {
+    type: "number",
+    value: inputValue,
+    onChange: handleInputChange,
+    onBlur: handleInputBlur,
+    onKeyPress: handleInputKeyPress,
+    min: min,
+    max: max,
+    className: "w-[4rem] px-2 py-2 text-center border-[2px] border-black rounded-[0.5rem] focus:border-blue-600 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  })));
+}
+;// ./src/ui/EntryBadge.js
+
+var EntryBadge = function EntryBadge(_ref) {
+  var name = _ref.name,
+    className = _ref.className;
+  if (name === "members") {
+    return /*#__PURE__*/react.createElement("svg", {
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      className: className
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M16 21.2V19.2C16 18.1391 15.5786 17.1217 14.8284 16.3715C14.0783 15.6214 13.0609 15.2 12 15.2H6C4.93913 15.2 3.92172 15.6214 3.17157 16.3715C2.42143 17.1217 2 18.1391 2 19.2V21.2M22 21.1998V19.1998C21.9993 18.3136 21.7044 17.4526 21.1614 16.7521C20.6184 16.0517 19.8581 15.5514 19 15.3298M16 3.32983C16.8604 3.55014 17.623 4.05053 18.1676 4.75214C18.7122 5.45375 19.0078 6.31666 19.0078 7.20483C19.0078 8.093 18.7122 8.95591 18.1676 9.65752C17.623 10.3591 16.8604 10.8595 16 11.0798M13 7.19995C13 9.40909 11.2091 11.2 9 11.2C6.79086 11.2 5 9.40909 5 7.19995C5 4.99081 6.79086 3.19995 9 3.19995C11.2091 3.19995 13 4.99081 13 7.19995Z",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }));
+  } else if (name === "hours") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_536_4222)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M12 6.19995V12.2L16 14.2M22 12.2C22 17.7228 17.5228 22.2 12 22.2C6.47715 22.2 2 17.7228 2 12.2C2 6.6771 6.47715 2.19995 12 2.19995C17.5228 2.19995 22 6.6771 22 12.2Z",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_536_4222"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "24",
+      height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "currentTestedPercentage") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M21 21.2L15 15.2M21 21.2V16.4M21 21.2H16.2M3 16.4V21.2M3 21.2H7.8M3 21.2L9 15.2M21 7.99995V3.19995M21 3.19995H16.2M21 3.19995L15 9.19995M3 7.99995V3.19995M3 3.19995H7.8M3 3.19995L9 9.19995",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }));
+  } else if (name === "currentCoveragePercentage") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_536_3959)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M12 8.19995V12.2M12 16.2H12.01M22 12.2C22 17.7228 17.5228 22.2 12 22.2C6.47715 22.2 2 17.7228 2 12.2C2 6.6771 6.47715 2.19995 12 2.19995C17.5228 2.19995 22 6.6771 22 12.2Z",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_536_3959"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "24",
+      height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "bugsMissedPercentage") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_536_3407)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M7 20.862V19.2C7 18.6695 7.21071 18.1608 7.58579 17.7857C7.96086 17.4107 8.46957 17.2 9 17.2H15C15.5304 17.2 16.0391 17.4107 16.4142 17.7857C16.7893 18.1608 17 18.6695 17 19.2V20.862M22 12.2C22 17.7228 17.5228 22.2 12 22.2C6.47715 22.2 2 17.7228 2 12.2C2 6.6771 6.47715 2.19995 12 2.19995C17.5228 2.19995 22 6.6771 22 12.2ZM15 10.2C15 11.8568 13.6569 13.2 12 13.2C10.3431 13.2 9 11.8568 9 10.2C9 8.5431 10.3431 7.19995 12 7.19995C13.6569 7.19995 15 8.5431 15 10.2Z",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_536_3407"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "24",
+      height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "delaysInDays") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_536_4658)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M8 2.19995V6.19995M16 2.19995V6.19995M3 10.2H21M8 14.2H8.01M12 14.2H12.01M16 14.2H16.01M8 18.2H8.01M12 18.2H12.01M16 18.2H16.01M5 4.19995H19C20.1046 4.19995 21 5.09538 21 6.19995V20.2C21 21.3045 20.1046 22.2 19 22.2H5C3.89543 22.2 3 21.3045 3 20.2V6.19995C3 5.09538 3.89543 4.19995 5 4.19995Z",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_536_4658"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "24",
+      height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "dollarSign") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none"
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_536_4751)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M12 2.19995V22.2M17 5.19995H9.5C8.57174 5.19995 7.6815 5.5687 7.02513 6.22508C6.36875 6.88145 6 7.77169 6 8.69995C6 9.62821 6.36875 10.5184 7.02513 11.1748C7.6815 11.8312 8.57174 12.2 9.5 12.2H14.5C15.4283 12.2 16.3185 12.5687 16.9749 13.2251C17.6313 13.8815 18 14.7717 18 15.7C18 16.6282 17.6313 17.5184 16.9749 18.1748C16.3185 18.8312 15.4283 19.2 14.5 19.2H6",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_536_4751"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "24",
+      height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  }
+};
+/* harmony default export */ const ui_EntryBadge = (EntryBadge);
+;// ./src/ui/InputTitle.js
+function InputTitle_slicedToArray(r, e) { return InputTitle_arrayWithHoles(r) || InputTitle_iterableToArrayLimit(r, e) || InputTitle_unsupportedIterableToArray(r, e) || InputTitle_nonIterableRest(); }
+function InputTitle_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function InputTitle_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return InputTitle_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? InputTitle_arrayLikeToArray(r, a) : void 0; } }
+function InputTitle_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function InputTitle_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function InputTitle_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+function InputTitle(_ref) {
+  var children = _ref.children,
+    icon = _ref.icon,
+    secondaryText = _ref.secondaryText;
+  var titleRef = react.useRef(null);
+  var _React$useState = react.useState(false),
+    _React$useState2 = InputTitle_slicedToArray(_React$useState, 2),
+    isMultiline = _React$useState2[0],
+    setIsMultiline = _React$useState2[1];
+  react.useEffect(function () {
+    var update = function update() {
+      if (!titleRef.current) return;
+      var el = titleRef.current;
+      var computedLineHeight = parseFloat(window.getComputedStyle(el).lineHeight);
+      var isWrapped = el.offsetHeight > computedLineHeight * 1.2; // small buffer
+      setIsMultiline(isWrapped);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return function () {
+      return window.removeEventListener("resize", update);
+    };
+  }, [children]);
+  return /*#__PURE__*/react.createElement("div", {
+    className: " flex flex-col gap-[0.12rem]"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "flex gap-[0.62rem] ".concat(isMultiline ? "items-start" : "items-center")
+  }, /*#__PURE__*/react.createElement(ui_EntryBadge, {
+    name: icon,
+    className: "".concat(isMultiline ? "mt-[0.125rem]" : "", " min-w-6 min-h-6")
+  }), /*#__PURE__*/react.createElement("p", {
+    ref: titleRef,
+    className: "text-black text-[1.5rem] leading-[1.25] font-semibold"
+  }, children)), /*#__PURE__*/react.createElement("div", {
+    className: "text-gray-500 text-[1rem] leading-[1.4] font-normal"
+  }, secondaryText));
+}
+;// ./src/ui/SingleEntry.js
+
+function SingleEntry(_ref) {
+  var children = _ref.children;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "w-full flex flex-col gap-5"
+  }, children);
+}
+;// ./src/ui/NumberInput.js
+function NumberInput_typeof(o) { "@babel/helpers - typeof"; return NumberInput_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, NumberInput_typeof(o); }
+function NumberInput_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function NumberInput_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? NumberInput_ownKeys(Object(t), !0).forEach(function (r) { NumberInput_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : NumberInput_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function NumberInput_defineProperty(e, r, t) { return (r = NumberInput_toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function NumberInput_toPropertyKey(t) { var i = NumberInput_toPrimitive(t, "string"); return "symbol" == NumberInput_typeof(i) ? i : i + ""; }
+function NumberInput_toPrimitive(t, r) { if ("object" != NumberInput_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != NumberInput_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function NumberInput_slicedToArray(r, e) { return NumberInput_arrayWithHoles(r) || NumberInput_iterableToArrayLimit(r, e) || NumberInput_unsupportedIterableToArray(r, e) || NumberInput_nonIterableRest(); }
+function NumberInput_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function NumberInput_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return NumberInput_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? NumberInput_arrayLikeToArray(r, a) : void 0; } }
+function NumberInput_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function NumberInput_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function NumberInput_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+function NumberInput(_ref) {
+  var value = _ref.value,
+    setValue = _ref.setValue,
+    valueName = _ref.valueName,
+    min = _ref.min,
+    max = _ref.max;
+  var inputRef = react.useRef(null);
+  var _React$useState = react.useState(String(value !== null && value !== void 0 ? value : 0)),
+    _React$useState2 = NumberInput_slicedToArray(_React$useState, 2),
+    input = _React$useState2[0],
+    setInput = _React$useState2[1];
+
+  // Keep UI text synced with value unless the user is actively clearing
+  react.useEffect(function () {
+    var active = document.activeElement === inputRef.current;
+    if (!active || input !== "") {
+      setInput(String(value !== null && value !== void 0 ? value : 0));
+    }
+  }, [value]);
+  var handleChange = function handleChange(e) {
+    var raw = e.target.value;
+    // only digits
+    var digits = raw.replace(/[^0-9]/g, "");
+    if (digits === "") {
+      setInput("");
+      // allow empty field; keep state as 0 underneath
+      setValue(function (prev) {
+        return NumberInput_objectSpread(NumberInput_objectSpread({}, prev), {}, NumberInput_defineProperty({}, valueName, 0));
+      });
+      return;
+    }
+    var num = parseInt(digits, 10);
+    // prevent typing beyond max
+    if (typeof max === "number" && num > max) {
+      num = max;
+    }
+    setInput(String(num));
+    var clamped = Math.max(min, typeof max === "number" ? Math.min(max, num) : num);
+    setValue(function (prev) {
+      return NumberInput_objectSpread(NumberInput_objectSpread({}, prev), {}, NumberInput_defineProperty({}, valueName, clamped));
+    });
+  };
+  var handleBlur = function handleBlur() {
+    if (input === "") setInput("0");
+  };
+  var handleKeyDown = function handleKeyDown(e) {
+    if (e.key === "Enter") e.currentTarget.blur();
+  };
+  return /*#__PURE__*/react.createElement("div", {
+    className: "w-full flex gap-1 border-[2px] border-black rounded-[0.625rem] px-4 py-3 focus-within:border-blue-600 text-[1rem] font-medium leading-[1.3] tracking-[-0.0075rem] items-center"
+  }, /*#__PURE__*/react.createElement("span", {
+    className: "text-black select-none"
+  }, "$"), /*#__PURE__*/react.createElement("input", {
+    ref: inputRef,
+    type: "text",
+    inputMode: "numeric",
+    value: input,
+    onChange: handleChange,
+    onBlur: handleBlur,
+    onKeyDown: handleKeyDown,
+    className: "w-full bg-transparent outline-none text-black",
+    "aria-label": "number input"
+  }));
+}
+;// ./src/components/Calculator.js
+
+
+
+
+
+function Calculator(_ref) {
+  var step = _ref.step,
+    data = _ref.data,
+    setData = _ref.setData;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "w-full pt-[3.5rem]"
+  }, step === 1 && /*#__PURE__*/react.createElement("div", {
+    className: "flex flex-col gap-12"
+  }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "members",
+    secondaryText: "Based on average $65k salary with benefits"
+  }, "How many people do you have on your QA Team?"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.members,
+    setValue: setData,
+    valueName: "members",
+    singular: "member",
+    plural: "members",
+    min: 0,
+    max: 20
+  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "hours"
+  }, "How many hours does your team spend testing per release?"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.hours,
+    setValue: setData,
+    valueName: "hours",
+    singular: "hour",
+    plural: "hours",
+    min: 5,
+    max: 200
+  }))), step === 2 && /*#__PURE__*/react.createElement("div", {
+    className: "flex flex-col gap-12"
+  }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "currentTestedPercentage",
+    secondaryText: "Suboptimal coverage is often due to limited time and resources."
+  }, "How much of your product is actually tested each release?"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.currentTestedPercentage,
+    setValue: setData,
+    valueName: "currentTestedPercentage",
+    singular: "%",
+    plural: "%",
+    min: 10,
+    max: 80
+  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "currentCoveragePercentage",
+    secondaryText: "Most manual QA misses rare but critical breakpoints."
+  }, "Roughly what percentage of error paths and edge cases are covered by the current regression suite?"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.currentCoveragePercentage,
+    setValue: setData,
+    valueName: "currentCoveragePercentage",
+    singular: "%",
+    plural: "%",
+    min: 0,
+    max: 30
+  })), " ", /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "bugsMissedPercentage",
+    secondaryText: "Bugs missed due to human factors. People make mistakes!"
+  }, "What percentage of bugs are missed due to human error during testing?"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.bugsMissedPercentage,
+    setValue: setData,
+    valueName: "bugsMissedPercentage",
+    singular: "%",
+    plural: "%",
+    min: 1,
+    max: 15
+  }))), step === 3 && /*#__PURE__*/react.createElement("div", {
+    className: "flex flex-col gap-12"
+  }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "dollarSign",
+    secondaryText: "What do you think is the average cost per production bug to your brand?"
+  }, "Cost of missed bugs"), /*#__PURE__*/react.createElement(NumberInput, {
+    value: data.costPerMissedBug,
+    setValue: setData,
+    valueName: "costPerMissedBug",
+    min: 0,
+    max: 10000000
+  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "delaysInDays",
+    secondaryText: "How many days are releases typically delayed by due to QA bottlenecks? "
+  }, "Release delays (days)"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.delaysInDays,
+    setValue: setData,
+    valueName: "delaysInDays",
+    singular: "day",
+    plural: "days",
+    min: 0,
+    max: 30
+  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "dollarSign",
+    secondaryText: "What is approximate business impact of every day the release is delayed by? "
+  }, "Revenue impact per delayed day"), /*#__PURE__*/react.createElement(NumberInput, {
+    value: data.revenueImpact,
+    setValue: setData,
+    valueName: "revenueImpact",
+    min: 0,
+    max: 10000000
+  }))));
+}
+;// ./src/App.js
+function App_slicedToArray(r, e) { return App_arrayWithHoles(r) || App_iterableToArrayLimit(r, e) || App_unsupportedIterableToArray(r, e) || App_nonIterableRest(); }
+function App_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function App_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return App_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? App_arrayLikeToArray(r, a) : void 0; } }
+function App_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function App_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function App_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
 
 
 
 var App = function App() {
   var _React$useState = react.useState(1),
-    _React$useState2 = _slicedToArray(_React$useState, 2),
+    _React$useState2 = App_slicedToArray(_React$useState, 2),
     step = _React$useState2[0],
     setStep = _React$useState2[1];
+  var modalRef = react.useRef(null);
+  var scrollToModalTop = function scrollToModalTop() {
+    var el = modalRef.current;
+    if (!el) return;
+    var offset = 5 * 16; // 10rem
+    var targetY = window.scrollY + el.getBoundingClientRect().top - offset;
+    window.scrollTo({
+      top: Math.max(0, targetY),
+      behavior: "smooth"
+    });
+  };
+  var _React$useState3 = react.useState({
+      members: 2,
+      often: 7,
+      hours: 40,
+      currentTestedPercentage: 40,
+      currentCoveragePercentage: 10,
+      bugsMissedPercentage: 5,
+      costPerMissedBug: 5000,
+      delaysInDays: 3,
+      revenueImpact: 2000
+    }),
+    _React$useState4 = App_slicedToArray(_React$useState3, 2),
+    data = _React$useState4[0],
+    setData = _React$useState4[1];
   return /*#__PURE__*/react.createElement("div", {
     className: "tailwind"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "flex bg-[#FAF4E8] p-16 justify-center items-center"
+    className: "flex bg-[#FAF4E8] p-16 justify-center items-center",
+    ref: modalRef
   }, /*#__PURE__*/react.createElement("div", {
     id: "inside",
     className: "flex flex-col gap-5 w-[61.875rem]"
   }, step < 4 && /*#__PURE__*/react.createElement("div", {
     id: "stepIndicator",
-    className: "flex flex-col items-center gap-3 w-full"
+    className: "flex flex-col items-center gap-3 w-full px-4"
   }, /*#__PURE__*/react.createElement("p", {
-    className: "text-center "
+    className: "text-center text-[1.5rem] font-semibold text-[#5C4E47]"
   }, "Step ", step, " of 3"), /*#__PURE__*/react.createElement("div", {
     className: "w-full h-[0.375rem] rounded-[62.5rem] bg-[#DCD5D0]"
   }, /*#__PURE__*/react.createElement("div", {
@@ -17755,7 +18787,7 @@ var App = function App() {
   }))), /*#__PURE__*/react.createElement("div", {
     id: "modal",
     className: "w-full border-[2px] border-black rounded-[1.25rem] bg-white px-20 pt-10 pb-14 flex flex-col items-center"
-  }, step < 4 ? /*#__PURE__*/react.createElement("div", {
+  }, step < 4 ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
     id: "top half",
     className: "flex flex-col items-center gap-3"
   }, /*#__PURE__*/react.createElement(ui_StepBadge, {
@@ -17764,39 +18796,57 @@ var App = function App() {
   }), /*#__PURE__*/react.createElement(StepText, {
     id: "titleDescription",
     step: step
-  })) : /*#__PURE__*/react.createElement("div", {
+  })), /*#__PURE__*/react.createElement("div", {
+    id: "calculator",
+    className: "w-full"
+  }, /*#__PURE__*/react.createElement(Calculator, {
+    step: step,
+    data: data,
+    setData: setData
+  }))) :
+  /*#__PURE__*/
+  // result page
+  react.createElement("div", {
     className: "flex flex-col items-center text-center"
   }, /*#__PURE__*/react.createElement("p", null, "Here is the value you will get with Spur"), /*#__PURE__*/react.createElement("h2", {
-    className: "text-[3.5rem] font-400 leading-[1.15] tracking-[-0.0525rem]"
+    className: "text-[3.5rem] font-normal leading-[1.15] tracking-[-0.0525rem]"
   }, "Go from manual QA to ", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("span", {
     className: "text-[#0E46FA]"
   }, "90% automated test coverage"), /*#__PURE__*/react.createElement("br", null), "in just", /*#__PURE__*/react.createElement("span", {
-    className: "underline font-700"
+    className: "underline font-bold"
   }, "8 weeks")))), /*#__PURE__*/react.createElement("div", {
     id: "buttondiv",
-    className: "flex justify-center gap-[0.625rem] text-[1.25rem] font-600 tracking-[0.02813rem]"
+    className: "flex justify-center gap-[0.625rem] text-[1.25rem] font-semibold tracking-[0.02813rem]"
   }, step > 1 && step < 4 && /*#__PURE__*/react.createElement("button", {
     id: "prevButton",
     className: " rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black",
     onClick: function onClick() {
+      scrollToModalTop();
       setStep(step - 1);
     }
   }, "Back"), step < 4 && /*#__PURE__*/react.createElement("button", {
     id: "nextButton",
     className: "bg-black rounded-[1rem] w-fit px-10 py-5 text-white",
     onClick: function onClick() {
+      scrollToModalTop();
       setStep(step + 1);
     }
   }, step === 3 ? "Calculate ROI with Spur" : "Next"), step > 3 && /*#__PURE__*/react.createElement("button", {
     id: "calculateButton",
     className: "rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black",
     onClick: function onClick() {
+      scrollToModalTop();
       setStep(1);
     }
   }, "Recalculate"), step > 3 && /*#__PURE__*/react.createElement("button", {
     id: "shareButton",
-    className: "rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black"
-  }, "Download & Share")))));
+    className: "rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black",
+    onClick: function onClick() {
+      scrollToModalTop();
+    }
+  }, "Download & Share")), " ", /*#__PURE__*/react.createElement("div", {
+    className: "text-black font-semibold"
+  }, "ignore this, this is ran's debugging console :) ", /*#__PURE__*/react.createElement("br", null), "members:", data.members, /*#__PURE__*/react.createElement("br", null), "often:", data.often, /*#__PURE__*/react.createElement("br", null), "hours:", data.hours, /*#__PURE__*/react.createElement("br", null), "currentTestedPercentage:", data.currentTestedPercentage, /*#__PURE__*/react.createElement("br", null), "currentCoveragePercentage:", data.currentCoveragePercentage, /*#__PURE__*/react.createElement("br", null), "bugsMissedPercentage:", data.bugsMissedPercentage, /*#__PURE__*/react.createElement("br", null), "costPerMissedBug:", data.costPerMissedBug, /*#__PURE__*/react.createElement("br", null), "delaysInDays:", data.delaysInDays, /*#__PURE__*/react.createElement("br", null), "revenueImpact:", data.revenueImpact))));
 };
 /* harmony default export */ const src_App = (App);
 ;// ./src/index.js
