@@ -138,7 +138,11 @@ const App = () => {
                       </h2>
                       <p>to</p>
                       <h2 className="text-[2.5rem] leading-[1.15] text-[#39A74A]">
-                        {(15 * 5) / 60} hours
+                        {Math.round((
+                          (data.hours / 0.1667) *
+                            releaseFrequencyToYearly[data.releaseFrequency]
+                        ) / 15)}
+                        days
                       </h2>
                     </div>
                   </ResultSection>
@@ -154,7 +158,7 @@ const App = () => {
                         data.members *
                           data.hours *
                           releaseFrequencyToYearly[data.releaseFrequency] *
-                          100 +
+                          31.25 +
                           data.costPerMissedBug +
                           data.bugsMissedPercentage * 0.01
                       )}

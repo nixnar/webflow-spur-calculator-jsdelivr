@@ -511,32 +511,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   left: 50% !important;
 }
 
-.tailwind .right-3{
-  right: 0.75rem !important;
-}
-
-.tailwind .top-1\\/2{
-  top: 50% !important;
-}
-
-.tailwind .left-0{
-  left: 0px !important;
-}
-
-.tailwind .top-0{
-  top: 0px !important;
-}
-
 .tailwind .z-10{
   z-index: 10 !important;
 }
 
-.tailwind .mt-\\[0\\.125rem\\]{
-  margin-top: 0.125rem !important;
-}
-
 .tailwind .mt-2{
   margin-top: 0.5rem !important;
+}
+
+.tailwind .mt-\\[0\\.125rem\\]{
+  margin-top: 0.125rem !important;
 }
 
 .tailwind .flex{
@@ -555,12 +539,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   height: 0.38rem !important;
 }
 
-.tailwind .h-full{
-  height: 100% !important;
-}
-
 .tailwind .h-auto{
   height: auto !important;
+}
+
+.tailwind .h-full{
+  height: 100% !important;
 }
 
 .tailwind .max-h-64{
@@ -573,6 +557,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .w-6{
   width: 1.5rem !important;
+}
+
+.tailwind .w-\\[20rem\\]{
+  width: 20rem !important;
 }
 
 .tailwind .w-\\[4rem\\]{
@@ -590,14 +578,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .w-full{
   width: 100% !important;
-}
-
-.tailwind .w-\\[42rem\\]{
-  width: 42rem !important;
-}
-
-.tailwind .w-\\[20rem\\]{
-  width: 20rem !important;
 }
 
 .tailwind .min-w-6{
@@ -669,12 +649,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   resize: both !important;
 }
 
-.tailwind .appearance-none{
-  -webkit-appearance: none !important;
-     -moz-appearance: none !important;
-          appearance: none !important;
-}
-
 .tailwind .flex-col{
   flex-direction: column !important;
 }
@@ -707,8 +681,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   gap: 3rem !important;
 }
 
+.tailwind .gap-2{
+  gap: 0.5rem !important;
+}
+
 .tailwind .gap-3{
   gap: 0.75rem !important;
+}
+
+.tailwind .gap-4{
+  gap: 1rem !important;
 }
 
 .tailwind .gap-5{
@@ -731,18 +713,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   gap: 0.62rem !important;
 }
 
-.tailwind .gap-24{
-  gap: 6rem !important;
-}
-
-.tailwind .gap-4{
-  gap: 1rem !important;
-}
-
-.tailwind .gap-2{
-  gap: 0.5rem !important;
-}
-
 .tailwind .overflow-auto{
   overflow: auto !important;
 }
@@ -761,6 +731,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .rounded-\\[0\\.625rem\\]{
   border-radius: 0.625rem !important;
+}
+
+.tailwind .rounded-\\[0\\.75rem\\]{
+  border-radius: 0.75rem !important;
 }
 
 .tailwind .rounded-\\[1\\.25rem\\]{
@@ -783,10 +757,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-radius: 0.75rem !important;
 }
 
-.tailwind .rounded-\\[0\\.75rem\\]{
-  border-radius: 0.75rem !important;
-}
-
 .tailwind .border-2{
   border-width: 2px !important;
 }
@@ -795,22 +765,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-width: 2px !important;
 }
 
-.tailwind .border-black{
+.tailwind .border-\\[\\#C3D1FE\\]{
   --tw-border-opacity: 1 !important;
-  border-color: rgba(0, 0, 0, 1) !important;
-  border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1)) !important;
-}
-
-.tailwind .border-white{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(255, 255, 255, 1) !important;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1)) !important;
-}
-
-.tailwind .border-blue-600{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(37, 99, 235, 1) !important;
-  border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
+  border-color: rgba(195, 209, 254, 1) !important;
+  border-color: rgba(195, 209, 254, var(--tw-border-opacity, 1)) !important;
 }
 
 .tailwind .border-\\[\\#D1EFD6\\]{
@@ -819,16 +777,22 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(209, 239, 214, var(--tw-border-opacity, 1)) !important;
 }
 
-.tailwind .border-red-500{
+.tailwind .border-black{
   --tw-border-opacity: 1 !important;
-  border-color: rgba(239, 68, 68, 1) !important;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity, 1)) !important;
+  border-color: rgba(0, 0, 0, 1) !important;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1)) !important;
 }
 
-.tailwind .border-\\[\\#C3D1FE\\]{
+.tailwind .border-blue-600{
   --tw-border-opacity: 1 !important;
-  border-color: rgba(195, 209, 254, 1) !important;
-  border-color: rgba(195, 209, 254, var(--tw-border-opacity, 1)) !important;
+  border-color: rgba(37, 99, 235, 1) !important;
+  border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-white{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1)) !important;
 }
 
 .tailwind .bg-\\[\\#5C4E47\\]{
@@ -841,6 +805,18 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   --tw-bg-opacity: 1 !important;
   background-color: rgba(220, 213, 208, 1) !important;
   background-color: rgba(220, 213, 208, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-\\[\\#EBF0FF\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(235, 240, 255, 1) !important;
+  background-color: rgba(235, 240, 255, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-\\[\\#F0FAF1\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(240, 250, 241, 1) !important;
+  background-color: rgba(240, 250, 241, var(--tw-bg-opacity, 1)) !important;
 }
 
 .tailwind .bg-\\[\\#FAF4E8\\]{
@@ -861,6 +837,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity, 1)) !important;
 }
 
+.tailwind .bg-gray-100{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(243, 244, 246, 1) !important;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity, 1)) !important;
+}
+
 .tailwind .bg-gray-300{
   --tw-bg-opacity: 1 !important;
   background-color: rgba(209, 213, 219, 1) !important;
@@ -875,38 +857,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   --tw-bg-opacity: 1 !important;
   background-color: rgba(255, 255, 255, 1) !important;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
-}
-
-.tailwind .bg-gray-100{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(243, 244, 246, 1) !important;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity, 1)) !important;
-}
-
-.tailwind .bg-\\[primitives\\/green\\/green-450\\]{
-  background-color: primitives/green/green-450 !important;
-}
-
-.tailwind .bg-\\[\\#F0FAF1\\]{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(240, 250, 241, 1) !important;
-  background-color: rgba(240, 250, 241, var(--tw-bg-opacity, 1)) !important;
-}
-
-.tailwind .bg-red-500{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(239, 68, 68, 1) !important;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity, 1)) !important;
-}
-
-.tailwind .bg-\\[\\#EBF0FF\\]{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(235, 240, 255, 1) !important;
-  background-color: rgba(235, 240, 255, var(--tw-bg-opacity, 1)) !important;
-}
-
-.tailwind .bg-opacity-50{
-  --tw-bg-opacity: 0.5 !important;
 }
 
 .tailwind .p-16{
@@ -933,6 +883,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-right: 1rem !important;
 }
 
+.tailwind .px-6{
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
 .tailwind .py-2{
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -953,23 +908,26 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 1.25rem !important;
 }
 
-.tailwind .py-\\[0\\.38rem\\]{
-  padding-top: 0.38rem !important;
-  padding-bottom: 0.38rem !important;
-}
-
-.tailwind .px-6{
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-}
-
 .tailwind .py-8{
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
 }
 
+.tailwind .py-\\[0\\.38rem\\]{
+  padding-top: 0.38rem !important;
+  padding-bottom: 0.38rem !important;
+}
+
 .tailwind .pb-14{
   padding-bottom: 3.5rem !important;
+}
+
+.tailwind .pb-24{
+  padding-bottom: 6rem !important;
+}
+
+.tailwind .pb-32{
+  padding-bottom: 8rem !important;
 }
 
 .tailwind .pt-10{
@@ -978,18 +936,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .pt-\\[3\\.5rem\\]{
   padding-top: 3.5rem !important;
-}
-
-.tailwind .pr-10{
-  padding-right: 2.5rem !important;
-}
-
-.tailwind .pb-32{
-  padding-bottom: 8rem !important;
-}
-
-.tailwind .pb-24{
-  padding-bottom: 6rem !important;
 }
 
 .tailwind .text-center{
@@ -1073,10 +1019,22 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   letter-spacing: 0.02813rem !important;
 }
 
+.tailwind .text-\\[\\#0535DD\\]{
+  --tw-text-opacity: 1 !important;
+  color: rgba(5, 53, 221, 1) !important;
+  color: rgba(5, 53, 221, var(--tw-text-opacity, 1)) !important;
+}
+
 .tailwind .text-\\[\\#0E46FA\\]{
   --tw-text-opacity: 1 !important;
   color: rgba(14, 70, 250, 1) !important;
   color: rgba(14, 70, 250, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-\\[\\#39A74A\\]{
+  --tw-text-opacity: 1 !important;
+  color: rgba(57, 167, 74, 1) !important;
+  color: rgba(57, 167, 74, var(--tw-text-opacity, 1)) !important;
 }
 
 .tailwind .text-\\[\\#5C4E47\\]{
@@ -1109,24 +1067,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   color: rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important;
 }
 
-.tailwind .text-\\[\\#39A74A\\]{
-  --tw-text-opacity: 1 !important;
-  color: rgba(57, 167, 74, 1) !important;
-  color: rgba(57, 167, 74, var(--tw-text-opacity, 1)) !important;
-}
-
-.tailwind .text-\\[\\#0535DD\\]{
-  --tw-text-opacity: 1 !important;
-  color: rgba(5, 53, 221, 1) !important;
-  color: rgba(5, 53, 221, var(--tw-text-opacity, 1)) !important;
-}
-
 .tailwind .underline{
   text-decoration-line: underline !important;
-}
-
-.tailwind .opacity-20{
-  opacity: 0.2 !important;
 }
 
 .tailwind .shadow-lg{
@@ -1170,12 +1112,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   transition-duration: 150ms !important;
 }
 
-.tailwind .\\[appearance\\:none\\]{
-  -webkit-appearance: none !important;
-     -moz-appearance: none !important;
-          appearance: none !important;
-}
-
 .tailwind .\\[appearance\\:textfield\\]{
   -webkit-appearance: textfield !important;
      -moz-appearance: textfield !important;
@@ -1207,29 +1143,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 * {
   -ms-overflow-style: none;
 }
-
 .focus-within\\:border-blue-600:focus-within{
   --tw-border-opacity: 1 !important;
   border-color: rgba(37, 99, 235, 1) !important;
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
-
 .focus\\:border-blue-600:focus{
   --tw-border-opacity: 1 !important;
   border-color: rgba(37, 99, 235, 1) !important;
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
-
 .focus\\:outline-none:focus{
   outline: 2px solid transparent !important;
   outline-offset: 2px !important;
 }
-
 .\\[\\&\\:\\:-webkit-inner-spin-button\\]\\:appearance-none::-webkit-inner-spin-button{
   -webkit-appearance: none !important;
           appearance: none !important;
 }
-
 .\\[\\&\\:\\:-webkit-outer-spin-button\\]\\:appearance-none::-webkit-outer-spin-button{
   -webkit-appearance: none !important;
           appearance: none !important;
@@ -19052,7 +18983,7 @@ function App_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 var App = function App() {
-  var _React$useState = react.useState(4),
+  var _React$useState = react.useState(1),
     _React$useState2 = App_slicedToArray(_React$useState, 2),
     step = _React$useState2[0],
     setStep = _React$useState2[1];
@@ -19182,14 +19113,14 @@ var App = function App() {
     className: "text-[2.5rem] leading-[1.15]"
   }, data.releaseFrequency), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
     className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
-  }, 15 * 5 / 60, " hours"))), /*#__PURE__*/react.createElement(ResultSection, {
+  }, Math.round(data.hours / 0.1667 * releaseFrequencyToYearly[data.releaseFrequency] / 15), "days"))), /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#EBF0FF] border-[#C3D1FE]",
     icon: "ROI",
     title: "Total ROI for your team",
     description: "(estimated annual cost savings on hours saved + cost of critical bugs missed)"
   }, /*#__PURE__*/react.createElement("h2", {
     className: "text-[2.5rem] leading-[1.15] text-[#0535DD]"
-  }, "$", Math.round(data.members * data.hours * releaseFrequencyToYearly[data.releaseFrequency] * 100 + data.costPerMissedBug + data.bugsMissedPercentage * 0.01)))))), /*#__PURE__*/react.createElement("div", {
+  }, "$", Math.round(data.members * data.hours * releaseFrequencyToYearly[data.releaseFrequency] * 31.25 + data.costPerMissedBug + data.bugsMissedPercentage * 0.01)))))), /*#__PURE__*/react.createElement("div", {
     id: "buttondiv",
     className: "flex justify-center gap-[0.625rem] text-[1.25rem] font-semibold tracking-[0.02813rem]"
   }, step > 1 && step < 4 && /*#__PURE__*/react.createElement("button", {
