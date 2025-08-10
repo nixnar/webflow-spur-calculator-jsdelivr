@@ -1143,24 +1143,29 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 * {
   -ms-overflow-style: none;
 }
+
 .focus-within\\:border-blue-600:focus-within{
   --tw-border-opacity: 1 !important;
   border-color: rgba(37, 99, 235, 1) !important;
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
+
 .focus\\:border-blue-600:focus{
   --tw-border-opacity: 1 !important;
   border-color: rgba(37, 99, 235, 1) !important;
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
+
 .focus\\:outline-none:focus{
   outline: 2px solid transparent !important;
   outline-offset: 2px !important;
 }
+
 .\\[\\&\\:\\:-webkit-inner-spin-button\\]\\:appearance-none::-webkit-inner-spin-button{
   -webkit-appearance: none !important;
           appearance: none !important;
 }
+
 .\\[\\&\\:\\:-webkit-outer-spin-button\\]\\:appearance-none::-webkit-outer-spin-button{
   -webkit-appearance: none !important;
           appearance: none !important;
@@ -19113,7 +19118,7 @@ var App = function App() {
     className: "text-[2.5rem] leading-[1.15]"
   }, data.releaseFrequency), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
     className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
-  }, Math.round(data.hours / 0.1667 * releaseFrequencyToYearly[data.releaseFrequency] / 15), "days"))), /*#__PURE__*/react.createElement(ResultSection, {
+  }, Math.round(data.hours / 0.1667 * releaseFrequencyToYearly[data.releaseFrequency]) / 15, "\xA0hours"))), /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#EBF0FF] border-[#C3D1FE]",
     icon: "ROI",
     title: "Total ROI for your team",

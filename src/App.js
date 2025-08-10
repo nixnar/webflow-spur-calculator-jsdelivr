@@ -138,11 +138,11 @@ const App = () => {
                       </h2>
                       <p>to</p>
                       <h2 className="text-[2.5rem] leading-[1.15] text-[#39A74A]">
-                        {Math.round((
+                        {Math.round(
                           (data.hours / 0.1667) *
                             releaseFrequencyToYearly[data.releaseFrequency]
-                        ) / 15)}
-                        days
+                        ) / 15}
+                        &nbsp;hours
                       </h2>
                     </div>
                   </ResultSection>
