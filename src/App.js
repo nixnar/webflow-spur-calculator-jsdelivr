@@ -5,7 +5,7 @@ import StepText from "./components/StepText";
 import Calculator from "./components/Calculator";
 import ResultSection from "./ui/ResultSection";
 const App = () => {
-  const [step, setStep] = React.useState(4);
+  const [step, setStep] = React.useState(1);
   const modalRef = React.useRef(null);
   const scrollToModalTop = () => {
     const el = modalRef.current;
