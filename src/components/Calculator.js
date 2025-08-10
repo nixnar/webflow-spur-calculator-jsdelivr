@@ -3,6 +3,7 @@ import Slider from "../ui/Slider";
 import InputTitle from "../ui/InputTitle";
 import SingleEntry from "../ui/SingleEntry";
 import NumberInput from "../ui/NumberInput";
+import Dropdown from "../ui/Dropdown";
 export default function Calculator({ step, data, setData }) {
   return (
     <div className="w-full pt-[3.5rem]">
@@ -23,6 +24,24 @@ export default function Calculator({ step, data, setData }) {
               plural="members"
               min={0}
               max={20}
+            />
+          </SingleEntry>
+          <SingleEntry>
+            <InputTitle icon="calendar">
+              How often are your releases?
+            </InputTitle>
+            <Dropdown
+              value={data.releaseFrequency}
+              setValue={setData}
+              valueName="releaseFrequency"
+              options={[
+                { label: "Daily", value: "1 Day" },
+                { label: "2-3 times per week", value: "3 Days" },
+                { label: "Weekly", value: "1 Week" },
+                { label: "Bi-Weekly", value: "2 Weeks" },
+                { label: "Monthly", value: "1 Month" },
+                { label: "Quarterly", value: "3 Months" },
+              ]}
             />
           </SingleEntry>
           <SingleEntry>

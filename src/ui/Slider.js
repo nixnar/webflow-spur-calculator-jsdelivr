@@ -28,8 +28,21 @@ export default function Slider({
     updateSliderValue(e);
   };
 
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    e.preventDefault();
+    updateSliderValue(e);
+  };
+
   const handleMouseMove = (e) => {
     if (isDragging) {
+      updateSliderValue(e);
+    }
+  };
+
+  const handleTouchMove = (e) => {
+    if (isDragging) {
+      e.preventDefault();
       updateSliderValue(e);
     }
   };
@@ -38,12 +51,24 @@ export default function Slider({
     setIsDragging(false);
   };
 
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
   // Update slider value based on mouse position
   const updateSliderValue = (e) => {
     if (!sliderRef.current) return;
 
     const rect = sliderRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+    const clientX =
+      (e && e.clientX) ??
+      (e && e.touches && e.touches[0] && e.touches[0].clientX) ??
+      (e &&
+        e.changedTouches &&
+        e.changedTouches[0] &&
+        e.changedTouches[0].clientX);
+    if (typeof clientX !== "number") return;
+    const x = clientX - rect.left;
     const width = rect.width;
     const percentage = Math.max(0, Math.min(100, (x / width) * 100));
     const newValue = Math.round(min + (percentage / 100) * (max - min));
@@ -85,9 +110,15 @@ export default function Slider({
     if (isDragging) {
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseup", handleMouseUp);
+      document.addEventListener("touchmove", handleTouchMove, {
+        passive: false,
+      });
+      document.addEventListener("touchend", handleTouchEnd);
       return () => {
         document.removeEventListener("mousemove", handleMouseMove);
         document.removeEventListener("mouseup", handleMouseUp);
+        document.removeEventListener("touchmove", handleTouchMove);
+        document.removeEventListener("touchend", handleTouchEnd);
       };
     }
   }, [isDragging]);
@@ -99,8 +130,9 @@ export default function Slider({
         {/* Slider Track Container - Extended clickable area */}
         <div
           ref={sliderRef}
-          className="relative w-full py-3 cursor-pointer"
+          className="relative w-full py-3 cursor-pointer touch-none"
           onMouseDown={handleMouseDown}
+          onTouchStart={handleTouchStart}
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >

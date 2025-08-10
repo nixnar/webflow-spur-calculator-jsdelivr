@@ -491,6 +491,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   display: none;
 }
 
+.tailwind .pointer-events-none{
+  pointer-events: none !important;
+}
+
 .tailwind .absolute{
   position: absolute !important;
 }
@@ -507,88 +511,72 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   left: 50% !important;
 }
 
-.tailwind .top-full{
-  top: 100% !important;
-}
-
-.tailwind .-top-2{
-  top: -0.5rem !important;
-}
-
-.tailwind .-top-10{
-  top: -2.5rem !important;
-}
-
-.tailwind .left-5{
-  left: 1.25rem !important;
+.tailwind .right-3{
+  right: 0.75rem !important;
 }
 
 .tailwind .top-1\\/2{
   top: 50% !important;
 }
 
-.tailwind .left-4{
-  left: 1rem !important;
+.tailwind .left-0{
+  left: 0px !important;
 }
 
-.tailwind .mt-2{
-  margin-top: 0.5rem !important;
+.tailwind .top-0{
+  top: 0px !important;
 }
 
-.tailwind .mt-4{
-  margin-top: 1rem !important;
+.tailwind .z-10{
+  z-index: 10 !important;
 }
 
 .tailwind .mt-\\[0\\.125rem\\]{
   margin-top: 0.125rem !important;
 }
 
-.tailwind .block{
-  display: block !important;
+.tailwind .mt-2{
+  margin-top: 0.5rem !important;
 }
 
 .tailwind .flex{
   display: flex !important;
 }
 
-.tailwind .h-\\[0\\.375rem\\]{
-  height: 0.375rem !important;
-}
-
-.tailwind .h-full{
-  height: 100% !important;
-}
-
-.tailwind .h-10{
-  height: 2.5rem !important;
-}
-
-.tailwind .h-0{
-  height: 0px !important;
-}
-
-.tailwind .h-2{
-  height: 0.5rem !important;
-}
-
 .tailwind .h-6{
   height: 1.5rem !important;
 }
 
-.tailwind .h-\\[3\\.5rem\\]{
-  height: 3.5rem !important;
+.tailwind .h-\\[0\\.375rem\\]{
+  height: 0.375rem !important;
 }
 
 .tailwind .h-\\[0\\.38rem\\]{
   height: 0.38rem !important;
 }
 
-.tailwind .max-h-6{
-  max-height: 1.5rem !important;
+.tailwind .h-full{
+  height: 100% !important;
+}
+
+.tailwind .h-auto{
+  height: auto !important;
+}
+
+.tailwind .max-h-64{
+  max-height: 16rem !important;
 }
 
 .tailwind .min-h-6{
   min-height: 1.5rem !important;
+}
+
+.tailwind .w-6{
+  width: 1.5rem !important;
+}
+
+.tailwind .w-\\[4rem\\]{
+  width: 4rem !important;
 }
 
 .tailwind .w-\\[61\\.875rem\\]{
@@ -604,28 +592,20 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   width: 100% !important;
 }
 
-.tailwind .w-0{
-  width: 0px !important;
+.tailwind .w-\\[42rem\\]{
+  width: 42rem !important;
 }
 
-.tailwind .w-20{
-  width: 5rem !important;
-}
-
-.tailwind .w-6{
-  width: 1.5rem !important;
-}
-
-.tailwind .w-\\[4rem\\]{
-  width: 4rem !important;
+.tailwind .w-\\[20rem\\]{
+  width: 20rem !important;
 }
 
 .tailwind .min-w-6{
   min-width: 1.5rem !important;
 }
 
-.tailwind .max-w-6{
-  max-width: 1.5rem !important;
+.tailwind .max-w-\\[90\\%\\]{
+  max-width: 90% !important;
 }
 
 .tailwind .-translate-x-1\\/2{
@@ -640,15 +620,15 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
-.tailwind .-translate-y-2{
-  --tw-translate-y: -0.5rem !important;
-  transform: translate(var(--tw-translate-x), -0.5rem) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
-}
-
 .tailwind .-translate-y-1\\/2{
   --tw-translate-y: -50% !important;
   transform: translate(var(--tw-translate-x), -50%) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.tailwind .rotate-180{
+  --tw-rotate: 180deg !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(180deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
@@ -675,6 +655,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   cursor: pointer !important;
 }
 
+.tailwind .touch-none{
+  touch-action: none !important;
+}
+
 .tailwind .select-none{
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
@@ -683,6 +667,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .resize{
   resize: both !important;
+}
+
+.tailwind .appearance-none{
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
 }
 
 .tailwind .flex-col{
@@ -697,10 +687,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   align-items: center !important;
 }
 
-.tailwind .justify-start{
-  justify-content: flex-start !important;
-}
-
 .tailwind .justify-end{
   justify-content: flex-end !important;
 }
@@ -713,6 +699,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   justify-content: space-between !important;
 }
 
+.tailwind .gap-1{
+  gap: 0.25rem !important;
+}
+
+.tailwind .gap-12{
+  gap: 3rem !important;
+}
+
 .tailwind .gap-3{
   gap: 0.75rem !important;
 }
@@ -721,44 +715,52 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   gap: 1.25rem !important;
 }
 
-.tailwind .gap-\\[0\\.625rem\\]{
-  gap: 0.625rem !important;
-}
-
 .tailwind .gap-6{
   gap: 1.5rem !important;
-}
-
-.tailwind .gap-8{
-  gap: 2rem !important;
-}
-
-.tailwind .gap-2{
-  gap: 0.5rem !important;
-}
-
-.tailwind .gap-\\[0\\.62rem\\]{
-  gap: 0.62rem !important;
 }
 
 .tailwind .gap-\\[0\\.12rem\\]{
   gap: 0.12rem !important;
 }
 
-.tailwind .gap-12{
-  gap: 3rem !important;
+.tailwind .gap-\\[0\\.625rem\\]{
+  gap: 0.625rem !important;
 }
 
-.tailwind .gap-1{
-  gap: 0.25rem !important;
+.tailwind .gap-\\[0\\.62rem\\]{
+  gap: 0.62rem !important;
+}
+
+.tailwind .gap-24{
+  gap: 6rem !important;
+}
+
+.tailwind .gap-4{
+  gap: 1rem !important;
+}
+
+.tailwind .gap-2{
+  gap: 0.5rem !important;
+}
+
+.tailwind .overflow-auto{
+  overflow: auto !important;
 }
 
 .tailwind .whitespace-nowrap{
   white-space: nowrap !important;
 }
 
-.tailwind .whitespace-pre-wrap{
-  white-space: pre-wrap !important;
+.tailwind .rounded-\\[0\\.375rem\\]{
+  border-radius: 0.375rem !important;
+}
+
+.tailwind .rounded-\\[0\\.5rem\\]{
+  border-radius: 0.5rem !important;
+}
+
+.tailwind .rounded-\\[0\\.625rem\\]{
+  border-radius: 0.625rem !important;
 }
 
 .tailwind .rounded-\\[1\\.25rem\\]{
@@ -773,52 +775,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-radius: 62.5rem !important;
 }
 
-.tailwind .rounded-xl{
-  border-radius: 0.75rem !important;
-}
-
 .tailwind .rounded-full{
   border-radius: 9999px !important;
 }
 
-.tailwind .rounded-lg{
-  border-radius: 0.5rem !important;
+.tailwind .rounded-xl{
+  border-radius: 0.75rem !important;
 }
 
-.tailwind .rounded-\\[0\\.5rem\\]{
-  border-radius: 0.5rem !important;
-}
-
-.tailwind .rounded-\\[0\\.375rem\\]{
-  border-radius: 0.375rem !important;
-}
-
-.tailwind .rounded{
-  border-radius: 0.25rem !important;
-}
-
-.tailwind .rounded-\\[0\\.625rem\\]{
-  border-radius: 0.625rem !important;
-}
-
-.tailwind .border-\\[2px\\]{
-  border-width: 2px !important;
+.tailwind .rounded-\\[0\\.75rem\\]{
+  border-radius: 0.75rem !important;
 }
 
 .tailwind .border-2{
   border-width: 2px !important;
 }
 
-.tailwind .border-l-4{
-  border-left-width: 4px !important;
-}
-
-.tailwind .border-r-4{
-  border-right-width: 4px !important;
-}
-
-.tailwind .border-t-4{
-  border-top-width: 4px !important;
+.tailwind .border-\\[2px\\]{
+  border-width: 2px !important;
 }
 
 .tailwind .border-black{
@@ -827,38 +801,34 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1)) !important;
 }
 
-.tailwind .border-red-500{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(239, 68, 68, 1) !important;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity, 1)) !important;
-}
-
-.tailwind .border-blue-500{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(59, 130, 246, 1) !important;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity, 1)) !important;
-}
-
-.tailwind .border-gray-300{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(209, 213, 219, 1) !important;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity, 1)) !important;
-}
-
-.tailwind .border-transparent{
-  border-color: transparent !important;
-}
-
 .tailwind .border-white{
   --tw-border-opacity: 1 !important;
   border-color: rgba(255, 255, 255, 1) !important;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1)) !important;
 }
 
-.tailwind .border-t-black{
+.tailwind .border-blue-600{
   --tw-border-opacity: 1 !important;
-  border-top-color: rgba(0, 0, 0, 1) !important;
-  border-top-color: rgba(0, 0, 0, var(--tw-border-opacity, 1)) !important;
+  border-color: rgba(37, 99, 235, 1) !important;
+  border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-\\[\\#D1EFD6\\]{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(209, 239, 214, 1) !important;
+  border-color: rgba(209, 239, 214, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-red-500{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(239, 68, 68, 1) !important;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity, 1)) !important;
+}
+
+.tailwind .border-\\[\\#C3D1FE\\]{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(195, 209, 254, 1) !important;
+  border-color: rgba(195, 209, 254, var(--tw-border-opacity, 1)) !important;
 }
 
 .tailwind .bg-\\[\\#5C4E47\\]{
@@ -885,12 +855,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity, 1)) !important;
 }
 
-.tailwind .bg-white{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(255, 255, 255, 1) !important;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
-}
-
 .tailwind .bg-blue-600{
   --tw-bg-opacity: 1 !important;
   background-color: rgba(37, 99, 235, 1) !important;
@@ -907,6 +871,44 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: transparent !important;
 }
 
+.tailwind .bg-white{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-gray-100{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(243, 244, 246, 1) !important;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-\\[primitives\\/green\\/green-450\\]{
+  background-color: primitives/green/green-450 !important;
+}
+
+.tailwind .bg-\\[\\#F0FAF1\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(240, 250, 241, 1) !important;
+  background-color: rgba(240, 250, 241, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-red-500{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(239, 68, 68, 1) !important;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-\\[\\#EBF0FF\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(235, 240, 255, 1) !important;
+  background-color: rgba(235, 240, 255, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-opacity-50{
+  --tw-bg-opacity: 0.5 !important;
+}
+
 .tailwind .p-16{
   padding: 4rem !important;
 }
@@ -916,24 +918,19 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-right: 2.5rem !important;
 }
 
+.tailwind .px-2{
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
 .tailwind .px-20{
   padding-left: 5rem !important;
   padding-right: 5rem !important;
 }
 
-.tailwind .py-5{
-  padding-top: 1.25rem !important;
-  padding-bottom: 1.25rem !important;
-}
-
-.tailwind .px-3{
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
-}
-
-.tailwind .py-1{
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
+.tailwind .px-4{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .tailwind .py-2{
@@ -941,19 +938,19 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 0.5rem !important;
 }
 
+.tailwind .py-3{
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
 .tailwind .py-4{
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
-.tailwind .px-2{
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-.tailwind .py-3{
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
+.tailwind .py-5{
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
 }
 
 .tailwind .py-\\[0\\.38rem\\]{
@@ -961,14 +958,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 0.38rem !important;
 }
 
-.tailwind .px-5{
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
+.tailwind .px-6{
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
-.tailwind .px-4{
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+.tailwind .py-8{
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .tailwind .pb-14{
@@ -983,12 +980,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-top: 3.5rem !important;
 }
 
-.tailwind .pl-7{
-  padding-left: 1.75rem !important;
+.tailwind .pr-10{
+  padding-right: 2.5rem !important;
 }
 
-.tailwind .pb-5{
-  padding-bottom: 1.25rem !important;
+.tailwind .pb-32{
+  padding-bottom: 8rem !important;
+}
+
+.tailwind .pb-24{
+  padding-bottom: 6rem !important;
 }
 
 .tailwind .text-center{
@@ -997,6 +998,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .text-\\[1\\.25rem\\]{
   font-size: 1.25rem !important;
+}
+
+.tailwind .text-\\[1\\.5rem\\]{
+  font-size: 1.5rem !important;
 }
 
 .tailwind .text-\\[1rem\\]{
@@ -1016,8 +1021,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   line-height: 1.25rem !important;
 }
 
-.tailwind .text-\\[1\\.5rem\\]{
-  font-size: 1.5rem !important;
+.tailwind .font-bold{
+  font-weight: 700 !important;
 }
 
 .tailwind .font-medium{
@@ -1028,36 +1033,32 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   font-weight: 400 !important;
 }
 
-.tailwind .font-bold{
-  font-weight: 700 !important;
-}
-
 .tailwind .font-semibold{
   font-weight: 600 !important;
-}
-
-.tailwind .font-extrabold{
-  font-weight: 800 !important;
 }
 
 .tailwind .leading-\\[1\\.15\\]{
   line-height: 1.15 !important;
 }
 
+.tailwind .leading-\\[1\\.25\\]{
+  line-height: 1.25 !important;
+}
+
 .tailwind .leading-\\[1\\.2\\]{
   line-height: 1.2 !important;
+}
+
+.tailwind .leading-\\[1\\.3\\]{
+  line-height: 1.3 !important;
 }
 
 .tailwind .leading-\\[1\\.4\\]{
   line-height: 1.4 !important;
 }
 
-.tailwind .leading-\\[1\\.25\\]{
-  line-height: 1.25 !important;
-}
-
-.tailwind .leading-\\[1\\.3\\]{
-  line-height: 1.3 !important;
+.tailwind .tracking-\\[-0\\.0075rem\\]{
+  letter-spacing: -0.0075rem !important;
 }
 
 .tailwind .tracking-\\[-0\\.01875rem\\]{
@@ -1072,38 +1073,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   letter-spacing: 0.02813rem !important;
 }
 
-.tailwind .tracking-\\[-0\\.0075rem\\]{
-  letter-spacing: -0.0075rem !important;
-}
-
 .tailwind .text-\\[\\#0E46FA\\]{
   --tw-text-opacity: 1 !important;
   color: rgba(14, 70, 250, 1) !important;
   color: rgba(14, 70, 250, var(--tw-text-opacity, 1)) !important;
-}
-
-.tailwind .text-black{
-  --tw-text-opacity: 1 !important;
-  color: rgba(0, 0, 0, 1) !important;
-  color: rgba(0, 0, 0, var(--tw-text-opacity, 1)) !important;
-}
-
-.tailwind .text-white{
-  --tw-text-opacity: 1 !important;
-  color: rgba(255, 255, 255, 1) !important;
-  color: rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important;
-}
-
-.tailwind .text-gray-600{
-  --tw-text-opacity: 1 !important;
-  color: rgba(75, 85, 99, 1) !important;
-  color: rgba(75, 85, 99, var(--tw-text-opacity, 1)) !important;
-}
-
-.tailwind .text-gray-500{
-  --tw-text-opacity: 1 !important;
-  color: rgba(107, 114, 128, 1) !important;
-  color: rgba(107, 114, 128, var(--tw-text-opacity, 1)) !important;
 }
 
 .tailwind .text-\\[\\#5C4E47\\]{
@@ -1112,14 +1085,61 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   color: rgba(92, 78, 71, var(--tw-text-opacity, 1)) !important;
 }
 
+.tailwind .text-black{
+  --tw-text-opacity: 1 !important;
+  color: rgba(0, 0, 0, 1) !important;
+  color: rgba(0, 0, 0, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-gray-500{
+  --tw-text-opacity: 1 !important;
+  color: rgba(107, 114, 128, 1) !important;
+  color: rgba(107, 114, 128, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-gray-600{
+  --tw-text-opacity: 1 !important;
+  color: rgba(75, 85, 99, 1) !important;
+  color: rgba(75, 85, 99, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-\\[\\#39A74A\\]{
+  --tw-text-opacity: 1 !important;
+  color: rgba(57, 167, 74, 1) !important;
+  color: rgba(57, 167, 74, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-\\[\\#0535DD\\]{
+  --tw-text-opacity: 1 !important;
+  color: rgba(5, 53, 221, 1) !important;
+  color: rgba(5, 53, 221, var(--tw-text-opacity, 1)) !important;
+}
+
 .tailwind .underline{
   text-decoration-line: underline !important;
+}
+
+.tailwind .opacity-20{
+  opacity: 0.2 !important;
 }
 
 .tailwind .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) !important;
   box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow) !important;
+}
+
+.tailwind .shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color) !important;
+  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow) !important;
 }
 
@@ -1140,8 +1160,20 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   transition-duration: 150ms !important;
 }
 
+.tailwind .transition-transform{
+  transition-property: transform !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
 .tailwind .duration-150{
   transition-duration: 150ms !important;
+}
+
+.tailwind .\\[appearance\\:none\\]{
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
 }
 
 .tailwind .\\[appearance\\:textfield\\]{
@@ -1330,7 +1362,7 @@ module.exports = function (i) {
 
 var Scheduler = __webpack_require__(982),
   React = __webpack_require__(540),
-  ReactDOM = __webpack_require__(342);
+  ReactDOM = __webpack_require__(961);
 function formatProdErrorMessage(code) {
   var url = "https://react.dev/errors/" + code;
   if (1 < arguments.length) {
@@ -16750,7 +16782,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 342:
+/***/ 961:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -18222,20 +18254,37 @@ function Slider(_ref) {
     setIsDragging(true);
     updateSliderValue(e);
   };
+  var handleTouchStart = function handleTouchStart(e) {
+    setIsDragging(true);
+    e.preventDefault();
+    updateSliderValue(e);
+  };
   var handleMouseMove = function handleMouseMove(e) {
     if (isDragging) {
+      updateSliderValue(e);
+    }
+  };
+  var handleTouchMove = function handleTouchMove(e) {
+    if (isDragging) {
+      e.preventDefault();
       updateSliderValue(e);
     }
   };
   var handleMouseUp = function handleMouseUp() {
     setIsDragging(false);
   };
+  var handleTouchEnd = function handleTouchEnd() {
+    setIsDragging(false);
+  };
 
   // Update slider value based on mouse position
   var updateSliderValue = function updateSliderValue(e) {
+    var _ref2, _ref3;
     if (!sliderRef.current) return;
     var rect = sliderRef.current.getBoundingClientRect();
-    var x = e.clientX - rect.left;
+    var clientX = (_ref2 = (_ref3 = e && e.clientX) !== null && _ref3 !== void 0 ? _ref3 : e && e.touches && e.touches[0] && e.touches[0].clientX) !== null && _ref2 !== void 0 ? _ref2 : e && e.changedTouches && e.changedTouches[0] && e.changedTouches[0].clientX;
+    if (typeof clientX !== "number") return;
+    var x = clientX - rect.left;
     var width = rect.width;
     var percentage = Math.max(0, Math.min(100, x / width * 100));
     var newValue = Math.round(min + percentage / 100 * (max - min));
@@ -18280,9 +18329,15 @@ function Slider(_ref) {
     if (isDragging) {
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseup", handleMouseUp);
+      document.addEventListener("touchmove", handleTouchMove, {
+        passive: false
+      });
+      document.addEventListener("touchend", handleTouchEnd);
       return function () {
         document.removeEventListener("mousemove", handleMouseMove);
         document.removeEventListener("mouseup", handleMouseUp);
+        document.removeEventListener("touchmove", handleTouchMove);
+        document.removeEventListener("touchend", handleTouchEnd);
       };
     }
   }, [isDragging]);
@@ -18292,8 +18347,9 @@ function Slider(_ref) {
     className: "relative w-full"
   }, /*#__PURE__*/react.createElement("div", {
     ref: sliderRef,
-    className: "relative w-full py-3 cursor-pointer",
+    className: "relative w-full py-3 cursor-pointer touch-none",
     onMouseDown: handleMouseDown,
+    onTouchStart: handleTouchStart,
     onMouseEnter: function onMouseEnter() {
       return setIsHovering(true);
     },
@@ -18467,7 +18523,8 @@ var EntryBadge = function EntryBadge(_ref) {
       width: "24",
       height: "25",
       viewBox: "0 0 24 25",
-      fill: "none"
+      fill: "none",
+      className: className
     }, /*#__PURE__*/react.createElement("g", {
       "clip-path": "url(#clip0_536_4751)"
     }, /*#__PURE__*/react.createElement("path", {
@@ -18481,6 +18538,93 @@ var EntryBadge = function EntryBadge(_ref) {
     }, /*#__PURE__*/react.createElement("rect", {
       width: "24",
       height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "calendar") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "25",
+      viewBox: "0 0 24 25",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_556_4116)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M8 2.19995V6.19995M16 2.19995V6.19995M3 10.2H21M8 14.2H8.01M12 14.2H12.01M16 14.2H16.01M8 18.2H8.01M12 18.2H12.01M16 18.2H16.01M5 4.19995H19C20.1046 4.19995 21 5.09538 21 6.19995V20.2C21 21.3045 20.1046 22.2 19 22.2H5C3.89543 22.2 3 21.3045 3 20.2V6.19995C3 5.09538 3.89543 4.19995 5 4.19995Z",
+      stroke: "#18181B",
+      "stroke-width": "2.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_556_4116"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "24",
+      height: "24",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "ROI") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "21",
+      height: "21",
+      viewBox: "0 0 21 21",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M18.8346 6.0332L11.7513 13.1165L7.58464 8.94987L2.16797 14.3665M18.8346 6.0332H13.8346M18.8346 6.0332V11.0332",
+      stroke: "black",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }));
+  } else if (name === "releaseCycle") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "20",
+      height: "21",
+      viewBox: "0 0 20 21",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_203_7110)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M3.33227 11.8664C3.17457 11.867 3.01996 11.8227 2.8864 11.7389C2.75283 11.6551 2.6458 11.5351 2.57773 11.3928C2.50966 11.2506 2.48335 11.0919 2.50185 10.9353C2.52036 10.7787 2.58292 10.6306 2.68227 10.5081L10.9323 2.00809C10.9942 1.93666 11.0785 1.88839 11.1714 1.87121C11.2644 1.85402 11.3604 1.86894 11.4437 1.91351C11.527 1.95809 11.5928 2.02968 11.63 2.11652C11.6673 2.20336 11.674 2.3003 11.6489 2.39143L10.0489 7.40809C10.0018 7.53436 9.98591 7.67019 10.0028 7.80393C10.0196 7.93767 10.0687 8.06533 10.1457 8.17595C10.2227 8.28657 10.3254 8.37686 10.445 8.43906C10.5646 8.50127 10.6975 8.53353 10.8323 8.53309H16.6656C16.8233 8.53256 16.9779 8.57678 17.1115 8.66061C17.245 8.74445 17.3521 8.86447 17.4201 9.00671C17.4882 9.14896 17.5145 9.30761 17.496 9.46421C17.4775 9.62082 17.415 9.76896 17.3156 9.89143L9.0656 18.3914C9.00372 18.4629 8.91939 18.5111 8.82645 18.5283C8.73352 18.5455 8.6375 18.5306 8.55416 18.486C8.47082 18.4414 8.40511 18.3698 8.36782 18.283C8.33053 18.1962 8.32387 18.0992 8.34894 18.0081L9.94894 12.9914C9.99611 12.8652 10.012 12.7293 9.99511 12.5956C9.97826 12.4619 9.92922 12.3342 9.85219 12.2236C9.77517 12.113 9.67246 12.0227 9.55287 11.9605C9.43329 11.8983 9.3004 11.866 9.1656 11.8664H3.33227Z",
+      stroke: "black",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_203_7110"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "20",
+      height: "20",
+      fill: "white",
+      transform: "translate(0 0.199951)"
+    }))));
+  } else if (name === "cutTime") {
+    return /*#__PURE__*/react.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "20",
+      height: "21",
+      viewBox: "0 0 20 21",
+      fill: "none",
+      className: className
+    }, /*#__PURE__*/react.createElement("g", {
+      "clip-path": "url(#clip0_203_7102)"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M10.0013 5.19991V10.1999H13.7513M18.3346 10.1999C18.3346 14.8023 14.6037 18.5332 10.0013 18.5332C5.39893 18.5332 1.66797 14.8023 1.66797 10.1999C1.66797 5.59754 5.39893 1.86658 10.0013 1.86658C14.6037 1.86658 18.3346 5.59754 18.3346 10.1999Z",
+      stroke: "black",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+      id: "clip0_203_7102"
+    }, /*#__PURE__*/react.createElement("rect", {
+      width: "20",
+      height: "20",
       fill: "white",
       transform: "translate(0 0.199951)"
     }))));
@@ -18619,7 +18763,133 @@ function NumberInput(_ref) {
     "aria-label": "number input"
   }));
 }
+;// ./src/ui/Dropdown.js
+function Dropdown_typeof(o) { "@babel/helpers - typeof"; return Dropdown_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Dropdown_typeof(o); }
+function Dropdown_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function Dropdown_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? Dropdown_ownKeys(Object(t), !0).forEach(function (r) { Dropdown_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Dropdown_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function Dropdown_defineProperty(e, r, t) { return (r = Dropdown_toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function Dropdown_toPropertyKey(t) { var i = Dropdown_toPrimitive(t, "string"); return "symbol" == Dropdown_typeof(i) ? i : i + ""; }
+function Dropdown_toPrimitive(t, r) { if ("object" != Dropdown_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Dropdown_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function Dropdown_slicedToArray(r, e) { return Dropdown_arrayWithHoles(r) || Dropdown_iterableToArrayLimit(r, e) || Dropdown_unsupportedIterableToArray(r, e) || Dropdown_nonIterableRest(); }
+function Dropdown_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Dropdown_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return Dropdown_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? Dropdown_arrayLikeToArray(r, a) : void 0; } }
+function Dropdown_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function Dropdown_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Dropdown_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+function Dropdown(_ref) {
+  var value = _ref.value,
+    setValue = _ref.setValue,
+    valueName = _ref.valueName,
+    options = _ref.options;
+  var _React$useState = react.useState(false),
+    _React$useState2 = Dropdown_slicedToArray(_React$useState, 2),
+    open = _React$useState2[0],
+    setOpen = _React$useState2[1];
+  var containerRef = react.useRef(null);
+  var selected = options.find(function (o) {
+    return o.value === value;
+  }) || options[0];
+  var _React$useState3 = react.useState(Math.max(0, options.findIndex(function (o) {
+      return o.value === value;
+    }))),
+    _React$useState4 = Dropdown_slicedToArray(_React$useState3, 2),
+    highlightIndex = _React$useState4[0],
+    setHighlightIndex = _React$useState4[1];
+
+  // Close on outside click
+  react.useEffect(function () {
+    var onDocClick = function onDocClick(e) {
+      if (!containerRef.current) return;
+      if (!containerRef.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener("mousedown", onDocClick);
+    return function () {
+      return document.removeEventListener("mousedown", onDocClick);
+    };
+  }, []);
+  var commit = function commit(option) {
+    setValue(function (prev) {
+      return Dropdown_objectSpread(Dropdown_objectSpread({}, prev), {}, Dropdown_defineProperty({}, valueName, option.value));
+    });
+    setOpen(false);
+  };
+  var onKeyDown = function onKeyDown(e) {
+    if (!open && (e.key === "Enter" || e.key === " " || e.key === "ArrowDown")) {
+      e.preventDefault();
+      setOpen(true);
+      return;
+    }
+    if (!open) return;
+    if (e.key === "Escape") {
+      setOpen(false);
+      return;
+    }
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setHighlightIndex(function (i) {
+        return Math.min(options.length - 1, i + 1);
+      });
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setHighlightIndex(function (i) {
+        return Math.max(0, i - 1);
+      });
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      commit(options[highlightIndex]);
+    }
+  };
+  return /*#__PURE__*/react.createElement("div", {
+    ref: containerRef,
+    className: "relative w-full"
+  }, /*#__PURE__*/react.createElement("button", {
+    type: "button",
+    "aria-haspopup": "listbox",
+    "aria-expanded": open,
+    onClick: function onClick() {
+      return setOpen(function (v) {
+        return !v;
+      });
+    },
+    onKeyDown: onKeyDown,
+    className: "w-full flex items-center justify-between border-[2px] border-black rounded-[0.625rem] px-4 py-3 text-[1rem] font-medium leading-[1.3] tracking-[-0.0075rem] bg-white focus:outline-none focus:border-blue-600"
+  }, /*#__PURE__*/react.createElement("span", null, selected.label), /*#__PURE__*/react.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "20",
+    height: "21",
+    viewBox: "0 0 20 21",
+    fill: "none",
+    className: "".concat(open ? "rotate-180" : "", " transition-transform")
+  }, /*#__PURE__*/react.createElement("path", {
+    d: "M5 7.69995L10 12.7L15 7.69995",
+    stroke: "black",
+    strokeWidth: "1.66667",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }))), open && /*#__PURE__*/react.createElement("ul", {
+    role: "listbox",
+    tabIndex: -1,
+    className: "absolute z-10 mt-2 w-full max-h-64 overflow-auto bg-white border-[2px] border-blue-600 rounded-[0.625rem] shadow-sm"
+  }, options.map(function (option, idx) {
+    var active = idx === highlightIndex;
+    var isSelected = option.value === selected.value;
+    return /*#__PURE__*/react.createElement("li", {
+      role: "option",
+      "aria-selected": isSelected,
+      key: option.value,
+      className: "px-4 py-2 cursor-pointer text-[1rem] leading-[1.3] tracking-[-0.0075rem] ".concat(active ? "bg-gray-100" : "bg-white", " ").concat(isSelected ? "font-semibold" : "font-medium"),
+      onMouseEnter: function onMouseEnter() {
+        return setHighlightIndex(idx);
+      },
+      onClick: function onClick() {
+        return commit(option);
+      }
+    }, option.label);
+  })));
+}
 ;// ./src/components/Calculator.js
+
 
 
 
@@ -18644,6 +18914,31 @@ function Calculator(_ref) {
     plural: "members",
     min: 0,
     max: 20
+  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "calendar"
+  }, "How often are your releases?"), /*#__PURE__*/react.createElement(Dropdown, {
+    value: data.releaseFrequency,
+    setValue: setData,
+    valueName: "releaseFrequency",
+    options: [{
+      label: "Daily",
+      value: "1 Day"
+    }, {
+      label: "2-3 times per week",
+      value: "3 Days"
+    }, {
+      label: "Weekly",
+      value: "1 Week"
+    }, {
+      label: "Bi-Weekly",
+      value: "2 Weeks"
+    }, {
+      label: "Monthly",
+      value: "1 Month"
+    }, {
+      label: "Quarterly",
+      value: "3 Months"
+    }]
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "hours"
   }, "How many hours does your team spend testing per release?"), /*#__PURE__*/react.createElement(Slider, {
@@ -18722,6 +19017,27 @@ function Calculator(_ref) {
     max: 10000000
   }))));
 }
+;// ./src/ui/ResultSection.js
+
+
+function ResultSection(_ref) {
+  var color = _ref.color,
+    icon = _ref.icon,
+    title = _ref.title,
+    description = _ref.description,
+    children = _ref.children;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "flex flex-col items-center gap-4 ".concat(color, " border-2 rounded-[0.75rem] py-8 px-6 w-full")
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center gap-2"
+  }, /*#__PURE__*/react.createElement(ui_EntryBadge, {
+    name: icon
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "text-[1.25rem] font-semibold leading-[1.3]"
+  }, title)), /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center"
+  }, children));
+}
 ;// ./src/App.js
 function App_slicedToArray(r, e) { return App_arrayWithHoles(r) || App_iterableToArrayLimit(r, e) || App_unsupportedIterableToArray(r, e) || App_nonIterableRest(); }
 function App_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -18734,8 +19050,9 @@ function App_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 var App = function App() {
-  var _React$useState = react.useState(1),
+  var _React$useState = react.useState(4),
     _React$useState2 = App_slicedToArray(_React$useState, 2),
     step = _React$useState2[0],
     setStep = _React$useState2[1];
@@ -18750,9 +19067,17 @@ var App = function App() {
       behavior: "smooth"
     });
   };
+  var releaseFrequencyToYearly = {
+    "1 Day": 365,
+    "3 Days": 122,
+    "1 Week": 52,
+    "2 Weeks": 26,
+    "1 Month": 12,
+    "3 Months": 4
+  };
   var _React$useState3 = react.useState({
       members: 2,
-      often: 7,
+      releaseFrequency: "1 Day",
       hours: 40,
       currentTestedPercentage: 40,
       currentCoveragePercentage: 10,
@@ -18807,14 +19132,64 @@ var App = function App() {
   /*#__PURE__*/
   // result page
   react.createElement("div", {
-    className: "flex flex-col items-center text-center"
-  }, /*#__PURE__*/react.createElement("p", null, "Here is the value you will get with Spur"), /*#__PURE__*/react.createElement("h2", {
-    className: "text-[3.5rem] font-normal leading-[1.15] tracking-[-0.0525rem]"
+    className: "flex flex-col items-center text-center w-full"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "pb-24"
+  }, "Here is the value you will get with Spur"), /*#__PURE__*/react.createElement("div", {
+    className: "relative w-full flex items-center justify-center pb-32"
+  }, /*#__PURE__*/react.createElement("svg", {
+    className: "absolute pointer-events-none w-[20rem] max-w-[90%] h-auto",
+    viewBox: "0 0 321 321",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/react.createElement("path", {
+    d: "M37.5193 78.0216C32.0169 74.3275 24.5182 75.774 21.2466 81.5376C3.48427 112.83 -3.26944 149.32 2.29614 185.106C8.47857 224.857 29.4086 260.82 60.917 285.832C92.4254 310.845 132.2 323.069 172.317 320.072C212.434 317.074 249.95 299.075 277.392 269.658C304.834 240.241 320.187 201.567 320.393 161.338C320.6 121.109 305.645 82.2793 278.506 52.5824C251.368 22.8855 214.039 4.50148 173.955 1.09227C137.869 -1.9768 101.936 7.29267 71.9513 27.1836C66.4286 30.8472 65.5059 38.4282 69.5729 43.661C73.6399 48.8937 81.1538 49.7886 86.7245 46.1984C111.904 29.971 141.85 22.4484 171.921 25.0059C205.993 27.9038 237.722 43.5302 260.79 68.7726C283.857 94.0149 296.569 127.021 296.394 161.215C296.218 195.409 283.168 228.283 259.842 253.287C236.517 278.291 204.629 293.591 170.529 296.139C136.429 298.687 102.621 288.295 75.8387 267.035C49.0566 245.775 31.2661 215.206 26.011 181.417C21.3731 151.597 26.7996 121.2 41.2407 94.9558C44.4357 89.1494 43.0216 81.7157 37.5193 78.0216Z",
+    fill: "#EBF0FF"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M195.46 99.2362C212.468 95.549 226.892 111.792 221.337 128.217C217.814 138.632 212.691 153.594 208.529 164.986C204.196 176.846 197.682 191.609 194.27 199.178C188.869 211.161 173.406 213.872 164.142 205.028L155.405 196.687C152.869 199.781 150.254 202.965 148.088 205.583C146.586 207.397 145.614 208.61 144.995 209.403C144.688 209.797 144.482 210.068 144.353 210.243C144.339 210.261 144.327 210.278 144.316 210.294C143.921 210.939 143.257 211.919 142.278 212.923C140.971 214.262 139.695 215.042 139.333 215.259L139.333 215.258C133.664 218.805 127.847 218.123 124.298 216.996C120.941 215.93 118.271 214.115 116.665 212.92C114.915 211.618 113.31 210.189 112.132 209.122L112.132 209.123C111.706 208.737 111.335 208.397 111.004 208.094C110.273 207.425 109.767 206.963 109.262 206.533C105.856 203.631 102.113 199.564 99.5434 194.92C97.6228 191.449 93.0672 181.516 99.633 172.09C103.449 166.611 106.529 163.909 110.118 161.639C110.42 161.449 110.695 161.279 110.938 161.129C111.857 160.562 112.457 160.202 113.405 159.328L107.842 154.948C96.2481 145.818 99.1124 127.252 113.365 122.369C124.637 118.508 147.677 110.774 162.827 106.83C172.655 104.271 185.866 101.316 195.46 99.2362Z",
+    fill: "#EBF0FF",
+    stroke: "white",
+    strokeWidth: "6.9445",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M174.877 176.934C176.908 178.874 180.234 178.246 181.384 175.683C184.357 169.058 189.481 157.358 192.876 148.054C196.144 139.099 200.139 127.457 203.102 118.71C204.999 113.107 200.102 107.611 194.323 108.872C186.377 110.605 176.334 112.873 168.812 114.831C156.814 117.954 138.434 124.085 128.458 127.493C125.4 128.538 124.741 132.536 127.279 134.536L137.499 142.591C140.196 144.717 139.543 149.959 136.888 152.138C135.796 153.034 134.613 154.111 133.362 155.404C127.709 161.244 122.963 163.607 118.221 170.419C115.947 173.687 120.102 179.508 124.287 183.075C127.691 185.977 133.218 192.12 135.189 189.419C140.99 181.473 138.017 185.498 143.343 179.057C147.001 174.632 152.191 168.282 155.359 164.401C156.871 162.548 159.639 162.377 161.368 164.029L174.877 176.934Z",
+    fill: "#FFFDF8"
+  })), /*#__PURE__*/react.createElement("h2", {
+    className: "relative text-[3.5rem] font-normal leading-[1.15] tracking-[-0.0525rem] w-full"
   }, "Go from manual QA to ", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("span", {
     className: "text-[#0E46FA]"
-  }, "90% automated test coverage"), /*#__PURE__*/react.createElement("br", null), "in just", /*#__PURE__*/react.createElement("span", {
+  }, "90% automated test coverage"), /*#__PURE__*/react.createElement("br", null), "in just\xA0", /*#__PURE__*/react.createElement("span", {
     className: "underline font-bold"
-  }, "8 weeks")))), /*#__PURE__*/react.createElement("div", {
+  }, "8 weeks"))), /*#__PURE__*/react.createElement("div", {
+    className: "flex flex-col items-center gap-4 w-full"
+  }, /*#__PURE__*/react.createElement(ResultSection, {
+    color: "bg-[#F0FAF1] border-[#D1EFD6]",
+    icon: "cutTime",
+    title: "Cut Down Your Time Spent on Manual QA Every Regression"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center gap-3"
+  }, /*#__PURE__*/react.createElement("h2", {
+    className: "text-[2.5rem] leading-[1.15]"
+  }, data.hours, " hours"), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
+    className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
+  }, Math.round(data.hours * 0.167), " hours"))), /*#__PURE__*/react.createElement(ResultSection, {
+    color: "bg-[#F0FAF1] border-[#D1EFD6]",
+    icon: "releaseCycle",
+    title: "Faster release cycles"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center gap-3"
+  }, /*#__PURE__*/react.createElement("h2", {
+    className: "text-[2.5rem] leading-[1.15]"
+  }, data.releaseFrequency), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
+    className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
+  }, 15 * 5 / 60, " hours"))), /*#__PURE__*/react.createElement(ResultSection, {
+    color: "bg-[#EBF0FF] border-[#C3D1FE]",
+    icon: "ROI",
+    title: "Total ROI for your team",
+    description: "(estimated annual cost savings on hours saved + cost of critical bugs missed)"
+  }, /*#__PURE__*/react.createElement("h2", {
+    className: "text-[2.5rem] leading-[1.15] text-[#0535DD]"
+  }, "$", Math.round(data.members * data.hours * releaseFrequencyToYearly[data.releaseFrequency] * 100 + data.costPerMissedBug + data.bugsMissedPercentage * 0.01)))))), /*#__PURE__*/react.createElement("div", {
     id: "buttondiv",
     className: "flex justify-center gap-[0.625rem] text-[1.25rem] font-semibold tracking-[0.02813rem]"
   }, step > 1 && step < 4 && /*#__PURE__*/react.createElement("button", {
@@ -18846,7 +19221,7 @@ var App = function App() {
     }
   }, "Download & Share")), " ", /*#__PURE__*/react.createElement("div", {
     className: "text-black font-semibold"
-  }, "ignore this, this is ran's debugging console :) ", /*#__PURE__*/react.createElement("br", null), "members:", data.members, /*#__PURE__*/react.createElement("br", null), "often:", data.often, /*#__PURE__*/react.createElement("br", null), "hours:", data.hours, /*#__PURE__*/react.createElement("br", null), "currentTestedPercentage:", data.currentTestedPercentage, /*#__PURE__*/react.createElement("br", null), "currentCoveragePercentage:", data.currentCoveragePercentage, /*#__PURE__*/react.createElement("br", null), "bugsMissedPercentage:", data.bugsMissedPercentage, /*#__PURE__*/react.createElement("br", null), "costPerMissedBug:", data.costPerMissedBug, /*#__PURE__*/react.createElement("br", null), "delaysInDays:", data.delaysInDays, /*#__PURE__*/react.createElement("br", null), "revenueImpact:", data.revenueImpact))));
+  }, "ignore this, this is ran's debugging console :) ", /*#__PURE__*/react.createElement("br", null), "members:", data.members, /*#__PURE__*/react.createElement("br", null), "releaseFrequency:", data.releaseFrequency, /*#__PURE__*/react.createElement("br", null), "hours:", data.hours, /*#__PURE__*/react.createElement("br", null), "currentTestedPercentage:", data.currentTestedPercentage, /*#__PURE__*/react.createElement("br", null), "currentCoveragePercentage:", data.currentCoveragePercentage, /*#__PURE__*/react.createElement("br", null), "bugsMissedPercentage:", data.bugsMissedPercentage, /*#__PURE__*/react.createElement("br", null), "costPerMissedBug:", data.costPerMissedBug, /*#__PURE__*/react.createElement("br", null), "delaysInDays:", data.delaysInDays, /*#__PURE__*/react.createElement("br", null), "revenueImpact:", data.revenueImpact))));
 };
 /* harmony default export */ const src_App = (App);
 ;// ./src/index.js
