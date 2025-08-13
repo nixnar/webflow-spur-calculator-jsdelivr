@@ -55,7 +55,7 @@ export default function Calculator({ step, data, setData }) {
               singular="hour"
               plural="hours"
               min={5}
-              max={200}
+              max={240}
             />
           </SingleEntry>
         </div>
@@ -75,8 +75,8 @@ export default function Calculator({ step, data, setData }) {
               valueName="currentTestedPercentage"
               singular="%"
               plural="%"
-              min={10}
-              max={80}
+              min={0}
+              max={100}
             />
           </SingleEntry>
           <SingleEntry>
@@ -94,7 +94,7 @@ export default function Calculator({ step, data, setData }) {
               singular="%"
               plural="%"
               min={0}
-              max={30}
+              max={100}
             />
           </SingleEntry>{" "}
           <SingleEntry>
@@ -111,8 +111,8 @@ export default function Calculator({ step, data, setData }) {
               valueName="bugsMissedPercentage"
               singular="%"
               plural="%"
-              min={1}
-              max={15}
+              min={0}
+              max={100}
             />
           </SingleEntry>
         </div>

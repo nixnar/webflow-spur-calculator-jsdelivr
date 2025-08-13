@@ -159,7 +159,9 @@ export default function Slider({
             {/* Hover Tooltip */}
             {(isHovering || isDragging) && (
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2  text-black bg-white border-2 border-black rounded-[0.375rem] text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium px-2 py-[0.38rem] whitespace-nowrap">
-                {value} {value <= 1 ? singular : plural}
+                {value >= 24 && plural === "hours"
+                  ? `${(value / 24).toFixed(1)} days`
+                  : `${value} ${value <= 1 ? singular : plural}`}
               </div>
             )}
           </div>
@@ -170,14 +172,18 @@ export default function Slider({
           <span>
             {min} {min <= 1 ? singular : plural}
           </span>
-          <span>
-            {max} {max <= 1 ? singular : plural}
-          </span>
+          {plural === "hours" && max > 24 ? (
+            <span>{max / 24} days</span>
+          ) : (
+            <span>
+              {max} {max <= 1 ? singular : plural}
+            </span>
+          )}
         </div>
       </div>
 
       {/* Input Field */}
-      <div className="flex items-center justify-end">
+      <div className="flex items-center justify-end gap-2">
         <input
           type="number"
           value={inputValue}
@@ -188,6 +194,11 @@ export default function Slider({
           max={max}
           className="w-[4rem] px-2 py-2 text-center border-[2px] border-black rounded-[0.5rem] focus:border-blue-600 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
         />
+        <span className="text-black text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium">
+          {(!isNaN(parseInt(inputValue)) ? parseInt(inputValue) : value) <= 1
+            ? singular
+            : plural}
+        </span>
       </div>
     </div>
   );

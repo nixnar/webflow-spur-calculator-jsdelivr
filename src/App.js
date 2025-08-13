@@ -4,8 +4,9 @@ import StepBadge from "./ui/StepBadge";
 import StepText from "./components/StepText";
 import Calculator from "./components/Calculator";
 import ResultSection from "./ui/ResultSection";
+import ResultSingleBlock from "./ui/ResultSingleBlock";
 const App = () => {
-  const [step, setStep] = React.useState(1);
+  const [step, setStep] = React.useState(4);
   const modalRef = React.useRef(null);
   const scrollToModalTop = () => {
     const el = modalRef.current;
@@ -32,6 +33,7 @@ const App = () => {
     costPerMissedBug: 5000,
     delaysInDays: 3,
     revenueImpact: 2000,
+    tests: 80,
   });
   return (
     <div className="tailwind">
@@ -138,10 +140,7 @@ const App = () => {
                       </h2>
                       <p>to</p>
                       <h2 className="text-[2.5rem] leading-[1.15] text-[#39A74A]">
-                        {Math.round(
-                          (data.hours / 0.1667) *
-                            releaseFrequencyToYearly[data.releaseFrequency]
-                        ) / 15}
+                        {Math.round(data.hours / ((data.tests / 15) * 0.1667))}
                         &nbsp;hours
                       </h2>
                     </div>
@@ -163,6 +162,30 @@ const App = () => {
                           data.bugsMissedPercentage * 0.01
                       )}
                     </h2>
+                  </ResultSection>
+                  <ResultSection
+                    color="bg-[#FCECF6] border-[#F1A7D0]"
+                    title="Even more reasons leading brands choose Spur!"
+                    bottomText="Read more about our agentic QA approach"
+                    bottomTextLink=""
+                  >
+                    <div className="flex items-center">
+                      <ResultSingleBlock
+                        icon="resultBlock1"
+                        title="No more “works on my machine”"
+                        description="Spur reproduces bugs with context — logs, screenshots, and step history."
+                      />
+                      <ResultSingleBlock
+                        icon="resultBlock2"
+                        title="Tests like a real user — but better"
+                        description="Spur interacts with your site like a “real” shopper, minus the human error."
+                      />
+                      <ResultSingleBlock
+                        icon="resultBlock3"
+                        title="Run tests in parallel and scale"
+                        description="High coverage, 24/7 — without hiring more testers."
+                      />
+                    </div>
                   </ResultSection>
                 </div>
               </div>
@@ -240,6 +263,8 @@ const App = () => {
             delaysInDays:{data.delaysInDays}
             <br />
             revenueImpact:{data.revenueImpact}
+            <br />
+            tests:{data.tests}
           </div>
         </div>
       </div>

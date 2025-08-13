@@ -523,6 +523,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   margin-top: 0.125rem !important;
 }
 
+.tailwind .mb-4{
+  margin-bottom: 1rem !important;
+}
+
+.tailwind .mb-2{
+  margin-bottom: 0.5rem !important;
+}
+
 .tailwind .flex{
   display: flex !important;
 }
@@ -545,6 +553,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .h-full{
   height: 100% !important;
+}
+
+.tailwind .h-14{
+  height: 3.5rem !important;
 }
 
 .tailwind .max-h-64{
@@ -580,12 +592,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   width: 100% !important;
 }
 
+.tailwind .w-14{
+  width: 3.5rem !important;
+}
+
 .tailwind .min-w-6{
   min-width: 1.5rem !important;
 }
 
 .tailwind .max-w-\\[90\\%\\]{
   max-width: 90% !important;
+}
+
+.tailwind .flex-1{
+  flex: 1 1 0% !important;
+}
+
+.tailwind .flex-grow{
+  flex-grow: 1 !important;
 }
 
 .tailwind .-translate-x-1\\/2{
@@ -659,6 +683,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .items-center{
   align-items: center !important;
+}
+
+.tailwind .justify-start{
+  justify-content: flex-start !important;
 }
 
 .tailwind .justify-end{
@@ -795,6 +823,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1)) !important;
 }
 
+.tailwind .border-\\[\\#F1A7D0\\]{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(241, 167, 208, 1) !important;
+  border-color: rgba(241, 167, 208, var(--tw-border-opacity, 1)) !important;
+}
+
 .tailwind .bg-\\[\\#5C4E47\\]{
   --tw-bg-opacity: 1 !important;
   background-color: rgba(92, 78, 71, 1) !important;
@@ -859,8 +893,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
 }
 
+.tailwind .bg-\\[\\#F1A7D0\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(241, 167, 208, 1) !important;
+  background-color: rgba(241, 167, 208, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-\\[\\#FCECF6\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(252, 236, 246, 1) !important;
+  background-color: rgba(252, 236, 246, var(--tw-bg-opacity, 1)) !important;
+}
+
 .tailwind .p-16{
   padding: 4rem !important;
+}
+
+.tailwind .p-6{
+  padding: 1.5rem !important;
+}
+
+.tailwind .p-3{
+  padding: 0.75rem !important;
 }
 
 .tailwind .px-10{
@@ -938,6 +992,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-top: 3.5rem !important;
 }
 
+.tailwind .text-left{
+  text-align: left !important;
+}
+
 .tailwind .text-center{
   text-align: center !important;
 }
@@ -965,6 +1023,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 .tailwind .text-sm{
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
+}
+
+.tailwind .text-2xl{
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.tailwind .text-base{
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.tailwind .text-\\[0\\.75rem\\]{
+  font-size: 0.75rem !important;
+}
+
+.tailwind .text-\\[0\\.875rem\\]{
+  font-size: 0.875rem !important;
 }
 
 .tailwind .font-bold{
@@ -1003,6 +1079,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   line-height: 1.4 !important;
 }
 
+.tailwind .leading-\\[1\\]{
+  line-height: 1 !important;
+}
+
 .tailwind .tracking-\\[-0\\.0075rem\\]{
   letter-spacing: -0.0075rem !important;
 }
@@ -1017,6 +1097,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .tracking-\\[0\\.02813rem\\]{
   letter-spacing: 0.02813rem !important;
+}
+
+.tailwind .tracking-\\[-0\\.01313rem\\]{
+  letter-spacing: -0.01313rem !important;
+}
+
+.tailwind .tracking-\\[-0\\.0225rem\\]{
+  letter-spacing: -0.0225rem !important;
 }
 
 .tailwind .text-\\[\\#0535DD\\]{
@@ -18307,10 +18395,10 @@ function Slider(_ref) {
     }
   }, (isHovering || isDragging) && /*#__PURE__*/react.createElement("div", {
     className: "absolute -top-12 left-1/2 transform -translate-x-1/2  text-black bg-white border-2 border-black rounded-[0.375rem] text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium px-2 py-[0.38rem] whitespace-nowrap"
-  }, value, " ", value <= 1 ? singular : plural))), /*#__PURE__*/react.createElement("div", {
+  }, value >= 24 && plural === "hours" ? "".concat((value / 24).toFixed(1), " days") : "".concat(value, " ").concat(value <= 1 ? singular : plural)))), /*#__PURE__*/react.createElement("div", {
     className: "flex justify-between text-sm text-gray-600"
-  }, /*#__PURE__*/react.createElement("span", null, min, " ", min <= 1 ? singular : plural), /*#__PURE__*/react.createElement("span", null, max, " ", max <= 1 ? singular : plural))), /*#__PURE__*/react.createElement("div", {
-    className: "flex items-center justify-end"
+  }, /*#__PURE__*/react.createElement("span", null, min, " ", min <= 1 ? singular : plural), plural === "hours" && max > 24 ? /*#__PURE__*/react.createElement("span", null, max / 24, " days") : /*#__PURE__*/react.createElement("span", null, max, " ", max <= 1 ? singular : plural))), /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center justify-end gap-2"
   }, /*#__PURE__*/react.createElement("input", {
     type: "number",
     value: inputValue,
@@ -18320,7 +18408,9 @@ function Slider(_ref) {
     min: min,
     max: max,
     className: "w-[4rem] px-2 py-2 text-center border-[2px] border-black rounded-[0.5rem] focus:border-blue-600 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-  })));
+  }), /*#__PURE__*/react.createElement("span", {
+    className: "text-black text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium"
+  }, (!isNaN(parseInt(inputValue)) ? parseInt(inputValue) : value) <= 1 ? singular : plural)));
 }
 ;// ./src/ui/EntryBadge.js
 
@@ -18564,6 +18654,66 @@ var EntryBadge = function EntryBadge(_ref) {
       fill: "white",
       transform: "translate(0 0.199951)"
     }))));
+  } else if (name === "resultBlock1") {
+    return /*#__PURE__*/react.createElement("svg", {
+      width: "56",
+      height: "57",
+      viewBox: "0 0 56 57",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      className: className
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M27.998 1.43994C31.8572 1.43994 35.2515 3.48739 37.1631 6.54053C37.8244 6.4163 38.4954 6.35498 39.166 6.35498C41.9023 6.35503 44.6444 7.38902 46.7266 9.47119C49.3197 12.0645 50.2844 15.6766 49.6553 19.0327C52.7096 20.9448 54.7577 24.3395 54.7578 28.1997C54.7578 32.0594 52.7099 35.4534 49.6572 37.3657C50.2869 40.7231 49.3213 44.3354 46.7275 46.9292C44.6453 49.0114 41.9034 50.0454 39.167 50.0454C38.4959 50.0454 37.8256 49.9813 37.1641 49.8569C35.2518 52.9109 31.8581 54.9595 27.998 54.9595C24.1384 54.9594 20.7444 52.9117 18.833 49.8579C18.1719 49.9821 17.5015 50.0454 16.8311 50.0454C14.0947 50.0454 11.3527 49.0113 9.27051 46.9292C6.67684 44.3355 5.71027 40.7223 6.33984 37.3657C3.28641 35.4534 1.23828 32.0593 1.23828 28.1997C1.23836 24.3399 3.28608 20.9449 6.33887 19.0327C5.70975 15.6758 6.67615 12.0646 9.26953 9.47119C11.3518 7.38896 14.0937 6.35498 16.8301 6.35498C17.5008 6.35501 18.1708 6.41729 18.832 6.5415C20.7443 3.48801 24.1384 1.44002 27.998 1.43994Z",
+      fill: "#D32283",
+      stroke: "black",
+      "stroke-width": "2"
+    }), /*#__PURE__*/react.createElement("path", {
+      d: "M25 25.2H25.01M31 25.2H31.01M38 28.2C38 33.7228 33.5228 38.2 28 38.2C22.4772 38.2 18 33.7228 18 28.2C18 22.6771 22.4772 18.2 28 18.2C33.5228 18.2 38 22.6771 38 28.2ZM34 29.2C33.7614 30.6124 33.0254 31.8928 31.9249 32.8099C30.8245 33.7269 29.4323 34.22 28 34.2C26.5677 34.22 25.1755 33.7269 24.0751 32.8099C22.9746 31.8928 22.2386 30.6124 22 29.2H34Z",
+      stroke: "white",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }));
+  } else if (name === "resultBlock2") {
+    return /*#__PURE__*/react.createElement("svg", {
+      width: "57",
+      height: "57",
+      viewBox: "0 0 57 57",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      className: className
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M28.666 1.43994C32.5252 1.43994 35.9195 3.48739 37.8311 6.54053C38.4923 6.4163 39.1634 6.35498 39.834 6.35498C42.5703 6.35503 45.3124 7.38902 47.3945 9.47119C49.9877 12.0645 50.9524 15.6766 50.3232 19.0327C53.3775 20.9448 55.4257 24.3395 55.4258 28.1997C55.4258 32.0594 53.3779 35.4534 50.3252 37.3657C50.9549 40.7231 49.9893 44.3354 47.3955 46.9292C45.3133 49.0114 42.5713 50.0454 39.835 50.0454C39.1639 50.0454 38.4936 49.9813 37.832 49.8569C35.9198 52.9109 32.5261 54.9595 28.666 54.9595C24.8064 54.9594 21.4124 52.9117 19.501 49.8579C18.8399 49.9821 18.1694 50.0454 17.499 50.0454C14.7627 50.0454 12.0207 49.0113 9.93848 46.9292C7.34481 44.3355 6.37824 40.7223 7.00781 37.3657C3.95438 35.4534 1.90625 32.0593 1.90625 28.1997C1.90633 24.3399 3.95405 20.9449 7.00684 19.0327C6.37772 15.6758 7.34412 12.0646 9.9375 9.47119C12.0197 7.38896 14.7616 6.35498 17.498 6.35498C18.1687 6.35501 18.8388 6.41729 19.5 6.5415C21.4123 3.48801 24.8064 1.44002 28.666 1.43994Z",
+      fill: "#D32283",
+      stroke: "black",
+      "stroke-width": "2"
+    }), /*#__PURE__*/react.createElement("path", {
+      d: "M28.668 31.2L25.668 28.2M28.668 31.2C30.0648 30.6687 31.4049 29.9987 32.668 29.2M28.668 31.2V36.2C28.668 36.2 31.698 35.65 32.668 34.2C33.748 32.58 32.668 29.2 32.668 29.2M25.668 28.2C26.2001 26.8194 26.8702 25.496 27.668 24.25C28.8332 22.3869 30.4556 20.853 32.381 19.794C34.3063 18.7351 36.4706 18.1863 38.668 18.2C38.668 20.92 37.888 25.7 32.668 29.2M25.668 28.2L20.668 28.2C20.668 28.2 21.218 25.17 22.668 24.2C24.288 23.12 27.668 24.2 27.668 24.2M21.168 32.7C19.668 33.96 19.168 37.7 19.168 37.7C19.168 37.7 22.908 37.2 24.168 35.7C24.878 34.86 24.868 33.57 24.078 32.79C23.6893 32.419 23.1773 32.2047 22.6402 32.1881C22.1031 32.1714 21.5788 32.3538 21.168 32.7Z",
+      stroke: "white",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }));
+  } else if (name === "resultBlock3") {
+    return /*#__PURE__*/react.createElement("svg", {
+      width: "57",
+      height: "57",
+      viewBox: "0 0 57 57",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      className: className
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M28.3301 1.43994C32.1893 1.43994 35.5835 3.48739 37.4951 6.54053C38.1564 6.4163 38.8275 6.35498 39.498 6.35498C42.2344 6.35503 44.9764 7.38902 47.0586 9.47119C49.6517 12.0645 50.6164 15.6766 49.9873 19.0327C53.0416 20.9448 55.0898 24.3395 55.0898 28.1997C55.0898 32.0594 53.0419 35.4534 49.9893 37.3657C50.6189 40.7231 49.6533 44.3354 47.0596 46.9292C44.9774 49.0114 42.2354 50.0454 39.499 50.0454C38.8279 50.0454 38.1577 49.9813 37.4961 49.8569C35.5839 52.9109 32.1901 54.9595 28.3301 54.9595C24.4705 54.9594 21.0764 52.9117 19.165 49.8579C18.5039 49.9821 17.8335 50.0454 17.1631 50.0454C14.4268 50.0454 11.6847 49.0113 9.60254 46.9292C7.00888 44.3355 6.04231 40.7223 6.67188 37.3657C3.61844 35.4534 1.57031 32.0593 1.57031 28.1997C1.57039 24.3399 3.61811 20.9449 6.6709 19.0327C6.04178 15.6758 7.00818 12.0646 9.60156 9.47119C11.6838 7.38896 14.4257 6.35498 17.1621 6.35498C17.8328 6.35501 18.5029 6.41729 19.1641 6.5415C21.0763 3.48801 24.4705 1.44002 28.3301 1.43994Z",
+      fill: "#D32283",
+      stroke: "black",
+      "stroke-width": "2"
+    }), /*#__PURE__*/react.createElement("path", {
+      d: "M22.4125 25.7L18.9125 27.3C18.7407 27.3807 18.5954 27.5087 18.4937 27.669C18.3919 27.8292 18.3379 28.0151 18.3379 28.205C18.3379 28.3948 18.3919 28.5807 18.4937 28.7409C18.5954 28.9012 18.7407 29.0292 18.9125 29.11L27.5125 33.02C27.7717 33.1373 28.0529 33.198 28.3375 33.198C28.622 33.198 28.9033 33.1373 29.1625 33.02L37.7425 29.12C37.9199 29.0417 38.0708 28.9136 38.1767 28.7511C38.2826 28.5886 38.339 28.3989 38.339 28.205C38.339 28.011 38.2826 27.8213 38.1767 27.6588C38.0708 27.4963 37.9199 27.3682 37.7425 27.29L34.2425 25.7M22.4125 30.7L18.9125 32.3C18.7407 32.3807 18.5954 32.5087 18.4937 32.669C18.3919 32.8292 18.3379 33.0151 18.3379 33.205C18.3379 33.3948 18.3919 33.5807 18.4937 33.7409C18.5954 33.9012 18.7407 34.0292 18.9125 34.11L27.5125 38.02C27.7717 38.1373 28.0529 38.198 28.3375 38.198C28.622 38.198 28.9033 38.1373 29.1625 38.02L37.7425 34.12C37.9199 34.0417 38.0708 33.9136 38.1767 33.7511C38.2826 33.5886 38.339 33.3989 38.339 33.205C38.339 33.011 38.2826 32.8213 38.1767 32.6588C38.0708 32.4963 37.9199 32.3682 37.7425 32.29L34.2425 30.7M29.1625 18.3801C28.9019 18.2612 28.6189 18.1997 28.3325 18.1997C28.0461 18.1997 27.763 18.2612 27.5025 18.3801L18.9325 22.2801C18.755 22.3583 18.6042 22.4865 18.4982 22.6489C18.3923 22.8114 18.3359 23.0011 18.3359 23.1951C18.3359 23.389 18.3923 23.5788 18.4982 23.7412C18.6042 23.9037 18.755 24.0318 18.9325 24.1101L27.5125 28.0201C27.773 28.1389 28.0561 28.2004 28.3425 28.2004C28.6289 28.2004 28.9119 28.1389 29.1725 28.0201L37.7525 24.1201C37.9299 24.0418 38.0808 23.9137 38.1867 23.7512C38.2926 23.5887 38.349 23.399 38.349 23.2051C38.349 23.0111 38.2926 22.8214 38.1867 22.6589C38.0808 22.4965 37.9299 22.3683 37.7525 22.2901L29.1625 18.3801Z",
+      stroke: "white",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }));
   }
 };
 /* harmony default export */ const ui_EntryBadge = (EntryBadge);
@@ -18884,7 +19034,7 @@ function Calculator(_ref) {
     singular: "hour",
     plural: "hours",
     min: 5,
-    max: 200
+    max: 240
   }))), step === 2 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
   }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
@@ -18896,8 +19046,8 @@ function Calculator(_ref) {
     valueName: "currentTestedPercentage",
     singular: "%",
     plural: "%",
-    min: 10,
-    max: 80
+    min: 0,
+    max: 100
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "currentCoveragePercentage",
     secondaryText: "Most manual QA misses rare but critical breakpoints."
@@ -18908,7 +19058,7 @@ function Calculator(_ref) {
     singular: "%",
     plural: "%",
     min: 0,
-    max: 30
+    max: 100
   })), " ", /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "bugsMissedPercentage",
     secondaryText: "Bugs missed due to human factors. People make mistakes!"
@@ -18918,8 +19068,8 @@ function Calculator(_ref) {
     valueName: "bugsMissedPercentage",
     singular: "%",
     plural: "%",
-    min: 1,
-    max: 15
+    min: 0,
+    max: 100
   }))), step === 3 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
   }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
@@ -18961,7 +19111,9 @@ function ResultSection(_ref) {
     icon = _ref.icon,
     title = _ref.title,
     description = _ref.description,
-    children = _ref.children;
+    children = _ref.children,
+    bottomText = _ref.bottomText,
+    bottomTextLink = _ref.bottomTextLink;
   return /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col items-center gap-4 ".concat(color, " border-2 rounded-[0.75rem] py-8 px-6 w-full")
   }, /*#__PURE__*/react.createElement("div", {
@@ -18972,7 +19124,28 @@ function ResultSection(_ref) {
     className: "text-[1.25rem] font-semibold leading-[1.3]"
   }, title)), /*#__PURE__*/react.createElement("div", {
     className: "flex items-center"
-  }, children));
+  }, children), bottomText && /*#__PURE__*/react.createElement("a", {
+    href: bottomTextLink,
+    className: "text-[1rem] font-semibold leading-[1] tracking-[-0.0225rem] underline p-3"
+  }, bottomText));
+}
+;// ./src/ui/ResultSingleBlock.js
+
+
+function ResultSingleBlock(_ref) {
+  var title = _ref.title,
+    description = _ref.description,
+    icon = _ref.icon;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "flex flex-col p-6 justify-start items-start text-left gap-2 flex-1"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(ui_EntryBadge, {
+    name: icon,
+    className: "w-14 h-14 mb-2"
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "text-[1.5rem] font-bold leading-[1.2] tracking-[-0.0075rem]"
+  }, title), /*#__PURE__*/react.createElement("div", {
+    className: "text-[0.875rem] font-medium leading-[1.3] tracking-[-0.01313rem]"
+  }, description));
 }
 ;// ./src/App.js
 function App_slicedToArray(r, e) { return App_arrayWithHoles(r) || App_iterableToArrayLimit(r, e) || App_unsupportedIterableToArray(r, e) || App_nonIterableRest(); }
@@ -18987,8 +19160,9 @@ function App_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 var App = function App() {
-  var _React$useState = react.useState(1),
+  var _React$useState = react.useState(4),
     _React$useState2 = App_slicedToArray(_React$useState, 2),
     step = _React$useState2[0],
     setStep = _React$useState2[1];
@@ -19020,7 +19194,8 @@ var App = function App() {
       bugsMissedPercentage: 5,
       costPerMissedBug: 5000,
       delaysInDays: 3,
-      revenueImpact: 2000
+      revenueImpact: 2000,
+      tests: 80
     }),
     _React$useState4 = App_slicedToArray(_React$useState3, 2),
     data = _React$useState4[0],
@@ -19118,14 +19293,33 @@ var App = function App() {
     className: "text-[2.5rem] leading-[1.15]"
   }, data.releaseFrequency), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
     className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
-  }, Math.round(data.hours / 0.1667 * releaseFrequencyToYearly[data.releaseFrequency]) / 15, "\xA0hours"))), /*#__PURE__*/react.createElement(ResultSection, {
+  }, Math.round(data.hours / (data.tests / 15 * 0.1667)), "\xA0hours"))), /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#EBF0FF] border-[#C3D1FE]",
     icon: "ROI",
     title: "Total ROI for your team",
     description: "(estimated annual cost savings on hours saved + cost of critical bugs missed)"
   }, /*#__PURE__*/react.createElement("h2", {
     className: "text-[2.5rem] leading-[1.15] text-[#0535DD]"
-  }, "$", Math.round(data.members * data.hours * releaseFrequencyToYearly[data.releaseFrequency] * 31.25 + data.costPerMissedBug + data.bugsMissedPercentage * 0.01)))))), /*#__PURE__*/react.createElement("div", {
+  }, "$", Math.round(data.members * data.hours * releaseFrequencyToYearly[data.releaseFrequency] * 31.25 + data.costPerMissedBug + data.bugsMissedPercentage * 0.01))), /*#__PURE__*/react.createElement(ResultSection, {
+    color: "bg-[#FCECF6] border-[#F1A7D0]",
+    title: "Even more reasons leading brands choose Spur!",
+    bottomText: "Read more about our agentic QA approach",
+    bottomTextLink: ""
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "flex items-center"
+  }, /*#__PURE__*/react.createElement(ResultSingleBlock, {
+    icon: "resultBlock1",
+    title: "No more \u201Cworks on my machine\u201D",
+    description: "Spur reproduces bugs with context \u2014 logs, screenshots, and step history."
+  }), /*#__PURE__*/react.createElement(ResultSingleBlock, {
+    icon: "resultBlock2",
+    title: "Tests like a real user \u2014 but better",
+    description: "Spur interacts with your site like a \u201Creal\u201D shopper, minus the human error."
+  }), /*#__PURE__*/react.createElement(ResultSingleBlock, {
+    icon: "resultBlock3",
+    title: "Run tests in parallel and scale",
+    description: "High coverage, 24/7 \u2014 without hiring more testers."
+  })))))), /*#__PURE__*/react.createElement("div", {
     id: "buttondiv",
     className: "flex justify-center gap-[0.625rem] text-[1.25rem] font-semibold tracking-[0.02813rem]"
   }, step > 1 && step < 4 && /*#__PURE__*/react.createElement("button", {
@@ -19157,7 +19351,7 @@ var App = function App() {
     }
   }, "Download & Share")), " ", /*#__PURE__*/react.createElement("div", {
     className: "text-black font-semibold"
-  }, "ignore this, this is ran's debugging console :) ", /*#__PURE__*/react.createElement("br", null), "members:", data.members, /*#__PURE__*/react.createElement("br", null), "releaseFrequency:", data.releaseFrequency, /*#__PURE__*/react.createElement("br", null), "hours:", data.hours, /*#__PURE__*/react.createElement("br", null), "currentTestedPercentage:", data.currentTestedPercentage, /*#__PURE__*/react.createElement("br", null), "currentCoveragePercentage:", data.currentCoveragePercentage, /*#__PURE__*/react.createElement("br", null), "bugsMissedPercentage:", data.bugsMissedPercentage, /*#__PURE__*/react.createElement("br", null), "costPerMissedBug:", data.costPerMissedBug, /*#__PURE__*/react.createElement("br", null), "delaysInDays:", data.delaysInDays, /*#__PURE__*/react.createElement("br", null), "revenueImpact:", data.revenueImpact))));
+  }, "ignore this, this is ran's debugging console :) ", /*#__PURE__*/react.createElement("br", null), "members:", data.members, /*#__PURE__*/react.createElement("br", null), "releaseFrequency:", data.releaseFrequency, /*#__PURE__*/react.createElement("br", null), "hours:", data.hours, /*#__PURE__*/react.createElement("br", null), "currentTestedPercentage:", data.currentTestedPercentage, /*#__PURE__*/react.createElement("br", null), "currentCoveragePercentage:", data.currentCoveragePercentage, /*#__PURE__*/react.createElement("br", null), "bugsMissedPercentage:", data.bugsMissedPercentage, /*#__PURE__*/react.createElement("br", null), "costPerMissedBug:", data.costPerMissedBug, /*#__PURE__*/react.createElement("br", null), "delaysInDays:", data.delaysInDays, /*#__PURE__*/react.createElement("br", null), "revenueImpact:", data.revenueImpact, /*#__PURE__*/react.createElement("br", null), "tests:", data.tests))));
 };
 /* harmony default export */ const src_App = (App);
 ;// ./src/index.js
