@@ -1,6 +1,11 @@
 import React from "react";
 import EntryBadge from "./EntryBadge";
-export default function InputTitle({ children, icon, secondaryText }) {
+export default function InputTitle({
+  children,
+  icon,
+  secondaryText,
+  isMobile,
+}) {
   const titleRef = React.useRef(null);
   const [isMultiline, setIsMultiline] = React.useState(false);
 
@@ -25,7 +30,7 @@ export default function InputTitle({ children, icon, secondaryText }) {
       <div
         className={`flex gap-[0.62rem] ${
           isMultiline ? "items-start" : "items-center"
-        }`}
+        } ${isMobile && "flex-col items-center justify-center text-center"}`}
       >
         <EntryBadge
           name={icon}
@@ -33,12 +38,18 @@ export default function InputTitle({ children, icon, secondaryText }) {
         />
         <p
           ref={titleRef}
-          className="text-black text-[1.5rem] leading-[1.25] font-semibold"
+          className={`text-black text-[1.5rem] leading-[1.25] font-semibold ${
+            isMobile && "text-center"
+          }`}
         >
           {children}
         </p>
       </div>
-      <div className="text-gray-500 text-[1rem] leading-[1.4] font-normal">
+      <div
+        className={`text-gray-500 text-[1rem] leading-[1.4] font-normal ${
+          isMobile && "text-center"
+        }`}
+      >
         {secondaryText}
       </div>
     </div>

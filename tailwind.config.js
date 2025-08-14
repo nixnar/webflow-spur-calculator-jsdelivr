@@ -10,10 +10,10 @@ module.exports = {
         white40: "rgba(255, 255, 255, 0.4)",
       },
       fontFamily: {
-        sans: ["Space Grotesk"],
+        //sans: ["Space Grotesk"],
       },
       screens: {
-        mobile: { max: "1030px" },
+        mobile: { max: "980px" },
       },
     },
   },

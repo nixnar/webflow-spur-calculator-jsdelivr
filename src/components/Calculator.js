@@ -4,7 +4,7 @@ import InputTitle from "../ui/InputTitle";
 import SingleEntry from "../ui/SingleEntry";
 import NumberInput from "../ui/NumberInput";
 import Dropdown from "../ui/Dropdown";
-export default function Calculator({ step, data, setData }) {
+export default function Calculator({ step, data, setData, isMobile }) {
   return (
     <div className="w-full pt-[3.5rem]">
       {step === 1 && (
@@ -13,6 +13,7 @@ export default function Calculator({ step, data, setData }) {
             <InputTitle
               icon="members"
               secondaryText="Based on average $65k salary with benefits"
+              isMobile={isMobile}
             >
               How many people do you have on your QA Team?
             </InputTitle>
@@ -24,10 +25,11 @@ export default function Calculator({ step, data, setData }) {
               plural="members"
               min={0}
               max={20}
+              isMobile={isMobile}
             />
           </SingleEntry>
           <SingleEntry>
-            <InputTitle icon="calendar">
+            <InputTitle icon="calendar" isMobile={isMobile}>
               How often are your releases?
             </InputTitle>
             <Dropdown
@@ -45,7 +47,7 @@ export default function Calculator({ step, data, setData }) {
             />
           </SingleEntry>
           <SingleEntry>
-            <InputTitle icon="hours">
+            <InputTitle icon="hours" isMobile={isMobile}>
               How many hours does your team spend testing per release?
             </InputTitle>
             <Slider
@@ -56,6 +58,7 @@ export default function Calculator({ step, data, setData }) {
               plural="hours"
               min={5}
               max={240}
+              isMobile={isMobile}
             />
           </SingleEntry>
         </div>
@@ -66,6 +69,7 @@ export default function Calculator({ step, data, setData }) {
             <InputTitle
               icon="currentTestedPercentage"
               secondaryText="Suboptimal coverage is often due to limited time and resources."
+              isMobile={isMobile}
             >
               How much of your product is actually tested each release?
             </InputTitle>
@@ -77,12 +81,14 @@ export default function Calculator({ step, data, setData }) {
               plural="%"
               min={0}
               max={100}
+              isMobile={isMobile}
             />
           </SingleEntry>
           <SingleEntry>
             <InputTitle
               icon="currentCoveragePercentage"
               secondaryText="Most manual QA misses rare but critical breakpoints."
+              isMobile={isMobile}
             >
               Roughly what percentage of error paths and edge cases are covered
               by the current regression suite?
@@ -95,12 +101,14 @@ export default function Calculator({ step, data, setData }) {
               plural="%"
               min={0}
               max={100}
+              isMobile={isMobile}
             />
           </SingleEntry>{" "}
           <SingleEntry>
             <InputTitle
               icon="bugsMissedPercentage"
               secondaryText="Bugs missed due to human factors. People make mistakes!"
+              isMobile={isMobile}
             >
               What percentage of bugs are missed due to human error during
               testing?
@@ -113,6 +121,7 @@ export default function Calculator({ step, data, setData }) {
               plural="%"
               min={0}
               max={100}
+              isMobile={isMobile}
             />
           </SingleEntry>
         </div>
@@ -123,6 +132,7 @@ export default function Calculator({ step, data, setData }) {
             <InputTitle
               icon="dollarSign"
               secondaryText="What do you think is the average cost per production bug to your brand?"
+              isMobile={isMobile}
             >
               Cost of missed bugs
             </InputTitle>
@@ -138,6 +148,7 @@ export default function Calculator({ step, data, setData }) {
             <InputTitle
               icon="delaysInDays"
               secondaryText="How many days are releases typically delayed by due to QA bottlenecks? "
+              isMobile={isMobile}
             >
               Release delays (days)
             </InputTitle>
@@ -149,12 +160,14 @@ export default function Calculator({ step, data, setData }) {
               plural="days"
               min={0}
               max={30}
+              isMobile={isMobile}
             />
           </SingleEntry>
           <SingleEntry>
             <InputTitle
               icon="dollarSign"
               secondaryText="What is approximate business impact of every day the release is delayed by? "
+              isMobile={isMobile}
             >
               Revenue impact per delayed day
             </InputTitle>

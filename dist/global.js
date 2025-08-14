@@ -172,7 +172,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.tailwind *,.tailwind ::before,.tailwi
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Space Grotesk; /* 4 */
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -495,12 +495,23 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   pointer-events: none !important;
 }
 
+.tailwind .fixed{
+  position: fixed !important;
+}
+
 .tailwind .absolute{
   position: absolute !important;
 }
 
 .tailwind .relative{
   position: relative !important;
+}
+
+.tailwind .inset-0{
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
 }
 
 .tailwind .-top-12{
@@ -511,8 +522,44 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   left: 50% !important;
 }
 
+.tailwind .right-4{
+  right: 1rem !important;
+}
+
+.tailwind .top-4{
+  top: 1rem !important;
+}
+
 .tailwind .z-10{
   z-index: 10 !important;
+}
+
+.tailwind .z-\\[9999\\]{
+  z-index: 9999 !important;
+}
+
+.tailwind .z-\\[90\\]{
+  z-index: 90 !important;
+}
+
+.tailwind .m-0{
+  margin: 0px !important;
+}
+
+.tailwind .mb-2{
+  margin-bottom: 0.5rem !important;
+}
+
+.tailwind .mb-3{
+  margin-bottom: 0.75rem !important;
+}
+
+.tailwind .mb-8{
+  margin-bottom: 2rem !important;
+}
+
+.tailwind .mt-1{
+  margin-top: 0.25rem !important;
 }
 
 .tailwind .mt-2{
@@ -523,16 +570,20 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   margin-top: 0.125rem !important;
 }
 
-.tailwind .mb-4{
-  margin-bottom: 1rem !important;
-}
-
-.tailwind .mb-2{
-  margin-bottom: 0.5rem !important;
+.tailwind .block{
+  display: block !important;
 }
 
 .tailwind .flex{
   display: flex !important;
+}
+
+.tailwind .hidden{
+  display: none !important;
+}
+
+.tailwind .h-14{
+  height: 3.5rem !important;
 }
 
 .tailwind .h-6{
@@ -555,16 +606,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   height: 100% !important;
 }
 
-.tailwind .h-14{
-  height: 3.5rem !important;
+.tailwind .h-screen{
+  height: 100vh !important;
 }
 
 .tailwind .max-h-64{
   max-height: 16rem !important;
 }
 
+.tailwind .max-h-\\[90vh\\]{
+  max-height: 90vh !important;
+}
+
 .tailwind .min-h-6{
   min-height: 1.5rem !important;
+}
+
+.tailwind .w-14{
+  width: 3.5rem !important;
 }
 
 .tailwind .w-6{
@@ -592,12 +651,20 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   width: 100% !important;
 }
 
-.tailwind .w-14{
-  width: 3.5rem !important;
+.tailwind .w-screen{
+  width: 100vw !important;
 }
 
 .tailwind .min-w-6{
   min-width: 1.5rem !important;
+}
+
+.tailwind .min-w-\\[30rem\\]{
+  min-width: 30rem !important;
+}
+
+.tailwind .max-w-\\[61\\.875vw\\]{
+  max-width: 61.875vw !important;
 }
 
 .tailwind .max-w-\\[90\\%\\]{
@@ -606,10 +673,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .flex-1{
   flex: 1 1 0% !important;
-}
-
-.tailwind .flex-grow{
-  flex-grow: 1 !important;
 }
 
 .tailwind .-translate-x-1\\/2{
@@ -781,6 +844,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-radius: 9999px !important;
 }
 
+.tailwind .rounded-md{
+  border-radius: 0.375rem !important;
+}
+
 .tailwind .rounded-xl{
   border-radius: 0.75rem !important;
 }
@@ -805,6 +872,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(209, 239, 214, var(--tw-border-opacity, 1)) !important;
 }
 
+.tailwind .border-\\[\\#F1A7D0\\]{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(241, 167, 208, 1) !important;
+  border-color: rgba(241, 167, 208, var(--tw-border-opacity, 1)) !important;
+}
+
 .tailwind .border-black{
   --tw-border-opacity: 1 !important;
   border-color: rgba(0, 0, 0, 1) !important;
@@ -817,16 +890,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
 
+.tailwind .border-red-600{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(220, 38, 38, 1) !important;
+  border-color: rgba(220, 38, 38, var(--tw-border-opacity, 1)) !important;
+}
+
 .tailwind .border-white{
   --tw-border-opacity: 1 !important;
   border-color: rgba(255, 255, 255, 1) !important;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1)) !important;
-}
-
-.tailwind .border-\\[\\#F1A7D0\\]{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(241, 167, 208, 1) !important;
-  border-color: rgba(241, 167, 208, var(--tw-border-opacity, 1)) !important;
 }
 
 .tailwind .bg-\\[\\#5C4E47\\]{
@@ -859,10 +932,20 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(250, 244, 232, var(--tw-bg-opacity, 1)) !important;
 }
 
+.tailwind .bg-\\[\\#FCECF6\\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(252, 236, 246, 1) !important;
+  background-color: rgba(252, 236, 246, var(--tw-bg-opacity, 1)) !important;
+}
+
 .tailwind .bg-black{
   --tw-bg-opacity: 1 !important;
   background-color: rgba(0, 0, 0, 1) !important;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity, 1)) !important;
+}
+
+.tailwind .bg-black\\/50{
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .tailwind .bg-blue-600{
@@ -893,28 +976,32 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1)) !important;
 }
 
-.tailwind .bg-\\[\\#F1A7D0\\]{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(241, 167, 208, 1) !important;
-  background-color: rgba(241, 167, 208, var(--tw-bg-opacity, 1)) !important;
-}
-
-.tailwind .bg-\\[\\#FCECF6\\]{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(252, 236, 246, 1) !important;
-  background-color: rgba(252, 236, 246, var(--tw-bg-opacity, 1)) !important;
+.tailwind .p-0{
+  padding: 0px !important;
 }
 
 .tailwind .p-16{
   padding: 4rem !important;
 }
 
-.tailwind .p-6{
-  padding: 1.5rem !important;
+.tailwind .p-2{
+  padding: 0.5rem !important;
 }
 
 .tailwind .p-3{
   padding: 0.75rem !important;
+}
+
+.tailwind .p-6{
+  padding: 1.5rem !important;
+}
+
+.tailwind .p-4{
+  padding: 1rem !important;
+}
+
+.tailwind .p-8{
+  padding: 2rem !important;
 }
 
 .tailwind .px-10{
@@ -940,6 +1027,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 .tailwind .px-6{
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+}
+
+.tailwind .px-8{
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.tailwind .py-10{
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 
 .tailwind .py-2{
@@ -972,6 +1069,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 0.38rem !important;
 }
 
+.tailwind .px-3{
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
 .tailwind .pb-14{
   padding-bottom: 3.5rem !important;
 }
@@ -988,8 +1090,40 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-top: 2.5rem !important;
 }
 
+.tailwind .pt-2{
+  padding-top: 0.5rem !important;
+}
+
 .tailwind .pt-\\[3\\.5rem\\]{
   padding-top: 3.5rem !important;
+}
+
+.tailwind .pb-4{
+  padding-bottom: 1rem !important;
+}
+
+.tailwind .pt-4{
+  padding-top: 1rem !important;
+}
+
+.tailwind .pb-10{
+  padding-bottom: 2.5rem !important;
+}
+
+.tailwind .pt-8{
+  padding-top: 2rem !important;
+}
+
+.tailwind .pb-6{
+  padding-bottom: 1.5rem !important;
+}
+
+.tailwind .pb-8{
+  padding-bottom: 2rem !important;
+}
+
+.tailwind .pb-16{
+  padding-bottom: 4rem !important;
 }
 
 .tailwind .text-left{
@@ -998,6 +1132,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .text-center{
   text-align: center !important;
+}
+
+.tailwind .text-\\[0\\.875rem\\]{
+  font-size: 0.875rem !important;
 }
 
 .tailwind .text-\\[1\\.25rem\\]{
@@ -1025,22 +1163,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   line-height: 1.25rem !important;
 }
 
-.tailwind .text-2xl{
-  font-size: 1.5rem !important;
-  line-height: 2rem !important;
-}
-
-.tailwind .text-base{
-  font-size: 1rem !important;
-  line-height: 1.5rem !important;
-}
-
-.tailwind .text-\\[0\\.75rem\\]{
-  font-size: 0.75rem !important;
-}
-
-.tailwind .text-\\[0\\.875rem\\]{
-  font-size: 0.875rem !important;
+.tailwind .text-\\[2rem\\]{
+  font-size: 2rem !important;
 }
 
 .tailwind .font-bold{
@@ -1087,8 +1211,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   letter-spacing: -0.0075rem !important;
 }
 
+.tailwind .tracking-\\[-0\\.01313rem\\]{
+  letter-spacing: -0.01313rem !important;
+}
+
 .tailwind .tracking-\\[-0\\.01875rem\\]{
   letter-spacing: -0.01875rem !important;
+}
+
+.tailwind .tracking-\\[-0\\.0225rem\\]{
+  letter-spacing: -0.0225rem !important;
 }
 
 .tailwind .tracking-\\[-0\\.0525rem\\]{
@@ -1097,14 +1229,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .tracking-\\[0\\.02813rem\\]{
   letter-spacing: 0.02813rem !important;
-}
-
-.tailwind .tracking-\\[-0\\.01313rem\\]{
-  letter-spacing: -0.01313rem !important;
-}
-
-.tailwind .tracking-\\[-0\\.0225rem\\]{
-  letter-spacing: -0.0225rem !important;
 }
 
 .tailwind .text-\\[\\#0535DD\\]{
@@ -1147,6 +1271,18 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   --tw-text-opacity: 1 !important;
   color: rgba(75, 85, 99, 1) !important;
   color: rgba(75, 85, 99, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-gray-700{
+  --tw-text-opacity: 1 !important;
+  color: rgba(55, 65, 81, 1) !important;
+  color: rgba(55, 65, 81, var(--tw-text-opacity, 1)) !important;
+}
+
+.tailwind .text-red-600{
+  --tw-text-opacity: 1 !important;
+  color: rgba(220, 38, 38, 1) !important;
+  color: rgba(220, 38, 38, var(--tw-text-opacity, 1)) !important;
 }
 
 .tailwind .text-white{
@@ -1238,15 +1374,62 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
 
+.hover\\:bg-gray-50:hover{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(249, 250, 251, 1) !important;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity, 1)) !important;
+}
+
 .focus\\:border-blue-600:focus{
   --tw-border-opacity: 1 !important;
   border-color: rgba(37, 99, 235, 1) !important;
   border-color: rgba(37, 99, 235, var(--tw-border-opacity, 1)) !important;
 }
 
+.focus\\:border-red-600:focus{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(220, 38, 38, 1) !important;
+  border-color: rgba(220, 38, 38, var(--tw-border-opacity, 1)) !important;
+}
+
 .focus\\:outline-none:focus{
   outline: 2px solid transparent !important;
   outline-offset: 2px !important;
+}
+
+@media (max-width: 980px){
+
+  .mobile\\:h-10{
+    height: 2.5rem !important;
+  }
+
+  .mobile\\:w-10{
+    width: 2.5rem !important;
+  }
+
+  .mobile\\:flex-col{
+    flex-direction: column !important;
+  }
+
+  .mobile\\:items-center{
+    align-items: center !important;
+  }
+
+  .mobile\\:justify-center{
+    justify-content: center !important;
+  }
+
+  .mobile\\:text-\\[0\\.25rem\\]{
+    font-size: 0.25rem !important;
+  }
+
+  .mobile\\:text-\\[1\\.5rem\\]{
+    font-size: 1.5rem !important;
+  }
+
+  .mobile\\:text-\\[1rem\\]{
+    font-size: 1rem !important;
+  }
 }
 
 .\\[\\&\\:\\:-webkit-inner-spin-button\\]\\:appearance-none::-webkit-inner-spin-button{
@@ -18250,7 +18433,8 @@ function Slider(_ref) {
     singular = _ref.singular,
     plural = _ref.plural,
     min = _ref.min,
-    max = _ref.max;
+    max = _ref.max,
+    isMobile = _ref.isMobile;
   var _React$useState = react.useState(false),
     _React$useState2 = _slicedToArray(_React$useState, 2),
     isHovering = _React$useState2[0],
@@ -18408,7 +18592,7 @@ function Slider(_ref) {
     min: min,
     max: max,
     className: "w-[4rem] px-2 py-2 text-center border-[2px] border-black rounded-[0.5rem] focus:border-blue-600 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-  }), /*#__PURE__*/react.createElement("span", {
+  }), !isMobile && /*#__PURE__*/react.createElement("span", {
     className: "text-black text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium"
   }, (!isNaN(parseInt(inputValue)) ? parseInt(inputValue) : value) <= 1 ? singular : plural)));
 }
@@ -18729,7 +18913,8 @@ function InputTitle_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function InputTitle(_ref) {
   var children = _ref.children,
     icon = _ref.icon,
-    secondaryText = _ref.secondaryText;
+    secondaryText = _ref.secondaryText,
+    isMobile = _ref.isMobile;
   var titleRef = react.useRef(null);
   var _React$useState = react.useState(false),
     _React$useState2 = InputTitle_slicedToArray(_React$useState, 2),
@@ -18752,15 +18937,15 @@ function InputTitle(_ref) {
   return /*#__PURE__*/react.createElement("div", {
     className: " flex flex-col gap-[0.12rem]"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "flex gap-[0.62rem] ".concat(isMultiline ? "items-start" : "items-center")
+    className: "flex gap-[0.62rem] ".concat(isMultiline ? "items-start" : "items-center", " ").concat(isMobile && "flex-col items-center justify-center text-center")
   }, /*#__PURE__*/react.createElement(ui_EntryBadge, {
     name: icon,
     className: "".concat(isMultiline ? "mt-[0.125rem]" : "", " min-w-6 min-h-6")
   }), /*#__PURE__*/react.createElement("p", {
     ref: titleRef,
-    className: "text-black text-[1.5rem] leading-[1.25] font-semibold"
+    className: "text-black text-[1.5rem] leading-[1.25] font-semibold ".concat(isMobile && "text-center")
   }, children)), /*#__PURE__*/react.createElement("div", {
-    className: "text-gray-500 text-[1rem] leading-[1.4] font-normal"
+    className: "text-gray-500 text-[1rem] leading-[1.4] font-normal ".concat(isMobile && "text-center")
   }, secondaryText));
 }
 ;// ./src/ui/SingleEntry.js
@@ -18984,14 +19169,16 @@ function Dropdown(_ref) {
 function Calculator(_ref) {
   var step = _ref.step,
     data = _ref.data,
-    setData = _ref.setData;
+    setData = _ref.setData,
+    isMobile = _ref.isMobile;
   return /*#__PURE__*/react.createElement("div", {
     className: "w-full pt-[3.5rem]"
   }, step === 1 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
   }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "members",
-    secondaryText: "Based on average $65k salary with benefits"
+    secondaryText: "Based on average $65k salary with benefits",
+    isMobile: isMobile
   }, "How many people do you have on your QA Team?"), /*#__PURE__*/react.createElement(Slider, {
     value: data.members,
     setValue: setData,
@@ -18999,9 +19186,11 @@ function Calculator(_ref) {
     singular: "member",
     plural: "members",
     min: 0,
-    max: 20
+    max: 20,
+    isMobile: isMobile
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
-    icon: "calendar"
+    icon: "calendar",
+    isMobile: isMobile
   }, "How often are your releases?"), /*#__PURE__*/react.createElement(Dropdown, {
     value: data.releaseFrequency,
     setValue: setData,
@@ -19026,7 +19215,8 @@ function Calculator(_ref) {
       value: "3 Months"
     }]
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
-    icon: "hours"
+    icon: "hours",
+    isMobile: isMobile
   }, "How many hours does your team spend testing per release?"), /*#__PURE__*/react.createElement(Slider, {
     value: data.hours,
     setValue: setData,
@@ -19034,12 +19224,14 @@ function Calculator(_ref) {
     singular: "hour",
     plural: "hours",
     min: 5,
-    max: 240
+    max: 240,
+    isMobile: isMobile
   }))), step === 2 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
   }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "currentTestedPercentage",
-    secondaryText: "Suboptimal coverage is often due to limited time and resources."
+    secondaryText: "Suboptimal coverage is often due to limited time and resources.",
+    isMobile: isMobile
   }, "How much of your product is actually tested each release?"), /*#__PURE__*/react.createElement(Slider, {
     value: data.currentTestedPercentage,
     setValue: setData,
@@ -19047,10 +19239,12 @@ function Calculator(_ref) {
     singular: "%",
     plural: "%",
     min: 0,
-    max: 100
+    max: 100,
+    isMobile: isMobile
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "currentCoveragePercentage",
-    secondaryText: "Most manual QA misses rare but critical breakpoints."
+    secondaryText: "Most manual QA misses rare but critical breakpoints.",
+    isMobile: isMobile
   }, "Roughly what percentage of error paths and edge cases are covered by the current regression suite?"), /*#__PURE__*/react.createElement(Slider, {
     value: data.currentCoveragePercentage,
     setValue: setData,
@@ -19058,10 +19252,12 @@ function Calculator(_ref) {
     singular: "%",
     plural: "%",
     min: 0,
-    max: 100
+    max: 100,
+    isMobile: isMobile
   })), " ", /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "bugsMissedPercentage",
-    secondaryText: "Bugs missed due to human factors. People make mistakes!"
+    secondaryText: "Bugs missed due to human factors. People make mistakes!",
+    isMobile: isMobile
   }, "What percentage of bugs are missed due to human error during testing?"), /*#__PURE__*/react.createElement(Slider, {
     value: data.bugsMissedPercentage,
     setValue: setData,
@@ -19069,12 +19265,14 @@ function Calculator(_ref) {
     singular: "%",
     plural: "%",
     min: 0,
-    max: 100
+    max: 100,
+    isMobile: isMobile
   }))), step === 3 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
   }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "dollarSign",
-    secondaryText: "What do you think is the average cost per production bug to your brand?"
+    secondaryText: "What do you think is the average cost per production bug to your brand?",
+    isMobile: isMobile
   }, "Cost of missed bugs"), /*#__PURE__*/react.createElement(NumberInput, {
     value: data.costPerMissedBug,
     setValue: setData,
@@ -19083,7 +19281,8 @@ function Calculator(_ref) {
     max: 10000000
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "delaysInDays",
-    secondaryText: "How many days are releases typically delayed by due to QA bottlenecks? "
+    secondaryText: "How many days are releases typically delayed by due to QA bottlenecks? ",
+    isMobile: isMobile
   }, "Release delays (days)"), /*#__PURE__*/react.createElement(Slider, {
     value: data.delaysInDays,
     setValue: setData,
@@ -19091,10 +19290,12 @@ function Calculator(_ref) {
     singular: "day",
     plural: "days",
     min: 0,
-    max: 30
+    max: 30,
+    isMobile: isMobile
   })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "dollarSign",
-    secondaryText: "What is approximate business impact of every day the release is delayed by? "
+    secondaryText: "What is approximate business impact of every day the release is delayed by? ",
+    isMobile: isMobile
   }, "Revenue impact per delayed day"), /*#__PURE__*/react.createElement(NumberInput, {
     value: data.revenueImpact,
     setValue: setData,
@@ -19110,23 +19311,23 @@ function ResultSection(_ref) {
   var color = _ref.color,
     icon = _ref.icon,
     title = _ref.title,
-    description = _ref.description,
     children = _ref.children,
     bottomText = _ref.bottomText,
-    bottomTextLink = _ref.bottomTextLink;
+    bottomTextLink = _ref.bottomTextLink,
+    isMobile = _ref.isMobile;
   return /*#__PURE__*/react.createElement("div", {
-    className: "flex flex-col items-center gap-4 ".concat(color, " border-2 rounded-[0.75rem] py-8 px-6 w-full")
+    className: "flex flex-col items-center gap-4 ".concat(color, " border-2 rounded-[0.75rem] w-full ").concat(isMobile ? "py-4 px-3" : "py-8 px-6")
   }, /*#__PURE__*/react.createElement("div", {
-    className: "flex items-center gap-2"
+    className: "flex items-center gap-2 ".concat(isMobile ? "flex-col" : "")
   }, /*#__PURE__*/react.createElement(ui_EntryBadge, {
     name: icon
   }), /*#__PURE__*/react.createElement("p", {
-    className: "text-[1.25rem] font-semibold leading-[1.3]"
+    className: "text-[1.25rem] font-semibold leading-[1.3] mobile:text-[1rem]"
   }, title)), /*#__PURE__*/react.createElement("div", {
-    className: "flex items-center"
+    className: "flex items-center mobile:flex-col"
   }, children), bottomText && /*#__PURE__*/react.createElement("a", {
     href: bottomTextLink,
-    className: "text-[1rem] font-semibold leading-[1] tracking-[-0.0225rem] underline p-3"
+    className: "text-[1rem] font-semibold leading-[1] tracking-[-0.0225rem] underline p-3 mobile:text-[0.25rem]"
   }, bottomText));
 }
 ;// ./src/ui/ResultSingleBlock.js
@@ -19135,19 +19336,61 @@ function ResultSection(_ref) {
 function ResultSingleBlock(_ref) {
   var title = _ref.title,
     description = _ref.description,
-    icon = _ref.icon;
+    icon = _ref.icon,
+    isMobile = _ref.isMobile;
   return /*#__PURE__*/react.createElement("div", {
-    className: "flex flex-col p-6 justify-start items-start text-left gap-2 flex-1"
+    className: "flex flex-col p-6 justify-start items-start text-left gap-2 flex-1 ".concat(isMobile && "flex-col items-center justify-center p-3")
   }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(ui_EntryBadge, {
     name: icon,
-    className: "w-14 h-14 mb-2"
+    className: "w-14 h-14 mb-2 mobile:w-10 mobile:h-10"
   })), /*#__PURE__*/react.createElement("div", {
-    className: "text-[1.5rem] font-bold leading-[1.2] tracking-[-0.0075rem]"
+    className: "text-[1.5rem] font-bold leading-[1.2] tracking-[-0.0075rem] ".concat(isMobile && "text-center")
   }, title), /*#__PURE__*/react.createElement("div", {
-    className: "text-[0.875rem] font-medium leading-[1.3] tracking-[-0.01313rem]"
+    className: "text-[0.875rem] font-medium leading-[1.3] tracking-[-0.01313rem] ".concat(isMobile && "text-center")
   }, description));
 }
+;// ./src/ui/LabeledInput.js
+
+function LabeledInput(_ref) {
+  var label = _ref.label,
+    name = _ref.name,
+    _ref$type = _ref.type,
+    type = _ref$type === void 0 ? "text" : _ref$type,
+    placeholder = _ref.placeholder,
+    _ref$required = _ref.required,
+    required = _ref$required === void 0 ? false : _ref$required,
+    value = _ref.value,
+    onChange = _ref.onChange,
+    error = _ref.error;
+  var inputClasses = "w-full border-[2px] rounded-[0.625rem] px-4 py-3 text-[1rem] focus:outline-none ".concat(error ? "border-red-600 focus:border-red-600" : "border-black focus:border-blue-600");
+  return /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("label", {
+    htmlFor: name,
+    className: "block text-[1rem] font-semibold mb-2"
+  }, label, required && /*#__PURE__*/react.createElement("span", {
+    className: "text-red-600"
+  }, "*")), /*#__PURE__*/react.createElement("input", {
+    id: name,
+    name: name,
+    type: type,
+    placeholder: placeholder,
+    required: required,
+    value: value,
+    onChange: onChange,
+    className: inputClasses,
+    "aria-invalid": Boolean(error),
+    "aria-describedby": error ? "".concat(name, "-error") : undefined
+  }), error && /*#__PURE__*/react.createElement("p", {
+    id: "".concat(name, "-error"),
+    className: "text-red-600 text-sm mt-1"
+  }, error));
+}
 ;// ./src/App.js
+function App_typeof(o) { "@babel/helpers - typeof"; return App_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, App_typeof(o); }
+function App_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function App_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? App_ownKeys(Object(t), !0).forEach(function (r) { App_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : App_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function App_defineProperty(e, r, t) { return (r = App_toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function App_toPropertyKey(t) { var i = App_toPrimitive(t, "string"); return "symbol" == App_typeof(i) ? i : i + ""; }
+function App_toPrimitive(t, r) { if ("object" != App_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != App_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function App_slicedToArray(r, e) { return App_arrayWithHoles(r) || App_iterableToArrayLimit(r, e) || App_unsupportedIterableToArray(r, e) || App_nonIterableRest(); }
 function App_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function App_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return App_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? App_arrayLikeToArray(r, a) : void 0; } }
@@ -19161,12 +19404,45 @@ function App_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 var App = function App() {
-  var _React$useState = react.useState(4),
+  var _React$useState = react.useState(1),
     _React$useState2 = App_slicedToArray(_React$useState, 2),
     step = _React$useState2[0],
     setStep = _React$useState2[1];
+  var _React$useState3 = react.useState(false),
+    _React$useState4 = App_slicedToArray(_React$useState3, 2),
+    isMobile = _React$useState4[0],
+    setIsMobile = _React$useState4[1];
+  react.useEffect(function () {
+    var handleResize = function handleResize() {
+      setIsMobile(window.innerWidth < 980);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return function () {
+      return window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  var _React$useState5 = react.useState(false),
+    _React$useState6 = App_slicedToArray(_React$useState5, 2),
+    modalOpen = _React$useState6[0],
+    setModalOpen = _React$useState6[1];
   var modalRef = react.useRef(null);
+  // Lock background scroll and handle Escape key when modal is open
+  react.useEffect(function () {
+    if (!modalOpen) return;
+    var prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    var onKeyDown = function onKeyDown(e) {
+      if (e.key === "Escape") setModalOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return function () {
+      document.body.style.overflow = prevOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [modalOpen]);
   var scrollToModalTop = function scrollToModalTop() {
     var el = modalRef.current;
     if (!el) return;
@@ -19185,7 +19461,7 @@ var App = function App() {
     "1 Month": 12,
     "3 Months": 4
   };
-  var _React$useState3 = react.useState({
+  var _React$useState7 = react.useState({
       members: 2,
       releaseFrequency: "1 Day",
       hours: 40,
@@ -19197,13 +19473,64 @@ var App = function App() {
       revenueImpact: 2000,
       tests: 80
     }),
-    _React$useState4 = App_slicedToArray(_React$useState3, 2),
-    data = _React$useState4[0],
-    setData = _React$useState4[1];
+    _React$useState8 = App_slicedToArray(_React$useState7, 2),
+    data = _React$useState8[0],
+    setData = _React$useState8[1];
   return /*#__PURE__*/react.createElement("div", {
     className: "tailwind"
+  },
+  //modal
+  modalOpen && /*#__PURE__*/react.createElement("div", {
+    className: "fixed w-screen h-screen z-[9999] inset-0 bg-black/50 flex justify-center items-center m-0 p-0",
+    onClick: function onClick() {
+      return setModalOpen(false);
+    },
+    role: "dialog",
+    "aria-modal": "true",
+    "aria-labelledby": "spur-modal-title"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "flex bg-[#FAF4E8] p-16 justify-center items-center",
+    className: "bg-white w-[61.875rem] max-w-[61.875vw] max-h-[90vh] min-w-[30rem] px-20 py-10 rounded-[1.25rem] border-[2px] border-black relative",
+    onClick: function onClick(e) {
+      return e.stopPropagation();
+    }
+  }, /*#__PURE__*/react.createElement("button", {
+    type: "button",
+    "aria-label": "Close",
+    onClick: function onClick() {
+      return setModalOpen(false);
+    },
+    className: "absolute top-4 right-4 p-2 rounded-md border-[2px] border-black hover:bg-gray-50"
+  }, /*#__PURE__*/react.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "16",
+    height: "16",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "black",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, /*#__PURE__*/react.createElement("line", {
+    x1: "18",
+    y1: "6",
+    x2: "6",
+    y2: "18"
+  }), /*#__PURE__*/react.createElement("line", {
+    x1: "6",
+    y1: "6",
+    x2: "18",
+    y2: "18"
+  }))), /*#__PURE__*/react.createElement("h2", {
+    id: "spur-modal-title",
+    className: "text-[2.5rem] font-bold text-center mb-3"
+  }, "Your ROI with Spur report is ready!"), /*#__PURE__*/react.createElement("p", {
+    className: "text-gray-700 text-center mb-8"
+  }, "Thank you for visiting Spur\u2019s ROI Calculator. We hope you find this PDF report valuable and share it with your team."), /*#__PURE__*/react.createElement(ModalForm, {
+    onClose: function onClose() {
+      return setModalOpen(false);
+    }
+  }))), /*#__PURE__*/react.createElement("div", {
+    className: "flex bg-[#FAF4E8] ".concat(isMobile ? "p-6" : "p-16", " justify-center items-center"),
     ref: modalRef
   }, /*#__PURE__*/react.createElement("div", {
     id: "inside",
@@ -19222,7 +19549,7 @@ var App = function App() {
     }
   }))), /*#__PURE__*/react.createElement("div", {
     id: "modal",
-    className: "w-full border-[2px] border-black rounded-[1.25rem] bg-white px-20 pt-10 pb-14 flex flex-col items-center"
+    className: "w-full border-[2px] border-black rounded-[1.25rem] bg-white ".concat(isMobile ? "px-4 pt-4 pb-4" : "px-20 pt-10 pb-14", " flex flex-col items-center")
   }, step < 4 ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
     id: "top half",
     className: "flex flex-col items-center gap-3"
@@ -19238,16 +19565,17 @@ var App = function App() {
   }, /*#__PURE__*/react.createElement(Calculator, {
     step: step,
     data: data,
-    setData: setData
+    setData: setData,
+    isMobile: isMobile
   }))) :
   /*#__PURE__*/
   // result page
   react.createElement("div", {
     className: "flex flex-col items-center text-center w-full"
   }, /*#__PURE__*/react.createElement("p", {
-    className: "pb-24"
+    className: "".concat(isMobile ? "pb-8" : "pb-24", " z-[90]")
   }, "Here is the value you will get with Spur"), /*#__PURE__*/react.createElement("div", {
-    className: "relative w-full flex items-center justify-center pb-32"
+    className: "relative w-full flex items-center justify-center ".concat(isMobile ? "pb-16" : "pb-32")
   }, /*#__PURE__*/react.createElement("svg", {
     className: "absolute pointer-events-none w-[20rem] max-w-[90%] h-auto",
     viewBox: "0 0 321 321",
@@ -19266,7 +19594,7 @@ var App = function App() {
     d: "M174.877 176.934C176.908 178.874 180.234 178.246 181.384 175.683C184.357 169.058 189.481 157.358 192.876 148.054C196.144 139.099 200.139 127.457 203.102 118.71C204.999 113.107 200.102 107.611 194.323 108.872C186.377 110.605 176.334 112.873 168.812 114.831C156.814 117.954 138.434 124.085 128.458 127.493C125.4 128.538 124.741 132.536 127.279 134.536L137.499 142.591C140.196 144.717 139.543 149.959 136.888 152.138C135.796 153.034 134.613 154.111 133.362 155.404C127.709 161.244 122.963 163.607 118.221 170.419C115.947 173.687 120.102 179.508 124.287 183.075C127.691 185.977 133.218 192.12 135.189 189.419C140.99 181.473 138.017 185.498 143.343 179.057C147.001 174.632 152.191 168.282 155.359 164.401C156.871 162.548 159.639 162.377 161.368 164.029L174.877 176.934Z",
     fill: "#FFFDF8"
   })), /*#__PURE__*/react.createElement("h2", {
-    className: "relative text-[3.5rem] font-normal leading-[1.15] tracking-[-0.0525rem] w-full"
+    className: "relative ".concat(isMobile ? "text-[2.5rem]" : "text-[3.5rem]", " font-normal leading-[1.15] tracking-[-0.0525rem] w-full")
   }, "Go from manual QA to ", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("span", {
     className: "text-[#0E46FA]"
   }, "90% automated test coverage"), /*#__PURE__*/react.createElement("br", null), "in just\xA0", /*#__PURE__*/react.createElement("span", {
@@ -19276,84 +19604,182 @@ var App = function App() {
   }, /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#F0FAF1] border-[#D1EFD6]",
     icon: "cutTime",
-    title: "Cut Down Your Time Spent on Manual QA Every Regression"
+    title: "Cut Down Your Time Spent on Manual QA Every Regression",
+    isMobile: isMobile
   }, /*#__PURE__*/react.createElement("div", {
     className: "flex items-center gap-3"
   }, /*#__PURE__*/react.createElement("h2", {
-    className: "text-[2.5rem] leading-[1.15]"
+    className: "leading-[1.15] ".concat(isMobile ? "text-[1.5rem]" : "text-[2.5rem]")
   }, data.hours, " hours"), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
-    className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
+    className: "leading-[1.15] text-[#39A74A] ".concat(isMobile ? "text-[1.5rem]" : "text-[2.5rem]")
   }, Math.round(data.hours * 0.167), " hours"))), /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#F0FAF1] border-[#D1EFD6]",
     icon: "releaseCycle",
-    title: "Faster release cycles"
+    title: "Faster release cycles",
+    isMobile: isMobile
   }, /*#__PURE__*/react.createElement("div", {
     className: "flex items-center gap-3"
   }, /*#__PURE__*/react.createElement("h2", {
-    className: "text-[2.5rem] leading-[1.15]"
+    className: "leading-[1.15] ".concat(isMobile ? "text-[1.5rem]" : "text-[2.5rem]")
   }, data.releaseFrequency), /*#__PURE__*/react.createElement("p", null, "to"), /*#__PURE__*/react.createElement("h2", {
-    className: "text-[2.5rem] leading-[1.15] text-[#39A74A]"
+    className: "leading-[1.15] text-[#39A74A] ".concat(isMobile ? "text-[1.5rem]" : "text-[2.5rem]")
   }, Math.round(data.hours / (data.tests / 15 * 0.1667)), "\xA0hours"))), /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#EBF0FF] border-[#C3D1FE]",
     icon: "ROI",
     title: "Total ROI for your team",
-    description: "(estimated annual cost savings on hours saved + cost of critical bugs missed)"
+    description: "(estimated annual cost savings on hours saved + cost of critical bugs missed)",
+    isMobile: isMobile
   }, /*#__PURE__*/react.createElement("h2", {
-    className: "text-[2.5rem] leading-[1.15] text-[#0535DD]"
+    className: "leading-[1.15] text-[#0535DD] ".concat(isMobile ? "text-[1.5rem]" : "text-[2.5rem]")
   }, "$", Math.round(data.members * data.hours * releaseFrequencyToYearly[data.releaseFrequency] * 31.25 + data.costPerMissedBug + data.bugsMissedPercentage * 0.01))), /*#__PURE__*/react.createElement(ResultSection, {
     color: "bg-[#FCECF6] border-[#F1A7D0]",
     title: "Even more reasons leading brands choose Spur!",
     bottomText: "Read more about our agentic QA approach",
-    bottomTextLink: ""
+    bottomTextLink: "",
+    isMobile: isMobile
   }, /*#__PURE__*/react.createElement("div", {
-    className: "flex items-center"
+    className: "flex ".concat(isMobile && "flex-col")
   }, /*#__PURE__*/react.createElement(ResultSingleBlock, {
+    isMobile: isMobile,
     icon: "resultBlock1",
     title: "No more \u201Cworks on my machine\u201D",
     description: "Spur reproduces bugs with context \u2014 logs, screenshots, and step history."
   }), /*#__PURE__*/react.createElement(ResultSingleBlock, {
+    isMobile: isMobile,
     icon: "resultBlock2",
     title: "Tests like a real user \u2014 but better",
     description: "Spur interacts with your site like a \u201Creal\u201D shopper, minus the human error."
   }), /*#__PURE__*/react.createElement(ResultSingleBlock, {
+    isMobile: isMobile,
     icon: "resultBlock3",
     title: "Run tests in parallel and scale",
     description: "High coverage, 24/7 \u2014 without hiring more testers."
   })))))), /*#__PURE__*/react.createElement("div", {
     id: "buttondiv",
-    className: "flex justify-center gap-[0.625rem] text-[1.25rem] font-semibold tracking-[0.02813rem]"
+    className: "flex justify-center gap-[0.625rem] w-full".concat(isMobile ? "text-[1rem] flex-col" : "text-[1.25rem]", " font-semibold tracking-[0.02813rem]")
   }, step > 1 && step < 4 && /*#__PURE__*/react.createElement("button", {
     id: "prevButton",
-    className: " rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black",
+    className: "rounded-[1rem] ".concat(isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit", " text-black border-[2px] border-black"),
     onClick: function onClick() {
       scrollToModalTop();
       setStep(step - 1);
     }
   }, "Back"), step < 4 && /*#__PURE__*/react.createElement("button", {
     id: "nextButton",
-    className: "bg-black rounded-[1rem] w-fit px-10 py-5 text-white",
+    className: "bg-black rounded-[1rem] ".concat(isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit", " text-white"),
     onClick: function onClick() {
       scrollToModalTop();
       setStep(step + 1);
     }
   }, step === 3 ? "Calculate ROI with Spur" : "Next"), step > 3 && /*#__PURE__*/react.createElement("button", {
     id: "calculateButton",
-    className: "rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black",
+    className: "rounded-[1rem] ".concat(isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit", " text-black border-[2px] border-black"),
     onClick: function onClick() {
       scrollToModalTop();
       setStep(1);
     }
   }, "Recalculate"), step > 3 && /*#__PURE__*/react.createElement("button", {
     id: "shareButton",
-    className: "rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black",
+    className: "rounded-[1rem] w-fit ".concat(isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit", " text-black border-[2px] border-black"),
     onClick: function onClick() {
       scrollToModalTop();
+      setModalOpen(true);
     }
-  }, "Download & Share")), " ", /*#__PURE__*/react.createElement("div", {
+  }, "Download & Share")), /*#__PURE__*/react.createElement("div", {
     className: "text-black font-semibold"
   }, "ignore this, this is ran's debugging console :) ", /*#__PURE__*/react.createElement("br", null), "members:", data.members, /*#__PURE__*/react.createElement("br", null), "releaseFrequency:", data.releaseFrequency, /*#__PURE__*/react.createElement("br", null), "hours:", data.hours, /*#__PURE__*/react.createElement("br", null), "currentTestedPercentage:", data.currentTestedPercentage, /*#__PURE__*/react.createElement("br", null), "currentCoveragePercentage:", data.currentCoveragePercentage, /*#__PURE__*/react.createElement("br", null), "bugsMissedPercentage:", data.bugsMissedPercentage, /*#__PURE__*/react.createElement("br", null), "costPerMissedBug:", data.costPerMissedBug, /*#__PURE__*/react.createElement("br", null), "delaysInDays:", data.delaysInDays, /*#__PURE__*/react.createElement("br", null), "revenueImpact:", data.revenueImpact, /*#__PURE__*/react.createElement("br", null), "tests:", data.tests))));
 };
 /* harmony default export */ const src_App = (App);
+function ModalForm(_ref) {
+  var onClose = _ref.onClose;
+  var _React$useState9 = react.useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      company: ""
+    }),
+    _React$useState10 = App_slicedToArray(_React$useState9, 2),
+    values = _React$useState10[0],
+    setValues = _React$useState10[1];
+  var _React$useState11 = react.useState({}),
+    _React$useState12 = App_slicedToArray(_React$useState11, 2),
+    errors = _React$useState12[0],
+    setErrors = _React$useState12[1];
+  var handleChange = function handleChange(e) {
+    var _e$target = e.target,
+      name = _e$target.name,
+      value = _e$target.value;
+    setValues(function (v) {
+      return App_objectSpread(App_objectSpread({}, v), {}, App_defineProperty({}, name, value));
+    });
+  };
+  var validate = function validate() {
+    var nextErrors = {};
+    if (!values.firstName.trim()) nextErrors.firstName = "First name is required";
+    if (!values.lastName.trim()) nextErrors.lastName = "Last name is required";
+    if (!values.company.trim()) nextErrors.company = "Company name is required";
+    if (!values.email.trim()) nextErrors.email = "Business email is required";else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) nextErrors.email = "Enter a valid email";
+    setErrors(nextErrors);
+    return Object.keys(nextErrors).length === 0;
+  };
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    if (!validate()) return;
+    var payload = {
+      firstName: values.firstName.trim(),
+      lastName: values.lastName.trim(),
+      email: values.email.trim(),
+      company: values.company.trim()
+    };
+    // For now, just output to console as requested
+    // eslint-disable-next-line no-console
+    console.log(JSON.stringify(payload));
+    onClose();
+  };
+  return /*#__PURE__*/react.createElement("form", {
+    className: "flex flex-col gap-5",
+    onSubmit: handleSubmit,
+    noValidate: true
+  }, /*#__PURE__*/react.createElement(LabeledInput, {
+    label: "First Name",
+    name: "firstName",
+    placeholder: "E.g. Mary",
+    required: true,
+    value: values.firstName,
+    onChange: handleChange,
+    error: errors.firstName
+  }), /*#__PURE__*/react.createElement(LabeledInput, {
+    label: "Last Name",
+    name: "lastName",
+    placeholder: "E.g. Smith",
+    required: true,
+    value: values.lastName,
+    onChange: handleChange,
+    error: errors.lastName
+  }), /*#__PURE__*/react.createElement(LabeledInput, {
+    label: "Business Email",
+    name: "email",
+    type: "email",
+    placeholder: "businessemail@example.com",
+    required: true,
+    value: values.email,
+    onChange: handleChange,
+    error: errors.email
+  }), /*#__PURE__*/react.createElement(LabeledInput, {
+    label: "Company Name",
+    name: "company",
+    placeholder: "E.g. Acme Corp",
+    required: true,
+    value: values.company,
+    onChange: handleChange,
+    error: errors.company
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "flex justify-center pt-2"
+  }, /*#__PURE__*/react.createElement("button", {
+    type: "submit",
+    className: "bg-black text-white rounded-[1rem] px-8 py-4 text-[1rem] font-semibold"
+  }, "Download Now")));
+}
 ;// ./src/index.js
 
 

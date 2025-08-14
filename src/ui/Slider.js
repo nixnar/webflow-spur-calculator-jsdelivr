@@ -8,6 +8,7 @@ export default function Slider({
   plural,
   min,
   max,
+  isMobile,
 }) {
   const [isHovering, setIsHovering] = React.useState(false);
   const [isDragging, setIsDragging] = React.useState(false);
@@ -194,11 +195,13 @@ export default function Slider({
           max={max}
           className="w-[4rem] px-2 py-2 text-center border-[2px] border-black rounded-[0.5rem] focus:border-blue-600 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
         />
-        <span className="text-black text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium">
-          {(!isNaN(parseInt(inputValue)) ? parseInt(inputValue) : value) <= 1
-            ? singular
-            : plural}
-        </span>
+        {!isMobile && (
+          <span className="text-black text-[1rem] leading-[1.2] tracking-[-0.0075rem] font-medium">
+            {(!isNaN(parseInt(inputValue)) ? parseInt(inputValue) : value) <= 1
+              ? singular
+              : plural}
+          </span>
+        )}
       </div>
     </div>
   );

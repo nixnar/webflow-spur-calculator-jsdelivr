@@ -5,9 +5,35 @@ import StepText from "./components/StepText";
 import Calculator from "./components/Calculator";
 import ResultSection from "./ui/ResultSection";
 import ResultSingleBlock from "./ui/ResultSingleBlock";
+import LabeledInput from "./ui/LabeledInput";
 const App = () => {
-  const [step, setStep] = React.useState(4);
+  const [step, setStep] = React.useState(1);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 980);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const [modalOpen, setModalOpen] = React.useState(false);
   const modalRef = React.useRef(null);
+  // Lock background scroll and handle Escape key when modal is open
+  React.useEffect(() => {
+    if (!modalOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setModalOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [modalOpen]);
   const scrollToModalTop = () => {
     const el = modalRef.current;
     if (!el) return;
@@ -37,8 +63,60 @@ const App = () => {
   });
   return (
     <div className="tailwind">
+      {
+        //modal
+        modalOpen && (
+          <div
+            className="fixed w-screen h-screen z-[9999] inset-0 bg-black/50 flex justify-center items-center m-0 p-0"
+            onClick={() => setModalOpen(false)}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="spur-modal-title"
+          >
+            <div
+              className="bg-white w-[61.875rem] max-w-[61.875vw] max-h-[90vh] min-w-[30rem] px-20 py-10 rounded-[1.25rem] border-[2px] border-black relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                aria-label="Close"
+                onClick={() => setModalOpen(false)}
+                className="absolute top-4 right-4 p-2 rounded-md border-[2px] border-black hover:bg-gray-50"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="black"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+              <h2
+                id="spur-modal-title"
+                className="text-[2.5rem] font-bold text-center mb-3"
+              >
+                Your ROI with Spur report is ready!
+              </h2>
+              <p className="text-gray-700 text-center mb-8">
+                Thank you for visiting Spur’s ROI Calculator. We hope you find
+                this PDF report valuable and share it with your team.
+              </p>
+              <ModalForm onClose={() => setModalOpen(false)} />
+            </div>
+          </div>
+        )
+      }
       <div
-        className="flex bg-[#FAF4E8] p-16 justify-center items-center"
+        className={`flex bg-[#FAF4E8] ${
+          isMobile ? "p-6" : "p-16"
+        } justify-center items-center`}
         ref={modalRef}
       >
         <div id="inside" className="flex flex-col gap-5 w-[61.875rem]">
@@ -62,7 +140,9 @@ const App = () => {
           {/*modal */}
           <div
             id="modal"
-            className="w-full border-[2px] border-black rounded-[1.25rem] bg-white px-20 pt-10 pb-14 flex flex-col items-center"
+            className={`w-full border-[2px] border-black rounded-[1.25rem] bg-white ${
+              isMobile ? "px-4 pt-4 pb-4" : "px-20 pt-10 pb-14"
+            } flex flex-col items-center`}
           >
             {step < 4 ? (
               <>
@@ -71,16 +151,25 @@ const App = () => {
                   <StepText id="titleDescription" step={step} />
                 </div>
                 <div id="calculator" className="w-full">
-                  <Calculator step={step} data={data} setData={setData} />
+                  <Calculator
+                    step={step}
+                    data={data}
+                    setData={setData}
+                    isMobile={isMobile}
+                  />
                 </div>
               </>
             ) : (
               // result page
               <div className="flex flex-col items-center text-center w-full">
-                <p className="pb-24">
+                <p className={`${isMobile ? "pb-8" : "pb-24"} z-[90]`}>
                   Here is the value you will get with Spur
                 </p>
-                <div className="relative w-full flex items-center justify-center pb-32">
+                <div
+                  className={`relative w-full flex items-center justify-center ${
+                    isMobile ? "pb-16" : "pb-32"
+                  }`}
+                >
                   <svg
                     className="absolute pointer-events-none w-[20rem] max-w-[90%] h-auto"
                     viewBox="0 0 321 321"
@@ -103,7 +192,11 @@ const App = () => {
                       fill="#FFFDF8"
                     />
                   </svg>
-                  <h2 className="relative text-[3.5rem] font-normal leading-[1.15] tracking-[-0.0525rem] w-full">
+                  <h2
+                    className={`relative ${
+                      isMobile ? "text-[2.5rem]" : "text-[3.5rem]"
+                    } font-normal leading-[1.15] tracking-[-0.0525rem] w-full`}
+                  >
                     Go from manual QA to <br />
                     <span className="text-[#0E46FA]">
                       90% automated test coverage
@@ -118,13 +211,22 @@ const App = () => {
                     color="bg-[#F0FAF1] border-[#D1EFD6]"
                     icon="cutTime"
                     title="Cut Down Your Time Spent on Manual QA Every Regression"
+                    isMobile={isMobile}
                   >
                     <div className="flex items-center gap-3">
-                      <h2 className="text-[2.5rem] leading-[1.15]">
+                      <h2
+                        className={`leading-[1.15] ${
+                          isMobile ? "text-[1.5rem]" : "text-[2.5rem]"
+                        }`}
+                      >
                         {data.hours} hours
                       </h2>
                       <p>to</p>
-                      <h2 className="text-[2.5rem] leading-[1.15] text-[#39A74A]">
+                      <h2
+                        className={`leading-[1.15] text-[#39A74A] ${
+                          isMobile ? "text-[1.5rem]" : "text-[2.5rem]"
+                        }`}
+                      >
                         {Math.round(data.hours * 0.167)} hours
                       </h2>
                     </div>
@@ -133,13 +235,22 @@ const App = () => {
                     color="bg-[#F0FAF1] border-[#D1EFD6]"
                     icon="releaseCycle"
                     title="Faster release cycles"
+                    isMobile={isMobile}
                   >
                     <div className="flex items-center gap-3">
-                      <h2 className="text-[2.5rem] leading-[1.15]">
+                      <h2
+                        className={`leading-[1.15] ${
+                          isMobile ? "text-[1.5rem]" : "text-[2.5rem]"
+                        }`}
+                      >
                         {data.releaseFrequency}
                       </h2>
                       <p>to</p>
-                      <h2 className="text-[2.5rem] leading-[1.15] text-[#39A74A]">
+                      <h2
+                        className={`leading-[1.15] text-[#39A74A] ${
+                          isMobile ? "text-[1.5rem]" : "text-[2.5rem]"
+                        }`}
+                      >
                         {Math.round(data.hours / ((data.tests / 15) * 0.1667))}
                         &nbsp;hours
                       </h2>
@@ -150,8 +261,13 @@ const App = () => {
                     icon="ROI"
                     title="Total ROI for your team"
                     description="(estimated annual cost savings on hours saved + cost of critical bugs missed)"
+                    isMobile={isMobile}
                   >
-                    <h2 className="text-[2.5rem] leading-[1.15] text-[#0535DD]">
+                    <h2
+                      className={`leading-[1.15] text-[#0535DD] ${
+                        isMobile ? "text-[1.5rem]" : "text-[2.5rem]"
+                      }`}
+                    >
                       $
                       {Math.round(
                         data.members *
@@ -168,19 +284,23 @@ const App = () => {
                     title="Even more reasons leading brands choose Spur!"
                     bottomText="Read more about our agentic QA approach"
                     bottomTextLink=""
+                    isMobile={isMobile}
                   >
-                    <div className="flex items-center">
+                    <div className={`flex ${isMobile && "flex-col"}`}>
                       <ResultSingleBlock
+                        isMobile={isMobile}
                         icon="resultBlock1"
                         title="No more “works on my machine”"
                         description="Spur reproduces bugs with context — logs, screenshots, and step history."
                       />
                       <ResultSingleBlock
+                        isMobile={isMobile}
                         icon="resultBlock2"
                         title="Tests like a real user — but better"
                         description="Spur interacts with your site like a “real” shopper, minus the human error."
                       />
                       <ResultSingleBlock
+                        isMobile={isMobile}
                         icon="resultBlock3"
                         title="Run tests in parallel and scale"
                         description="High coverage, 24/7 — without hiring more testers."
@@ -194,12 +314,16 @@ const App = () => {
           {/*buttons */}
           <div
             id="buttondiv"
-            className="flex justify-center gap-[0.625rem] text-[1.25rem] font-semibold tracking-[0.02813rem]"
+            className={`flex justify-center gap-[0.625rem] w-full${
+              isMobile ? "text-[1rem] flex-col" : "text-[1.25rem]"
+            } font-semibold tracking-[0.02813rem]`}
           >
             {step > 1 && step < 4 && (
               <button
                 id="prevButton"
-                className=" rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black"
+                className={`rounded-[1rem] ${
+                  isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit"
+                } text-black border-[2px] border-black`}
                 onClick={() => {
                   scrollToModalTop();
                   setStep(step - 1);
@@ -211,7 +335,9 @@ const App = () => {
             {step < 4 && (
               <button
                 id="nextButton"
-                className="bg-black rounded-[1rem] w-fit px-10 py-5 text-white"
+                className={`bg-black rounded-[1rem] ${
+                  isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit"
+                } text-white`}
                 onClick={() => {
                   scrollToModalTop();
                   setStep(step + 1);
@@ -223,7 +349,9 @@ const App = () => {
             {step > 3 && (
               <button
                 id="calculateButton"
-                className="rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black"
+                className={`rounded-[1rem] ${
+                  isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit"
+                } text-black border-[2px] border-black`}
                 onClick={() => {
                   scrollToModalTop();
                   setStep(1);
@@ -235,15 +363,18 @@ const App = () => {
             {step > 3 && (
               <button
                 id="shareButton"
-                className="rounded-[1rem] w-fit px-10 py-5 text-black border-[2px] border-black"
+                className={`rounded-[1rem] w-fit ${
+                  isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit"
+                } text-black border-[2px] border-black`}
                 onClick={() => {
                   scrollToModalTop();
+                  setModalOpen(true);
                 }}
               >
                 Download & Share
               </button>
             )}
-          </div>{" "}
+          </div>
           <div className="text-black font-semibold">
             ignore this, this is ran's debugging console :) <br />
             members:{data.members}
@@ -273,3 +404,96 @@ const App = () => {
 };
 
 export default App;
+
+function ModalForm({ onClose }) {
+  const [values, setValues] = React.useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    company: "",
+  });
+  const [errors, setErrors] = React.useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues((v) => ({ ...v, [name]: value }));
+  };
+
+  const validate = () => {
+    const nextErrors = {};
+    if (!values.firstName.trim())
+      nextErrors.firstName = "First name is required";
+    if (!values.lastName.trim()) nextErrors.lastName = "Last name is required";
+    if (!values.company.trim()) nextErrors.company = "Company name is required";
+    if (!values.email.trim()) nextErrors.email = "Business email is required";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email))
+      nextErrors.email = "Enter a valid email";
+    setErrors(nextErrors);
+    return Object.keys(nextErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+    const payload = {
+      firstName: values.firstName.trim(),
+      lastName: values.lastName.trim(),
+      email: values.email.trim(),
+      company: values.company.trim(),
+    };
+    // For now, just output to console as requested
+    // eslint-disable-next-line no-console
+    console.log(JSON.stringify(payload));
+    onClose();
+  };
+
+  return (
+    <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
+      <LabeledInput
+        label="First Name"
+        name="firstName"
+        placeholder="E.g. Mary"
+        required
+        value={values.firstName}
+        onChange={handleChange}
+        error={errors.firstName}
+      />
+      <LabeledInput
+        label="Last Name"
+        name="lastName"
+        placeholder="E.g. Smith"
+        required
+        value={values.lastName}
+        onChange={handleChange}
+        error={errors.lastName}
+      />
+      <LabeledInput
+        label="Business Email"
+        name="email"
+        type="email"
+        placeholder="businessemail@example.com"
+        required
+        value={values.email}
+        onChange={handleChange}
+        error={errors.email}
+      />
+      <LabeledInput
+        label="Company Name"
+        name="company"
+        placeholder="E.g. Acme Corp"
+        required
+        value={values.company}
+        onChange={handleChange}
+        error={errors.company}
+      />
+      <div className="flex justify-center pt-2">
+        <button
+          type="submit"
+          className="bg-black text-white rounded-[1rem] px-8 py-4 text-[1rem] font-semibold"
+        >
+          Download Now
+        </button>
+      </div>
+    </form>
+  );
+}
