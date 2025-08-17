@@ -8,8 +8,8 @@ export default function Calculator({ step, data, setData, isMobile }) {
   return (
     <div className="w-full pt-[3.5rem]">
       {step === 1 && (
-        <div className="flex flex-col gap-12">
-          <SingleEntry>
+        <div className={`flex flex-col ${isMobile ? "gap-10" : "gap-12"}`}>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle
               icon="members"
               secondaryText="Based on average $65k salary with benefits"
@@ -28,7 +28,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
               isMobile={isMobile}
             />
           </SingleEntry>
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle icon="calendar" isMobile={isMobile}>
               How often are your releases?
             </InputTitle>
@@ -46,7 +46,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
               ]}
             />
           </SingleEntry>
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle icon="hours" isMobile={isMobile}>
               How many hours does your team spend testing per release?
             </InputTitle>
@@ -61,11 +61,26 @@ export default function Calculator({ step, data, setData, isMobile }) {
               isMobile={isMobile}
             />
           </SingleEntry>
+          <SingleEntry isMobile={isMobile}>
+              <InputTitle icon="currentTestedPercentage" isMobile={isMobile}>
+              How many tests do your team run per release?
+            </InputTitle>
+            <Slider
+              value={data.tests}
+              setValue={setData}
+              valueName="tests"
+              singular="test"
+              plural="tests"
+              min={1}
+              max={200}
+              isMobile={isMobile}
+            />
+          </SingleEntry>
         </div>
       )}
       {step === 2 && (
         <div className="flex flex-col gap-12">
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle
               icon="currentTestedPercentage"
               secondaryText="Suboptimal coverage is often due to limited time and resources."
@@ -84,7 +99,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
               isMobile={isMobile}
             />
           </SingleEntry>
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle
               icon="currentCoveragePercentage"
               secondaryText="Most manual QA misses rare but critical breakpoints."
@@ -104,7 +119,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
               isMobile={isMobile}
             />
           </SingleEntry>{" "}
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle
               icon="bugsMissedPercentage"
               secondaryText="Bugs missed due to human factors. People make mistakes!"
@@ -128,7 +143,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
       )}
       {step === 3 && (
         <div className="flex flex-col gap-12">
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle
               icon="dollarSign"
               secondaryText="What do you think is the average cost per production bug to your brand?"
@@ -144,7 +159,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
               max={10000000}
             />
           </SingleEntry>
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}>
             <InputTitle
               icon="delaysInDays"
               secondaryText="How many days are releases typically delayed by due to QA bottlenecks? "
@@ -163,7 +178,7 @@ export default function Calculator({ step, data, setData, isMobile }) {
               isMobile={isMobile}
             />
           </SingleEntry>
-          <SingleEntry>
+          <SingleEntry isMobile={isMobile}  >
             <InputTitle
               icon="dollarSign"
               secondaryText="What is approximate business impact of every day the release is delayed by? "

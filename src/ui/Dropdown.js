@@ -60,7 +60,7 @@ export default function Dropdown({ value, setValue, valueName, options }) {
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
         onKeyDown={onKeyDown}
-        className="w-full flex items-center justify-between border-[2px] border-black rounded-[0.625rem] px-4 py-3 text-[1rem] font-medium leading-[1.3] tracking-[-0.0075rem] bg-white focus:outline-none focus:border-blue-600"
+        className="w-full flex items-center justify-between border-[2px] border-black rounded-[0.625rem] pl-4 pr-3 py-3 text-[1rem] font-medium leading-[1.3] tracking-[-0.0075rem] bg-white focus:outline-none focus:border-blue-600"
       >
         <span>{selected.label}</span>
         <svg

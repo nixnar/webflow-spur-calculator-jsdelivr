@@ -125,7 +125,9 @@ export default function Slider({
   }, [isDragging]);
 
   return (
-    <div className="w-full py-4 select-none flex gap-6">
+    <div
+      className={`w-full ${isMobile ? "py-2" : "py-4"} select-none flex gap-6`}
+    >
       {/* Slider Container */}
       <div className="relative w-full">
         {/* Slider Track Container - Extended clickable area */}

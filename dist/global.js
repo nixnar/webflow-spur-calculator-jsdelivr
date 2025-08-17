@@ -534,12 +534,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   z-index: 10 !important;
 }
 
-.tailwind .z-\\[9999\\]{
-  z-index: 9999 !important;
-}
-
 .tailwind .z-\\[90\\]{
   z-index: 90 !important;
+}
+
+.tailwind .z-\\[9999\\]{
+  z-index: 9999 !important;
 }
 
 .tailwind .m-0{
@@ -568,6 +568,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .mt-\\[0\\.125rem\\]{
   margin-top: 0.125rem !important;
+}
+
+.tailwind .mb-4{
+  margin-bottom: 1rem !important;
 }
 
 .tailwind .block{
@@ -669,6 +673,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .max-w-\\[90\\%\\]{
   max-width: 90% !important;
+}
+
+.tailwind .max-w-\\[80rem\\]{
+  max-width: 80rem !important;
 }
 
 .tailwind .flex-1{
@@ -802,6 +810,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .tailwind .gap-\\[0\\.62rem\\]{
   gap: 0.62rem !important;
+}
+
+.tailwind .gap-10{
+  gap: 2.5rem !important;
 }
 
 .tailwind .overflow-auto{
@@ -996,19 +1008,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding: 1.5rem !important;
 }
 
-.tailwind .p-4{
-  padding: 1rem !important;
-}
-
-.tailwind .p-8{
-  padding: 2rem !important;
-}
-
-.tailwind .px-10{
-  padding-left: 2.5rem !important;
-  padding-right: 2.5rem !important;
-}
-
 .tailwind .px-2{
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -1017,6 +1016,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 .tailwind .px-20{
   padding-left: 5rem !important;
   padding-right: 5rem !important;
+}
+
+.tailwind .px-3{
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .tailwind .px-4{
@@ -1054,11 +1058,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 1rem !important;
 }
 
-.tailwind .py-5{
-  padding-top: 1.25rem !important;
-  padding-bottom: 1.25rem !important;
-}
-
 .tailwind .py-8{
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
@@ -1069,13 +1068,32 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 0.38rem !important;
 }
 
-.tailwind .px-3{
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
+.tailwind .px-10{
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.tailwind .px-5{
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.tailwind .py-5{
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.tailwind .py-\\[10px\\]{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .tailwind .pb-14{
   padding-bottom: 3.5rem !important;
+}
+
+.tailwind .pb-16{
+  padding-bottom: 4rem !important;
 }
 
 .tailwind .pb-24{
@@ -1086,6 +1104,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-bottom: 8rem !important;
 }
 
+.tailwind .pb-4{
+  padding-bottom: 1rem !important;
+}
+
+.tailwind .pb-8{
+  padding-bottom: 2rem !important;
+}
+
 .tailwind .pt-10{
   padding-top: 2.5rem !important;
 }
@@ -1094,36 +1120,20 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   padding-top: 0.5rem !important;
 }
 
-.tailwind .pt-\\[3\\.5rem\\]{
-  padding-top: 3.5rem !important;
-}
-
-.tailwind .pb-4{
-  padding-bottom: 1rem !important;
-}
-
 .tailwind .pt-4{
   padding-top: 1rem !important;
 }
 
-.tailwind .pb-10{
-  padding-bottom: 2.5rem !important;
+.tailwind .pt-\\[3\\.5rem\\]{
+  padding-top: 3.5rem !important;
 }
 
-.tailwind .pt-8{
-  padding-top: 2rem !important;
+.tailwind .pl-4{
+  padding-left: 1rem !important;
 }
 
-.tailwind .pb-6{
-  padding-bottom: 1.5rem !important;
-}
-
-.tailwind .pb-8{
-  padding-bottom: 2rem !important;
-}
-
-.tailwind .pb-16{
-  padding-bottom: 4rem !important;
+.tailwind .pr-3{
+  padding-right: 0.75rem !important;
 }
 
 .tailwind .text-left{
@@ -1411,20 +1421,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     flex-direction: column !important;
   }
 
-  .mobile\\:items-center{
-    align-items: center !important;
-  }
-
-  .mobile\\:justify-center{
-    justify-content: center !important;
-  }
-
   .mobile\\:text-\\[0\\.25rem\\]{
     font-size: 0.25rem !important;
-  }
-
-  .mobile\\:text-\\[1\\.5rem\\]{
-    font-size: 1.5rem !important;
   }
 
   .mobile\\:text-\\[1rem\\]{
@@ -18550,7 +18548,7 @@ function Slider(_ref) {
     }
   }, [isDragging]);
   return /*#__PURE__*/react.createElement("div", {
-    className: "w-full py-4 select-none flex gap-6"
+    className: "w-full ".concat(isMobile ? "py-2" : "py-4", " select-none flex gap-6")
   }, /*#__PURE__*/react.createElement("div", {
     className: "relative w-full"
   }, /*#__PURE__*/react.createElement("div", {
@@ -18951,9 +18949,10 @@ function InputTitle(_ref) {
 ;// ./src/ui/SingleEntry.js
 
 function SingleEntry(_ref) {
-  var children = _ref.children;
+  var children = _ref.children,
+    isMobile = _ref.isMobile;
   return /*#__PURE__*/react.createElement("div", {
-    className: "w-full flex flex-col gap-5"
+    className: "w-full flex flex-col ".concat(isMobile ? "gap-3" : "gap-5")
   }, children);
 }
 ;// ./src/ui/NumberInput.js
@@ -19124,7 +19123,7 @@ function Dropdown(_ref) {
       });
     },
     onKeyDown: onKeyDown,
-    className: "w-full flex items-center justify-between border-[2px] border-black rounded-[0.625rem] px-4 py-3 text-[1rem] font-medium leading-[1.3] tracking-[-0.0075rem] bg-white focus:outline-none focus:border-blue-600"
+    className: "w-full flex items-center justify-between border-[2px] border-black rounded-[0.625rem] pl-4 pr-3 py-3 text-[1rem] font-medium leading-[1.3] tracking-[-0.0075rem] bg-white focus:outline-none focus:border-blue-600"
   }, /*#__PURE__*/react.createElement("span", null, selected.label), /*#__PURE__*/react.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "20",
@@ -19174,8 +19173,10 @@ function Calculator(_ref) {
   return /*#__PURE__*/react.createElement("div", {
     className: "w-full pt-[3.5rem]"
   }, step === 1 && /*#__PURE__*/react.createElement("div", {
-    className: "flex flex-col gap-12"
-  }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+    className: "flex flex-col ".concat(isMobile ? "gap-10" : "gap-12")
+  }, /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "members",
     secondaryText: "Based on average $65k salary with benefits",
     isMobile: isMobile
@@ -19188,7 +19189,9 @@ function Calculator(_ref) {
     min: 0,
     max: 20,
     isMobile: isMobile
-  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  })), /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "calendar",
     isMobile: isMobile
   }, "How often are your releases?"), /*#__PURE__*/react.createElement(Dropdown, {
@@ -19214,7 +19217,9 @@ function Calculator(_ref) {
       label: "Quarterly",
       value: "3 Months"
     }]
-  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  })), /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "hours",
     isMobile: isMobile
   }, "How many hours does your team spend testing per release?"), /*#__PURE__*/react.createElement(Slider, {
@@ -19226,9 +19231,25 @@ function Calculator(_ref) {
     min: 5,
     max: 240,
     isMobile: isMobile
+  })), /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
+    icon: "currentTestedPercentage",
+    isMobile: isMobile
+  }, "How many tests do your team run per release?"), /*#__PURE__*/react.createElement(Slider, {
+    value: data.tests,
+    setValue: setData,
+    valueName: "tests",
+    singular: "test",
+    plural: "tests",
+    min: 1,
+    max: 200,
+    isMobile: isMobile
   }))), step === 2 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
-  }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  }, /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "currentTestedPercentage",
     secondaryText: "Suboptimal coverage is often due to limited time and resources.",
     isMobile: isMobile
@@ -19241,7 +19262,9 @@ function Calculator(_ref) {
     min: 0,
     max: 100,
     isMobile: isMobile
-  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  })), /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "currentCoveragePercentage",
     secondaryText: "Most manual QA misses rare but critical breakpoints.",
     isMobile: isMobile
@@ -19254,7 +19277,9 @@ function Calculator(_ref) {
     min: 0,
     max: 100,
     isMobile: isMobile
-  })), " ", /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  })), " ", /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "bugsMissedPercentage",
     secondaryText: "Bugs missed due to human factors. People make mistakes!",
     isMobile: isMobile
@@ -19269,7 +19294,9 @@ function Calculator(_ref) {
     isMobile: isMobile
   }))), step === 3 && /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col gap-12"
-  }, /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  }, /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "dollarSign",
     secondaryText: "What do you think is the average cost per production bug to your brand?",
     isMobile: isMobile
@@ -19279,7 +19306,9 @@ function Calculator(_ref) {
     valueName: "costPerMissedBug",
     min: 0,
     max: 10000000
-  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  })), /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "delaysInDays",
     secondaryText: "How many days are releases typically delayed by due to QA bottlenecks? ",
     isMobile: isMobile
@@ -19292,7 +19321,9 @@ function Calculator(_ref) {
     min: 0,
     max: 30,
     isMobile: isMobile
-  })), /*#__PURE__*/react.createElement(SingleEntry, null, /*#__PURE__*/react.createElement(InputTitle, {
+  })), /*#__PURE__*/react.createElement(SingleEntry, {
+    isMobile: isMobile
+  }, /*#__PURE__*/react.createElement(InputTitle, {
     icon: "dollarSign",
     secondaryText: "What is approximate business impact of every day the release is delayed by? ",
     isMobile: isMobile
@@ -19481,15 +19512,15 @@ var App = function App() {
   },
   //modal
   modalOpen && /*#__PURE__*/react.createElement("div", {
-    className: "fixed w-screen h-screen z-[9999] inset-0 bg-black/50 flex justify-center items-center m-0 p-0",
+    className: "fixed w-screen h-screen z-[9999] inset-0 bg-black/50 flex justify-center items-center m-0 p-0 px-5",
     onClick: function onClick() {
       return setModalOpen(false);
     },
     role: "dialog",
     "aria-modal": "true",
-    "aria-labelledby": "spur-modal-title"
+    "aria-labelledby": "spur-modal"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "bg-white w-[61.875rem] max-w-[61.875vw] max-h-[90vh] min-w-[30rem] px-20 py-10 rounded-[1.25rem] border-[2px] border-black relative",
+    className: "bg-white max-w-[80rem] max-h-[90vh] rounded-[1.25rem] border-[2px] border-black relative ".concat(isMobile ? "px-5 py-8" : "px-20 py-10"),
     onClick: function onClick(e) {
       return e.stopPropagation();
     }
@@ -19499,7 +19530,7 @@ var App = function App() {
     onClick: function onClick() {
       return setModalOpen(false);
     },
-    className: "absolute top-4 right-4 p-2 rounded-md border-[2px] border-black hover:bg-gray-50"
+    className: "absolute top-4 right-4 p-2 rounded-md hover:bg-gray-50"
   }, /*#__PURE__*/react.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "16",
@@ -19522,9 +19553,9 @@ var App = function App() {
     y2: "18"
   }))), /*#__PURE__*/react.createElement("h2", {
     id: "spur-modal-title",
-    className: "text-[2.5rem] font-bold text-center mb-3"
+    className: "font-bold text-center mb-3 ".concat(isMobile ? "text-[2rem]" : "text-[2.5rem]")
   }, "Your ROI with Spur report is ready!"), /*#__PURE__*/react.createElement("p", {
-    className: "text-gray-700 text-center mb-8"
+    className: "text-gray-700 text-center ".concat(isMobile ? "text-[1rem] mb-4" : "text-[1.5rem] mb-8")
   }, "Thank you for visiting Spur\u2019s ROI Calculator. We hope you find this PDF report valuable and share it with your team."), /*#__PURE__*/react.createElement(ModalForm, {
     onClose: function onClose() {
       return setModalOpen(false);
@@ -19656,7 +19687,7 @@ var App = function App() {
     description: "High coverage, 24/7 \u2014 without hiring more testers."
   })))))), /*#__PURE__*/react.createElement("div", {
     id: "buttondiv",
-    className: "flex justify-center gap-[0.625rem] w-full".concat(isMobile ? "text-[1rem] flex-col" : "text-[1.25rem]", " font-semibold tracking-[0.02813rem]")
+    className: "flex justify-center gap-[0.625rem] w-full".concat(isMobile ? "text-[1rem]" : "text-[1.25rem]", " font-semibold tracking-[0.02813rem]")
   }, step > 1 && step < 4 && /*#__PURE__*/react.createElement("button", {
     id: "prevButton",
     className: "rounded-[1rem] ".concat(isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit", " text-black border-[2px] border-black"),
@@ -19666,7 +19697,7 @@ var App = function App() {
     }
   }, "Back"), step < 4 && /*#__PURE__*/react.createElement("button", {
     id: "nextButton",
-    className: "bg-black rounded-[1rem] ".concat(isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit", " text-white"),
+    className: "bg-black rounded-[1rem] ".concat(isMobile ? "px-6 py-[10px] w-full" : "px-6 py-4 w-fit", " text-white"),
     onClick: function onClick() {
       scrollToModalTop();
       setStep(step + 1);

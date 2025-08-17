@@ -67,21 +67,23 @@ const App = () => {
         //modal
         modalOpen && (
           <div
-            className="fixed w-screen h-screen z-[9999] inset-0 bg-black/50 flex justify-center items-center m-0 p-0"
+            className="fixed w-screen h-screen z-[9999] inset-0 bg-black/50 flex justify-center items-center m-0 p-0 px-5"
             onClick={() => setModalOpen(false)}
             role="dialog"
             aria-modal="true"
-            aria-labelledby="spur-modal-title"
+            aria-labelledby="spur-modal"
           >
             <div
-              className="bg-white w-[61.875rem] max-w-[61.875vw] max-h-[90vh] min-w-[30rem] px-20 py-10 rounded-[1.25rem] border-[2px] border-black relative"
+              className={`bg-white max-w-[80rem] max-h-[90vh] rounded-[1.25rem] border-[2px] border-black relative ${
+                isMobile ? "px-5 py-8" : "px-20 py-10"
+              }`}
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 type="button"
                 aria-label="Close"
                 onClick={() => setModalOpen(false)}
-                className="absolute top-4 right-4 p-2 rounded-md border-[2px] border-black hover:bg-gray-50"
+                className="absolute top-4 right-4 p-2 rounded-md hover:bg-gray-50"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,11 +102,17 @@ const App = () => {
               </button>
               <h2
                 id="spur-modal-title"
-                className="text-[2.5rem] font-bold text-center mb-3"
+                className={`font-bold text-center mb-3 ${
+                  isMobile ? "text-[2rem]" : "text-[2.5rem]"
+                }`}
               >
                 Your ROI with Spur report is ready!
               </h2>
-              <p className="text-gray-700 text-center mb-8">
+              <p
+                className={`text-gray-700 text-center ${
+                  isMobile ? "text-[1rem] mb-4" : "text-[1.5rem] mb-8"
+                }`}
+              >
                 Thank you for visiting Spur’s ROI Calculator. We hope you find
                 this PDF report valuable and share it with your team.
               </p>
@@ -315,7 +323,7 @@ const App = () => {
           <div
             id="buttondiv"
             className={`flex justify-center gap-[0.625rem] w-full${
-              isMobile ? "text-[1rem] flex-col" : "text-[1.25rem]"
+              isMobile ? "text-[1rem]" : "text-[1.25rem]"
             } font-semibold tracking-[0.02813rem]`}
           >
             {step > 1 && step < 4 && (
@@ -336,7 +344,7 @@ const App = () => {
               <button
                 id="nextButton"
                 className={`bg-black rounded-[1rem] ${
-                  isMobile ? "px-4 py-2 w-full" : "px-6 py-4 w-fit"
+                  isMobile ? "px-6 py-[10px] w-full" : "px-6 py-4 w-fit"
                 } text-white`}
                 onClick={() => {
                   scrollToModalTop();
