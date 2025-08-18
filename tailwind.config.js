@@ -9,9 +9,7 @@ module.exports = {
         brand: "#14E8FF",
         white40: "rgba(255, 255, 255, 0.4)",
       },
-      fontFamily: {
-        //sans: ["Space Grotesk"],
-      },
+      fontFamily: {},
       screens: {
         mobile: { max: "980px" },
       },
